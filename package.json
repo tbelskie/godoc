@@ -1,0 +1,23 @@
+{
+    "name": "hugo-ai-cli",
+    "version": "0.1.0",
+    "description": "Conversational Static Site Generator - Built with Claude Code for Anthropic",
+    "main": "hugo-ai.js",
+    "bin": {
+      "hugo-ai": "./hugo-ai.js"
+    },
+    "scripts": {
+      "start": "node hugo-ai.js",
+      "test": "jest"
+    },
+    "keywords": ["hugo", "ai", "claude", "documentation"],
+    "author": "Tom Belskie",
+    "license": "MIT",
+    "dependencies": {
+      "chalk": "^4.1.2",
+      "commander": "^9.4.1",
+      "fs-extra": "^11.1.0",
+      "inquirer": "^8.2.5",
+      "ora": "^5.4.1"
+    }
+  }
