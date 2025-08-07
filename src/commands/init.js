@@ -9,6 +9,7 @@ const AdvancedContextManager = require('../context-manager');
 const HugoExpertise = require('../hugo-expertise');
 const ClaudeSimulator = require('../claude-simulator');
 const ThemeGenerator = require('../theme-generator');
+const ThemeIntelligence = require('../theme-intelligence');
 
 class InitCommand {
   constructor() {
@@ -16,6 +17,7 @@ class InitCommand {
     this.expertise = new HugoExpertise();
     this.claude = new ClaudeSimulator();
     this.themeGenerator = new ThemeGenerator();
+    this.themeIntelligence = new ThemeIntelligence();
   }
 
   async execute(options) {
@@ -27,7 +29,14 @@ class InitCommand {
     try {
       // Initialize context manager and log command start
       await this.contextManager.init();
-      await this.contextManager.logCommand('init', options.describe ? ['--describe', options.describe] : [], 'started');
+      const commandArgs = [];
+      if (options.describe) {
+        commandArgs.push('--describe', options.describe);
+      }
+      if (options.theme) {
+        commandArgs.push('--theme', options.theme);
+      }
+      await this.contextManager.logCommand('init', commandArgs, 'started');
       
       spinner.succeed('Context initialized');
       spinner.start('Analyzing your requirements...');
@@ -37,9 +46,40 @@ class InitCommand {
       spinner.succeed('Requirements analyzed');
       spinner.start('Determining optimal Hugo configuration...');
       
-      // Analyze project type and recommend theme
+      // Analyze project type
       const projectType = this.expertise.analyzeDescription(siteDetails.description);
-      const recommendedTheme = this.expertise.recommendTheme(projectType);
+      
+      // Determine theme using ThemeIntelligence
+      let selectedTheme = null;
+      if (options.theme) {
+        // Use specified theme
+        spinner.text = `Looking up theme: ${options.theme}...`;
+        selectedTheme = await this.themeIntelligence.getThemeByName(options.theme);
+        if (!selectedTheme) {
+          spinner.fail(chalk.red(`Theme '${options.theme}' not found`));
+          console.log(chalk.yellow('Available themes:'));
+          const availableThemes = await this.themeIntelligence.getThemeDatabase();
+          availableThemes.slice(0, 5).forEach(theme => {
+            console.log(chalk.gray(`  • ${theme.name} - ${theme.description}`));
+          });
+          process.exit(1);
+        }
+        console.log(chalk.green(`✅ Using theme: ${selectedTheme.name} by ${selectedTheme.author}`));
+      } else {
+        // Use AI-powered theme recommendation
+        spinner.text = 'Finding best theme match with AI...';
+        const recommendations = await this.themeIntelligence.matchThemes(siteDetails.description, 1);
+        if (recommendations.length > 0) {
+          selectedTheme = recommendations[0];
+          console.log(chalk.green(`✅ Recommended theme: ${selectedTheme.name} (score: ${selectedTheme.matchScore})`));
+          if (selectedTheme.matchReasons && selectedTheme.matchReasons.length > 0) {
+            console.log(chalk.gray(`   Reason: ${selectedTheme.matchReasons[0]}`));
+          }
+        }
+      }
+      
+      // Fallback to old system if no theme found
+      const recommendedTheme = selectedTheme || this.expertise.recommendTheme(projectType);
       
       spinner.succeed('Configuration determined');
       spinner.start('Setting up Hugo site structure...');
@@ -102,7 +142,7 @@ class InitCommand {
       
       // Log successful completion
       const duration = Date.now() - startTime;
-      await this.contextManager.logCommand('init', options.describe ? ['--describe', options.describe] : [], 'completed', { duration });
+      await this.contextManager.logCommand('init', commandArgs, 'completed', { duration });
       
       // Display summary
       this.displaySummary(siteDetails, recommendedTheme, projectType);
@@ -110,7 +150,14 @@ class InitCommand {
     } catch (error) {
       // Log failed command
       const duration = Date.now() - startTime;
-      await this.contextManager.logCommand('init', options.describe ? ['--describe', options.describe] : [], 'failed', { 
+      const commandArgs = [];
+      if (options.describe) {
+        commandArgs.push('--describe', options.describe);
+      }
+      if (options.theme) {
+        commandArgs.push('--theme', options.theme);
+      }
+      await this.contextManager.logCommand('init', commandArgs, 'failed', { 
         duration, 
         error: error.message 
       });
