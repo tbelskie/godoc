@@ -65,4 +65,29 @@ program
     await refactorCmd.execute(options);
   });
 
+program
+  .command('preview')
+  .description('Start live preview server')
+  .option('-p, --path <path>', 'Path to Hugo site (default: current directory)')
+  .option('--port <port>', 'Server port (default: 1313)', '1313')
+  .action(async (options) => {
+    const PreviewCommand = require('./src/commands/preview');
+    const previewCmd = new PreviewCommand();
+    await previewCmd.execute(options);
+  });
+
+program
+  .command('github')
+  .description('Create and configure GitHub repository')
+  .option('-n, --name <name>', 'Repository name')
+  .option('-d, --description <description>', 'Repository description')
+  .option('--private', 'Create private repository')
+  .option('--no-cicd', 'Skip CI/CD setup')
+  .option('--deployment <platform>', 'Deployment platform (netlify, vercel, github-pages)')
+  .action(async (options) => {
+    const GitHubCommand = require('./src/commands/github');
+    const githubCmd = new GitHubCommand();
+    await githubCmd.execute(options);
+  });
+
 program.parse(process.argv);
