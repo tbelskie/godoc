@@ -1,233 +1,215 @@
-# GOdoc: The First Conversational Static Site Generator 🚀
+# GOdoc - AI-Powered Hugo Documentation Generator
 
-> **Built with Claude Code** | Demonstrating advanced context management and AI-assisted development workflows
+[![npm version](https://img.shields.io/npm/v/godoc-cli.svg)](https://www.npmjs.com/package/godoc-cli)
+[![Node.js](https://img.shields.io/badge/node-%3E%3D16.0.0-brightgreen.svg)](https://nodejs.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## 🎯 Project Vision
+**Create professional Hugo documentation sites through natural language conversation.**
 
-Transform Hugo from a traditional static site generator into an intelligent, conversational documentation platform where teams describe their needs in natural language and Claude Code builds professional documentation sites.
-
-**Status**: MVP Development for Anthropic Claude Code Documentation Engineer Application  
-**Author**: Tom Belskie | [LinkedIn](https://www.linkedin.com/in/tom-belskie/)
-
-## 🔥 The Problem
-
-Using Claude Code directly for Hugo development has critical limitations:
-- **No Hugo expertise**: Claude doesn't know Hugo best practices
-- **No context persistence**: Loses site understanding between sessions
-- **No systematic workflows**: Each interaction is isolated
-- **No domain optimization**: Generic code generation vs Hugo-specific patterns
-
-## 💡 The Solution: GOdoc
-
-GOdoc is an intelligent orchestration layer that makes Claude Code "Hugo-smart":
-
-```
-User Intent → GOdoc (Domain Expert) → Claude Code API → Optimized Hugo Site
-```
-
-## 🏗️ Architecture & Context Management
-
-### Context Management Strategy
-
-GOdoc maintains three levels of context to ensure coherent site generation:
-
-1. **Project Level Context**
-   - Site purpose and audience
-   - Content architecture and taxonomy
-   - Design preferences and constraints
-   - Technical requirements (hosting, performance)
-
-2. **Content Level Context**
-   - Existing content inventory and gaps
-   - Writing style and tone guidelines
-   - Cross-references and relationships
-   - Update frequency and maintenance needs
-
-3. **Technical Level Context**
-   - Hugo version and configuration
-   - Theme customizations
-   - Plugin dependencies
-   - Deployment pipeline
-
-### Context Persistence Implementation
-
-```javascript
-// Context is maintained in .godoc/context.json
-{
-  "project": {
-    "name": "API Documentation",
-    "created": "2025-01-20",
-    "claudeInteractions": 15,
-    "lastModified": "2025-01-20T10:30:00Z"
-  },
-  "architecture": {
-    "contentTypes": ["api-reference", "guides", "tutorials"],
-    "theme": "docsy",
-    "deployment": "netlify"
-  },
-  "claudeCodeUsage": {
-    "totalTokens": 45000,
-    "sessionsCount": 8,
-    "averageResponseTime": "2.3s"
-  }
-}
-```
+GOdoc transforms simple descriptions into complete Hugo sites with custom themes, rich content, intelligent search, and deployment workflows. No Hugo expertise required.
 
 ## 🚀 Quick Start
-
-### Prerequisites
-- Node.js 18+
-- Hugo 0.120+
-- Claude Code CLI (for development)
 
 ### Installation
 
 ```bash
 npm install -g godoc-cli
-
-# Or for development
-git clone https://github.com/tbelskie/godoc
-cd godoc
-npm install
-npm link
 ```
 
-### Basic Usage
+### Create Your First Site
 
 ```bash
-# Initialize a new Hugo site with conversation
-godoc init --describe "API documentation for a fintech startup with dark mode"
+# Initialize a new documentation site
+godoc init --describe "API documentation for my fintech product"
 
-# Generate content conversationally
-godoc generate --content "Authentication guide with OAuth 2.0 examples"
+# Preview your site
+godoc preview
 
-# Analyze and improve existing Hugo sites
-godoc analyze --site ./my-docs --performance --seo
+# Generate additional content  
+godoc generate --content "OAuth 2.0 authentication guide"
 
-# Refactor legacy Hugo sites intelligently
-godoc refactor --modernize --preserve-urls --add-search
+# Create GitHub repository with CI/CD
+godoc github
 ```
 
-## 🛠️ Claude Code Integration Details
+**That's it!** GOdoc creates a complete, professional Hugo site with:
+- Custom responsive theme with your brand colors
+- Rich documentation content with code examples
+- Working search functionality
+- Deployment-ready configuration
 
-### How GOdoc Uses Claude Code
+## ✨ Key Features
 
-1. **Prompt Engineering**: GOdoc constructs specialized prompts with Hugo context
-2. **Response Processing**: Validates Claude's output against Hugo best practices
-3. **Error Recovery**: Handles API failures gracefully with retry logic
-4. **Token Optimization**: Batches requests to minimize API usage
+### 🧠 **Intelligent Site Generation**
+- **Natural Language Processing**: Extracts colors, pages, and structure from simple descriptions
+- **Industry-Specific Templates**: Automatically adapts content for API docs, product guides, technical blogs
+- **Smart Theme Generation**: Creates custom themes with responsive layouts and professional styling
 
-### Example Claude Code Interaction
+### 📚 **Rich Content Creation**
+- **AI-Powered Content**: Generates comprehensive documentation with examples and best practices
+- **Multi-Language Code Examples**: JavaScript, Python, cURL, Go examples automatically included
+- **Professional Structure**: Proper front matter, navigation, and cross-linking
 
-```javascript
-// GOdoc enhances Claude Code with domain knowledge
-async function generateHugoContent(userRequest) {
-  const hugoContext = await loadProjectContext();
-  
-  const enhancedPrompt = `
-    Given this Hugo site context:
-    - Theme: ${hugoContext.theme}
-    - Content Types: ${hugoContext.contentTypes}
-    - Existing Pages: ${hugoContext.pages}
-    
-    User Request: ${userRequest}
-    
-    Generate Hugo-optimized markdown with proper front matter,
-    shortcodes, and cross-references to existing content.
-  `;
-  
-  const response = await claudeCode.complete(enhancedPrompt);
-  return validateAndOptimizeHugoContent(response);
-}
-```
+### 🔍 **Advanced Search**
+- **Intelligent Search Index**: Automatically generated JSON search index
+- **Real-time Search**: Instant client-side search with content previews
+- **Context-Aware Results**: Prioritizes relevant documentation sections
 
-## 📊 Performance & Optimization
+### 🛠️ **Complete Workflow Integration**
+- **Hugo Best Practices**: Proper layouts, assets, and configuration out of the box
+- **GitHub Integration**: Automatic repository creation with CI/CD workflows
+- **Multi-Platform Deployment**: Netlify, Vercel, GitHub Pages support
+- **Performance Optimized**: Fast builds, SEO-ready, accessibility compliant
 
-GOdoc includes built-in performance optimization:
+## 📖 Usage Examples
 
-- **Intelligent Caching**: Reduces Claude API calls by 60%
-- **Batch Processing**: Groups related content generation
-- **Progressive Enhancement**: Applies improvements incrementally
-- **Lighthouse Integration**: Ensures 95+ performance scores
-
-## 🔄 Development Workflow with Claude Code
-
-This project demonstrates advanced Claude Code workflows:
-
-1. **Initial Development**: Used Claude Code to architect the CLI structure
-2. **Refactoring Cycles**: Iteratively improved code quality with Claude's analysis
-3. **Documentation Generation**: Claude Code helped write comprehensive docs
-4. **Test Coverage**: Generated test cases with Claude's assistance
-
-### Claude Code Usage Metrics
-
-- **Total Claude Interactions**: 47
-- **Code Generation Sessions**: 12
-- **Refactoring Sessions**: 8
-- **Documentation Sessions**: 6
-- **Context Management Improvements**: 15
-
-## 🧪 Testing
-
+### API Documentation
 ```bash
-# Run tests
-npm test
-
-# Run with coverage
-npm run test:coverage
-
-# Integration tests with real Hugo sites
-npm run test:integration
+godoc init --describe "REST API docs for payment processing with OAuth examples"
 ```
+**Creates**: Complete API reference with authentication guides, endpoint documentation, and interactive examples.
 
-## 📝 Documentation
-
-- [Development Guide](./DEVELOPMENT.md) - Building and extending GOdoc
-- [Context Management](./docs/context-management.md) - Deep dive into context strategies
-- [Claude Code Integration](./docs/claude-integration.md) - API usage patterns
-- [Performance Optimization](./docs/performance.md) - Optimization techniques
-
-## 🎯 Use Cases
-
-### 1. New Documentation Sites
+### Product Documentation  
 ```bash
-godoc init --type api-docs --style minimal --features "search,dark-mode"
+godoc init --describe "User guide for SaaS platform, clean design, focus on getting started"
 ```
+**Creates**: Professional product docs with onboarding flows, feature guides, and support resources.
 
-### 2. Legacy Site Modernization
+### Technical Blog
 ```bash
-godoc refactor --analyze ./old-docs --modernize --safe-mode
+godoc init --describe "Developer blog about machine learning, dark theme, code-heavy content"
+```
+**Creates**: Blog-optimized Hugo site with syntax highlighting, author profiles, and technical content templates.
+
+## 🎯 Commands
+
+| Command | Description | Example |
+|---------|-------------|---------|
+| `godoc init` | Create new Hugo site | `godoc init --describe "your vision"` |
+| `godoc generate` | Add new content | `godoc generate --content "troubleshooting guide"` |
+| `godoc preview` | Start development server | `godoc preview` |
+| `godoc analyze` | Analyze site performance | `godoc analyze --seo --performance` |
+| `godoc github` | Create GitHub repo | `godoc github --deployment netlify` |
+| `godoc refactor` | Modernize existing sites | `godoc refactor --modernize` |
+
+## 🏗️ How It Works
+
+### 1. **Natural Language Analysis**
+GOdoc parses your description to understand:
+- **Content Structure**: Pages, sections, navigation hierarchy  
+- **Visual Design**: Colors, themes, styling preferences
+- **Target Audience**: Technical level, industry context
+- **Functionality**: Search, analytics, deployment needs
+
+### 2. **Intelligent Generation**  
+- **Hugo Site Structure**: Proper directories, configuration, and assets
+- **Custom Theme**: CSS, layouts, and JavaScript tailored to your needs
+- **Rich Content**: Professional documentation with examples and best practices
+- **Search Integration**: Automatic index generation and search UI
+
+### 3. **Production Ready**
+- **Performance Optimized**: Fast builds, optimized assets, SEO-ready
+- **Deployment Workflows**: CI/CD automation for major hosting platforms  
+- **Maintenance Tools**: Content analysis, link checking, performance monitoring
+
+## 💼 Perfect For
+
+- **Developer Relations Teams**: Create API documentation that developers actually want to use
+- **Product Teams**: Build user guides and knowledge bases without technical overhead  
+- **Technical Writers**: Focus on content while GOdoc handles the technical implementation
+- **Open Source Projects**: Professional documentation sites that grow with your project
+
+## 🔧 Requirements
+
+- **Node.js**: Version 16.0.0 or higher
+- **Hugo**: Auto-installed or install manually for advanced features
+- **Git**: For repository management and deployment workflows
+
+## 📁 Generated Site Structure
+
+```
+your-site/
+├── content/                # Your documentation content
+├── layouts/               # Custom Hugo templates  
+├── assets/               # CSS, JavaScript, images
+├── static/              # Static files (search index, etc.)
+├── hugo.toml           # Hugo configuration
+├── .godoc/            # GOdoc context and session data
+└── .gitignore        # Configured for Hugo and GOdoc
 ```
 
-### 3. Content Generation at Scale
+## 🎨 Customization
+
+GOdoc generates a complete Hugo site that you can customize using standard Hugo practices:
+
+- **Content**: Edit Markdown files in `content/`
+- **Styling**: Modify CSS in `assets/css/`
+- **Layouts**: Customize templates in `layouts/`  
+- **Configuration**: Update `hugo.toml` for site settings
+
+## 🚀 Deployment Options
+
+GOdoc supports all major hosting platforms with automatic CI/CD setup:
+
+### Netlify (Recommended)
 ```bash
-godoc generate --bulk ./content-plan.yaml --consistent-voice
+godoc github --deployment netlify
 ```
 
-## 🚧 Current Limitations
+### Vercel
+```bash  
+godoc github --deployment vercel
+```
 
-- Requires Claude Code API access
-- Limited to Hugo static sites (Jekyll support planned)
-- English language only (i18n coming soon)
+### GitHub Pages
+```bash
+godoc github --deployment github-pages
+```
+
+## 🎯 Roadmap
+
+GOdoc is actively developed with exciting features planned:
+
+- **Phase 1** ✅: AI-powered Hugo generator (Current)
+- **Phase 2** 🔄: Advanced workflow orchestration
+- **Phase 3** 📅: Team collaboration features  
+- **Phase 4** 📅: Enterprise integrations
 
 ## 🤝 Contributing
 
-Contributions welcome! See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines.
+GOdoc is built with Claude Code and welcomes contributions:
+
+1. **Fork the repository**
+2. **Create a feature branch**: `git checkout -b amazing-feature`
+3. **Make your changes** and test thoroughly
+4. **Submit a pull request** with a clear description
+
+### Development Setup
+
+```bash
+git clone https://github.com/tbelskie/godoc.git
+cd godoc
+npm install
+npm link  # For local testing
+```
 
 ## 📄 License
 
-MIT License - See [LICENSE](./LICENSE) for details.
+MIT License - see [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 
-- Built using Claude Code for the Anthropic Documentation Engineer application
-- Inspired by the need for better AI-assisted documentation workflows
-- Special thanks to the Hugo community
-
-## 📞 Contact
-
-Tom Belskie - [Portfolio](https://www.tbelskie.com/portfolio) | [LinkedIn](https://www.linkedin.com/in/tom-belskie/)
+- **Hugo**: The blazing-fast static site generator that powers GOdoc
+- **Claude Code**: AI-assisted development that made GOdoc possible
+- **Open Source Community**: Hugo themes and tools that inspire GOdoc's design
 
 ---
 
-**Note**: This project showcases advanced Claude Code usage patterns and context management strategies for the Anthropic Claude Code Documentation Engineer role.
+**Ready to revolutionize your documentation workflow?**
+
+```bash
+npm install -g godoc-cli
+godoc init --describe "your documentation vision"
+```
+
+*Transform simple descriptions into professional documentation sites in minutes, not hours.*

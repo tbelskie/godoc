@@ -4,12 +4,12 @@ const inquirer = require('inquirer');
 const fs = require('fs-extra');
 const path = require('path');
 
-const HugoContextManager = require('../context-manager');
+const AdvancedContextManager = require('../context-manager');
 const ClaudeSimulator = require('../claude-simulator');
 
 class GenerateCommand {
   constructor() {
-    this.contextManager = new HugoContextManager();
+    this.contextManager = new AdvancedContextManager();
     this.claude = new ClaudeSimulator();
   }
 
@@ -17,10 +17,12 @@ class GenerateCommand {
     console.log(chalk.blue.bold('\n🤖 GOdoc Content Generator\n'));
     
     const spinner = ora('Loading project context...').start();
+    const startTime = Date.now();
     
     try {
-      // Load existing context
+      // Load existing context and log command start
       await this.contextManager.init();
+      await this.contextManager.logCommand('generate', options.content ? ['--content', options.content] : [], 'started');
       const context = await this.contextManager.loadContext();
       
       if (!context.project) {
@@ -60,10 +62,26 @@ class GenerateCommand {
       
       spinner.succeed(chalk.green('Content generated successfully!'));
       
+      spinner.text = 'Updating search index...';
+      
+      // Update search index with new content
+      await this.updateSearchIndex();
+      
+      // Log successful completion
+      const duration = Date.now() - startTime;
+      await this.contextManager.logCommand('generate', options.content ? ['--content', options.content] : [], 'completed', { duration });
+      
       // Display result
       this.displayResult(filePath, contentRequest);
       
     } catch (error) {
+      // Log failed command
+      const duration = Date.now() - startTime;
+      await this.contextManager.logCommand('generate', options.content ? ['--content', options.content] : [], 'failed', { 
+        duration, 
+        error: error.message 
+      });
+      
       spinner.fail(chalk.red('Failed to generate content'));
       console.error(chalk.red(error.message));
       process.exit(1);
@@ -314,6 +332,124 @@ class GenerateCommand {
     console.log(chalk.white('  3. Generate more content with'), chalk.yellow('godoc generate'));
     
     console.log(chalk.green('\n✨ Content ready for review!\n'));
+  }
+
+  async updateSearchIndex() {
+    try {
+      const contentDir = path.join(process.cwd(), 'content');
+      const searchIndex = [];
+      
+      // Helper function to extract text content from markdown
+      const extractTextContent = (markdown) => {
+        // Remove front matter
+        const content = markdown.replace(/^---[\s\S]*?---/, '');
+        // Remove markdown formatting but keep text
+        return content
+          .replace(/#{1,6}\s+/g, '') // Remove headers
+          .replace(/\*\*([^*]+)\*\*/g, '$1') // Bold
+          .replace(/\*([^*]+)\*/g, '$1') // Italic
+          .replace(/`([^`]+)`/g, '$1') // Inline code
+          .replace(/```[\s\S]*?```/g, '') // Code blocks
+          .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1') // Links
+          .replace(/^\s*[-*+]\s+/gm, '') // List items
+          .replace(/\n+/g, ' ') // Multiple newlines to space
+          .trim();
+      };
+
+      // Read all markdown files recursively
+      const readDirectory = async (dirPath, urlPrefix = '') => {
+        try {
+          const entries = await fs.readdir(dirPath, { withFileTypes: true });
+          
+          for (const entry of entries) {
+            const fullPath = path.join(dirPath, entry.name);
+            
+            if (entry.isDirectory()) {
+              // Recursively read subdirectories
+              const newUrlPrefix = urlPrefix + '/' + entry.name;
+              await readDirectory(fullPath, newUrlPrefix);
+            } else if (entry.name.endsWith('.md')) {
+              // Process markdown files
+              try {
+                const content = await fs.readFile(fullPath, 'utf8');
+                
+                // Extract title from front matter or first header
+                let title = entry.name.replace('.md', '');
+                let description = '';
+                
+                // Look for title in front matter
+                const frontMatterMatch = content.match(/^---[\s\S]*?title:\s*["']?([^"'\n]+)["']?[\s\S]*?---/);
+                if (frontMatterMatch) {
+                  title = frontMatterMatch[1];
+                }
+                
+                // Look for description in front matter
+                const descriptionMatch = content.match(/^---[\s\S]*?description:\s*["']?([^"'\n]+)["']?[\s\S]*?---/);
+                if (descriptionMatch) {
+                  description = descriptionMatch[1];
+                }
+                
+                // If no front matter title, look for first h1
+                if (title === entry.name.replace('.md', '')) {
+                  const h1Match = content.match(/^#\s+(.+)/m);
+                  if (h1Match) {
+                    title = h1Match[1];
+                  }
+                }
+                
+                // Generate URL
+                let url = urlPrefix + '/';
+                if (entry.name === '_index.md') {
+                  // Index files map to the directory URL
+                  url = urlPrefix || '/';
+                } else {
+                  // Regular files map to their name without .md
+                  url = urlPrefix + '/' + entry.name.replace('.md', '') + '/';
+                }
+                
+                // Clean up URL
+                url = url.replace(/\/+/g, '/').replace(/^\/+|\/+$/g, '');
+                if (!url.startsWith('/')) {
+                  url = '/' + url;
+                }
+                if (url !== '/' && url.endsWith('/')) {
+                  url = url.slice(0, -1);
+                }
+                
+                // Extract searchable content
+                const textContent = extractTextContent(content);
+                const searchableContent = description || textContent.substring(0, 300);
+                
+                searchIndex.push({
+                  title: title,
+                  url: url,
+                  content: searchableContent,
+                  type: urlPrefix.includes('/docs') ? 'documentation' : 'page'
+                });
+                
+              } catch (error) {
+                console.warn(`Warning: Could not process ${fullPath}: ${error.message}`);
+              }
+            }
+          }
+        } catch (error) {
+          // Directory might not exist, which is fine
+        }
+      };
+      
+      // Start reading from content directory
+      await readDirectory(contentDir);
+      
+      // Write search index to static directory
+      const staticDir = path.join(process.cwd(), 'static');
+      await fs.ensureDir(staticDir);
+      
+      const indexPath = path.join(staticDir, 'search-index.json');
+      await fs.writeJSON(indexPath, searchIndex, { spaces: 2 });
+      
+    } catch (error) {
+      console.warn(chalk.yellow(`⚠️  Could not update search index: ${error.message}`));
+    }
   }
 }
 

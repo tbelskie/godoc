@@ -5,14 +5,14 @@ const fs = require('fs-extra');
 const path = require('path');
 const { execSync } = require('child_process');
 
-const HugoContextManager = require('../context-manager');
+const AdvancedContextManager = require('../context-manager');
 const HugoExpertise = require('../hugo-expertise');
 const ClaudeSimulator = require('../claude-simulator');
 const ThemeGenerator = require('../theme-generator');
 
 class InitCommand {
   constructor() {
-    this.contextManager = new HugoContextManager();
+    this.contextManager = new AdvancedContextManager();
     this.expertise = new HugoExpertise();
     this.claude = new ClaudeSimulator();
     this.themeGenerator = new ThemeGenerator();
@@ -22,24 +22,35 @@ class InitCommand {
     console.log(chalk.blue.bold('\n🚀 GOdoc - Conversational Site Generator\n'));
     
     const spinner = ora('Analyzing your requirements...').start();
+    const startTime = Date.now();
     
     try {
+      // Initialize context manager and log command start
+      await this.contextManager.init();
+      await this.contextManager.logCommand('init', options.describe ? ['--describe', options.describe] : [], 'started');
+      
+      spinner.succeed('Context initialized');
+      spinner.start('Analyzing your requirements...');
       // Get site details through conversation
       const siteDetails = await this.getSiteDetails(options);
       
-      spinner.text = 'Determining optimal Hugo configuration...';
+      spinner.succeed('Requirements analyzed');
+      spinner.start('Determining optimal Hugo configuration...');
       
       // Analyze project type and recommend theme
       const projectType = this.expertise.analyzeDescription(siteDetails.description);
       const recommendedTheme = this.expertise.recommendTheme(projectType);
       
-      spinner.text = 'Setting up Hugo site structure...';
+      spinner.succeed('Configuration determined');
+      spinner.start('Setting up Hugo site structure...');
       
       // Create Hugo site
       await this.createHugoSite(siteDetails, recommendedTheme);
       
+      spinner.succeed('Hugo site structure created');
+      
       // Initialize context
-      await this.contextManager.init();
+      spinner.start('Initializing project context...');
       const context = {
         project: {
           name: siteDetails.name,
@@ -60,7 +71,8 @@ class InitCommand {
       
       await this.contextManager.saveContext(context);
       
-      spinner.text = 'Generating custom theme and layouts...';
+      spinner.succeed('Project context saved');
+      spinner.start('Generating custom theme and layouts...');
       
       // Generate custom theme
       const features = this.determineFeatures(siteDetails, projectType);
@@ -73,17 +85,36 @@ class InitCommand {
       
       const theme = await this.themeGenerator.generateCustomTheme(siteDetails.path, themeConfig);
       
-      spinner.text = 'Generating rich content...';
+      spinner.succeed('Custom theme generated');
+      
+      spinner.start('Generating rich content...');
       
       // Generate initial content with enhanced context
       await this.generateInitialContent(siteDetails, recommendedTheme, context);
       
+      spinner.succeed('Rich content generated');
+      spinner.start('Building search index...');
+      
+      // Generate search index
+      await this.generateSearchIndex(siteDetails);
+      
       spinner.succeed(chalk.green('Hugo site initialized successfully!'));
+      
+      // Log successful completion
+      const duration = Date.now() - startTime;
+      await this.contextManager.logCommand('init', options.describe ? ['--describe', options.describe] : [], 'completed', { duration });
       
       // Display summary
       this.displaySummary(siteDetails, recommendedTheme, projectType);
       
     } catch (error) {
+      // Log failed command
+      const duration = Date.now() - startTime;
+      await this.contextManager.logCommand('init', options.describe ? ['--describe', options.describe] : [], 'failed', { 
+        duration, 
+        error: error.message 
+      });
+      
       spinner.fail(chalk.red('Failed to initialize Hugo site'));
       console.error(chalk.red(error.message));
       process.exit(1);
@@ -559,6 +590,127 @@ title = '${siteDetails.name}'
     }
     
     console.log();
+  }
+
+  async generateSearchIndex(siteDetails) {
+    try {
+      const contentDir = path.join(siteDetails.path, 'content');
+      const searchIndex = [];
+      
+      // Helper function to extract text content from markdown
+      const extractTextContent = (markdown) => {
+        // Remove front matter
+        const content = markdown.replace(/^---[\s\S]*?---/, '');
+        // Remove markdown formatting but keep text
+        return content
+          .replace(/#{1,6}\s+/g, '') // Remove headers
+          .replace(/\*\*([^*]+)\*\*/g, '$1') // Bold
+          .replace(/\*([^*]+)\*/g, '$1') // Italic
+          .replace(/`([^`]+)`/g, '$1') // Inline code
+          .replace(/```[\s\S]*?```/g, '') // Code blocks
+          .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1') // Links
+          .replace(/^\s*[-*+]\s+/gm, '') // List items
+          .replace(/\n+/g, ' ') // Multiple newlines to space
+          .trim();
+      };
+
+      // Read all markdown files recursively
+      const readDirectory = async (dirPath, urlPrefix = '') => {
+        try {
+          const entries = await fs.readdir(dirPath, { withFileTypes: true });
+          
+          for (const entry of entries) {
+            const fullPath = path.join(dirPath, entry.name);
+            
+            if (entry.isDirectory()) {
+              // Recursively read subdirectories
+              const newUrlPrefix = urlPrefix + '/' + entry.name;
+              await readDirectory(fullPath, newUrlPrefix);
+            } else if (entry.name.endsWith('.md')) {
+              // Process markdown files
+              try {
+                const content = await fs.readFile(fullPath, 'utf8');
+                const lines = content.split('\n');
+                
+                // Extract title from front matter or first header
+                let title = entry.name.replace('.md', '');
+                let description = '';
+                
+                // Look for title in front matter
+                const frontMatterMatch = content.match(/^---[\s\S]*?title:\s*["']?([^"'\n]+)["']?[\s\S]*?---/);
+                if (frontMatterMatch) {
+                  title = frontMatterMatch[1];
+                }
+                
+                // Look for description in front matter
+                const descriptionMatch = content.match(/^---[\s\S]*?description:\s*["']?([^"'\n]+)["']?[\s\S]*?---/);
+                if (descriptionMatch) {
+                  description = descriptionMatch[1];
+                }
+                
+                // If no front matter title, look for first h1
+                if (title === entry.name.replace('.md', '')) {
+                  const h1Match = content.match(/^#\s+(.+)/m);
+                  if (h1Match) {
+                    title = h1Match[1];
+                  }
+                }
+                
+                // Generate URL
+                let url = urlPrefix + '/';
+                if (entry.name === '_index.md') {
+                  // Index files map to the directory URL
+                  url = urlPrefix || '/';
+                } else {
+                  // Regular files map to their name without .md
+                  url = urlPrefix + '/' + entry.name.replace('.md', '') + '/';
+                }
+                
+                // Clean up URL
+                url = url.replace(/\/+/g, '/').replace(/^\/+|\/+$/g, '');
+                if (!url.startsWith('/')) {
+                  url = '/' + url;
+                }
+                if (url !== '/' && url.endsWith('/')) {
+                  url = url.slice(0, -1);
+                }
+                
+                // Extract searchable content
+                const textContent = extractTextContent(content);
+                const searchableContent = description || textContent.substring(0, 300);
+                
+                searchIndex.push({
+                  title: title,
+                  url: url,
+                  content: searchableContent,
+                  type: urlPrefix.includes('/docs') ? 'documentation' : 'page'
+                });
+                
+              } catch (error) {
+                console.warn(`Warning: Could not process ${fullPath}: ${error.message}`);
+              }
+            }
+          }
+        } catch (error) {
+          // Directory might not exist, which is fine
+        }
+      };
+      
+      // Start reading from content directory
+      await readDirectory(contentDir);
+      
+      // Write search index to static directory so it's accessible at /search-index.json
+      const staticDir = path.join(siteDetails.path, 'static');
+      await fs.ensureDir(staticDir);
+      
+      const indexPath = path.join(staticDir, 'search-index.json');
+      await fs.writeJSON(indexPath, searchIndex, { spaces: 2 });
+      
+      console.log(chalk.green(`✅ Generated search index with ${searchIndex.length} pages`));
+      
+    } catch (error) {
+      console.warn(chalk.yellow(`⚠️  Could not generate search index: ${error.message}`));
+    }
   }
 }
 

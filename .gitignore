@@ -46,3 +46,7 @@ temp/
 
 # Internal product documentation
 product docs/
+
+# Test sites and temporary directories
+*-test/
+test-site/
