@@ -1,4 +1,4 @@
-# Hugo AI Development Session
+# GOdoc Development Session
 
 ## Current Status (Last Updated: 2025-08-06)
 
@@ -16,7 +16,7 @@
    - README.md, DEVELOPMENT.md, product-vision.md
    - CLAUDE.md for future Claude instances
 4. Git repository initialized with clean history (7 commits)
-5. GitHub repository created: https://github.com/tbelskie/hugo-ai
+5. GitHub repository created: https://github.com/tbelskie/godoc
 6. Working demo system
    - Automated test script (test-demo.js)
    - Example workflows and usage guide
@@ -32,7 +32,7 @@
 
 ### 💡 Key Decisions Made
 - Using Commander.js for CLI framework
-- Context stored in `.hugo-ai/` directory
+- Context stored in `.godoc/` directory
 - Three-tier context management (project/content/technical)
 - Simulator pattern for MVP before real API integration
 
@@ -45,9 +45,9 @@ npm install
 npm link
 
 # Test commands
-hugo-ai init --describe "API documentation site"
-hugo-ai generate --content "Authentication guide"
-hugo-ai analyze --performance --seo
+godoc init --describe "API documentation site"
+godoc generate --content "Authentication guide"
+godoc analyze --performance --seo
 ```
 
 ### 📝 Notes for Next Session

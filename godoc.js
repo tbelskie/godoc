@@ -14,8 +14,8 @@ const ClaudeSimulator = require('./src/claude-simulator');
 const program = new Command();
 
 program
-  .name('hugo-ai')
-  .description('Conversational Static Site Generator')
+  .name('godoc')
+  .description('GOdoc - Conversational Documentation Generator')
   .version('0.1.0');
 
 program

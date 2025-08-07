@@ -3,7 +3,7 @@ const path = require('path');
 
 class HugoContextManager {
   constructor() {
-    this.contextDir = '.hugo-ai';
+    this.contextDir = '.godoc';
     this.contextFile = path.join(this.contextDir, 'context.json');
   }
 

@@ -1,67 +1,67 @@
-# Hugo AI - DocGo Documentation Generator
+# GOdoc - GOdoc Documentation Generator
 
 **Status:** Production Ready ✅  
-**Version:** 1.0.0 (DocGo Complete)  
+**Version:** 1.0.0 (GOdoc Complete)  
 **Last Updated:** August 6, 2025
 
 ## Overview
 
-Hugo AI is a conversational static site generator that creates professional documentation sites through natural language interaction. The flagship feature "DocGo" transforms simple descriptions into complete Hugo sites with custom themes, rich content, and deployment workflows.
+GOdoc is a conversational static site generator that creates professional documentation sites through natural language interaction. The flagship feature "GOdoc" transforms simple descriptions into complete Hugo sites with custom themes, rich content, and deployment workflows.
 
 ## Quick Start
 
 ```bash
 # Initialize new documentation site
-hugo-ai init --describe "your requirements"
+godoc init --describe "your requirements"
 
 # Preview locally
-hugo-ai preview
+godoc preview
 
 # Deploy to GitHub with CI/CD
-hugo-ai github
+godoc github
 ```
 
 ## Core Commands
 
-### `hugo-ai init`
+### `godoc init`
 Initialize new Hugo site with AI assistance
 - `--describe <text>` - Natural language description
 - Interactive mode with clarifying questions
 - Automatic theme and content generation
 
-### `hugo-ai preview`
+### `godoc preview`
 Start live development server
 - Auto-reload on file changes
 - Asset optimization
 - Error detection and fixes
 
-### `hugo-ai github`
+### `godoc github`
 Create GitHub repository with deployment
 - `--deployment <platform>` - netlify, vercel, github-pages
 - `--private` - Create private repository
 - Automated CI/CD workflow setup
 
-### `hugo-ai generate`
+### `godoc generate`
 Generate additional content
 - `--content <request>` - Natural language content request
 - `--type <type>` - Content type specification
 
-### `hugo-ai analyze`
+### `godoc analyze`
 Analyze and optimize existing sites
 - `--performance` - Performance analysis
 - `--seo` - SEO optimization recommendations
 - `--accessibility` - Accessibility compliance
 
-### `hugo-ai refactor`
+### `godoc refactor`
 Modernize existing Hugo sites
 - `--modernize` - Update themes and structure
 - `--add-search` - Add search functionality
 
-## DocGo Workflow
+## GOdoc Workflow
 
 ### 1. Natural Language Processing
 ```bash
-hugo-ai init --describe "I want a clean, modern doc site for my fintech product, use black and green for primary colors. I need a home page, an overview page, and an API reference page, plus a Quickstart guide"
+godoc init --describe "I want a clean, modern doc site for my fintech product, use black and green for primary colors. I need a home page, an overview page, and an API reference page, plus a Quickstart guide"
 ```
 
 **Automatically detects:**
@@ -94,7 +94,7 @@ hugo-ai init --describe "I want a clean, modern doc site for my fintech product,
 ```
 src/
 ├── commands/
-│   ├── init.js          # DocGo initialization workflow
+│   ├── init.js          # GOdoc initialization workflow
 │   ├── generate.js      # Content generation
 │   ├── analyze.js       # Site analysis
 │   ├── refactor.js      # Site modernization
@@ -108,7 +108,7 @@ src/
 
 ### Core Components
 
-1. **CLI Entry** (`hugo-ai.js`): Commander-based CLI with DocGo workflow
+1. **CLI Entry** (`godoc.js`): Commander-based CLI with GOdoc workflow
 
 2. **Context Management** (`src/context-manager.js`): Maintains persistent state:
    - Project metadata and interaction tracking
@@ -157,7 +157,7 @@ title = 'Your Project Name'
 
 [params]
   description = "Your project description"
-  author = "Hugo AI"
+  author = "GOdoc"
   
 [menu]
   # Auto-generated navigation menus
@@ -171,7 +171,7 @@ title = 'Your Project Name'
 ```
 
 ### Context Management
-Project context stored in `.hugo-ai/context.json`:
+Project context stored in `.godoc/context.json`:
 ```json
 {
   "project": {
@@ -193,34 +193,34 @@ Project context stored in `.hugo-ai/context.json`:
 ## Development Workflow
 
 ### Local Development
-1. `hugo-ai init` - Create new site
-2. `hugo-ai preview` - Start development server
+1. `godoc init` - Create new site
+2. `godoc preview` - Start development server
 3. Edit files - Auto-reload enabled
-4. `hugo-ai generate` - Add more content
-5. `hugo-ai github` - Deploy to production
+4. `godoc generate` - Add more content
+5. `godoc github` - Deploy to production
 
 ### Content Creation
 ```bash
 # Generate specific content types
-hugo-ai generate --content "OAuth 2.0 authentication guide"
-hugo-ai generate --content "Payment API integration tutorial"
-hugo-ai generate --content "Error handling best practices"
+godoc generate --content "OAuth 2.0 authentication guide"
+godoc generate --content "Payment API integration tutorial"
+godoc generate --content "Error handling best practices"
 ```
 
 ### Site Analysis
 ```bash
 # Comprehensive analysis
-hugo-ai analyze --performance --seo --accessibility
+godoc analyze --performance --seo --accessibility
 
 # Specific analysis
-hugo-ai analyze --performance  # Performance only
+godoc analyze --performance  # Performance only
 ```
 
 ## Examples
 
 ### Fintech Documentation Site
 ```bash
-hugo-ai init --describe "I want a clean, modern doc site for my fintech product, use black and green for primary colors. I need a home page, an overview page, and an API reference page, plus a Quickstart guide"
+godoc init --describe "I want a clean, modern doc site for my fintech product, use black and green for primary colors. I need a home page, an overview page, and an API reference page, plus a Quickstart guide"
 ```
 
 **Result:**
@@ -232,12 +232,12 @@ hugo-ai init --describe "I want a clean, modern doc site for my fintech product,
 
 ### SaaS Product Documentation
 ```bash
-hugo-ai init --describe "Create documentation for my SaaS platform, use blue and white theme, need getting started, pricing, and API docs"
+godoc init --describe "Create documentation for my SaaS platform, use blue and white theme, need getting started, pricing, and API docs"
 ```
 
 ### Developer Tools Site
 ```bash
-hugo-ai init --describe "Documentation site for developer CLI tool, minimal design, focus on code examples and tutorials"
+godoc init --describe "Documentation site for developer CLI tool, minimal design, focus on code examples and tutorials"
 ```
 
 ## Testing
@@ -245,16 +245,16 @@ hugo-ai init --describe "Documentation site for developer CLI tool, minimal desi
 ### Demo Script
 ```bash
 # Run complete workflow demonstration
-node test-docgo-workflow.js
+node test-godoc-workflow.js
 ```
 
 ### Manual Testing
 ```bash
 # Test each command
 mkdir test-site && cd test-site
-hugo-ai init --describe "test documentation site"
-hugo-ai preview
-hugo-ai github --deployment netlify
+godoc init --describe "test documentation site"
+godoc preview
+godoc github --deployment netlify
 ```
 
 ## Deployment Options
@@ -286,6 +286,6 @@ name: Deploy to GitHub Pages
 
 ## Status: Production Ready ✅
 
-Hugo AI with DocGo workflow is ready for production use. The system successfully transforms natural language descriptions into professional documentation sites with custom themes, rich content, and complete deployment pipelines.
+GOdoc with GOdoc workflow is ready for production use. The system successfully transforms natural language descriptions into professional documentation sites with custom themes, rich content, and complete deployment pipelines.
 
 **Key Achievement:** Fintech demo successfully created and tested - from natural language input to live, browsable documentation site in under 2 minutes.

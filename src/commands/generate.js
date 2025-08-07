@@ -14,7 +14,7 @@ class GenerateCommand {
   }
 
   async execute(options) {
-    console.log(chalk.blue.bold('\n🤖 Hugo AI Content Generator\n'));
+    console.log(chalk.blue.bold('\n🤖 GOdoc Content Generator\n'));
     
     const spinner = ora('Loading project context...').start();
     
@@ -24,8 +24,8 @@ class GenerateCommand {
       const context = await this.contextManager.loadContext();
       
       if (!context.project) {
-        spinner.fail(chalk.red('No Hugo AI project found'));
-        console.log(chalk.yellow('Run "hugo-ai init" first to initialize a project'));
+        spinner.fail(chalk.red('No GOdoc project found'));
+        console.log(chalk.yellow('Run "godoc init" first to initialize a project'));
         process.exit(1);
       }
       
@@ -311,7 +311,7 @@ class GenerateCommand {
     console.log(chalk.cyan('\n🎯 Next Steps:'));
     console.log(chalk.white('  1. Review the generated content'));
     console.log(chalk.white('  2. Run'), chalk.yellow('hugo server -D'), chalk.white('to preview'));
-    console.log(chalk.white('  3. Generate more content with'), chalk.yellow('hugo-ai generate'));
+    console.log(chalk.white('  3. Generate more content with'), chalk.yellow('godoc generate'));
     
     console.log(chalk.green('\n✨ Content ready for review!\n'));
   }

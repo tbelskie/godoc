@@ -14,7 +14,7 @@ class RefactorCommand {
   }
 
   async execute(options) {
-    console.log(chalk.blue.bold('\n🔧 Hugo AI Site Refactoring\n'));
+    console.log(chalk.blue.bold('\n🔧 GOdoc Site Refactoring\n'));
     
     const sitePath = options.path || process.cwd();
     const spinner = ora('Analyzing site for refactoring opportunities...').start();
@@ -79,7 +79,7 @@ class RefactorCommand {
 
   async createBackup(sitePath) {
     const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
-    this.backupPath = path.join(sitePath, `.hugo-ai-backup-${timestamp}`);
+    this.backupPath = path.join(sitePath, `.godoc-backup-${timestamp}`);
     
     // Backup critical directories and files
     const items = ['content', 'layouts', 'static', 'assets', 'data', 
@@ -300,7 +300,7 @@ class RefactorCommand {
     let config = await fs.readFile(configPath, 'utf8');
     
     // Append changes as TOML
-    config += '\n\n# Added by Hugo AI Refactor\n';
+    config += '\n\n# Added by GOdoc Refactor\n';
     config += this.objectToToml(action.changes);
     
     await fs.writeFile(configPath, config);
@@ -406,8 +406,8 @@ draft: false
     
     console.log(chalk.cyan('\n🎯 Next Steps:'));
     console.log(chalk.white('  1. Test your site:'), chalk.yellow('hugo server -D'));
-    console.log(chalk.white('  2. Verify improvements:'), chalk.yellow('hugo-ai analyze'));
-    console.log(chalk.white('  3. Generate content:'), chalk.yellow('hugo-ai generate'));
+    console.log(chalk.white('  2. Verify improvements:'), chalk.yellow('godoc analyze'));
+    console.log(chalk.white('  3. Generate content:'), chalk.yellow('godoc generate'));
     
     console.log(chalk.green('\n✨ Refactoring complete!\n'));
   }

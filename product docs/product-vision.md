@@ -1,4 +1,4 @@
-# Hugo AI: The First Conversational Static Site Generator
+# GOdoc: The First Conversational Static Site Generator
 
 ## Project Vision
 
@@ -6,21 +6,21 @@ Transform Hugo from a traditional static site generator into an intelligent, con
 
 **Status**: New project to be built - Currently in planning phase for Anthropic Claude Code documentation engineer application.
 
-**Unique Value**: Unlike using Claude Code directly (which lacks Hugo expertise and context persistence), Hugo AI provides domain-specific intelligence, systematic workflows, and professional tooling optimized for Hugo development.
+**Unique Value**: Unlike using Claude Code directly (which lacks Hugo expertise and context persistence), GOdoc provides domain-specific intelligence, systematic workflows, and professional tooling optimized for Hugo development.
 
 ## Core Concept: "Talk Your Docs Into Existence"
 
-Instead of manually configuring Hugo themes, writing content templates, and organizing complex documentation architectures, teams will have conversations with Claude Code through Hugo AI to build exactly what they need.
+Instead of manually configuring Hugo themes, writing content templates, and organizing complex documentation architectures, teams will have conversations with Claude Code through GOdoc to build exactly what they need.
 
 ### The Paradigm Shift
 ```
 Old Way: Learn Hugo syntax → Configure templates → Write content → Deploy
-New Way: Describe your needs → Hugo AI + Claude Code builds it → Review & deploy
+New Way: Describe your needs → GOdoc + Claude Code builds it → Review & deploy
 Direct Claude Code: Generic generation → No Hugo expertise → No context persistence
-Hugo AI Way: Domain expertise → Systematic workflows → Context management → Professional results
+GOdoc Way: Domain expertise → Systematic workflows → Context management → Professional results
 ```
 
-### Why Hugo AI vs. Direct Claude Code Usage:
+### Why GOdoc vs. Direct Claude Code Usage:
 - **Domain Expertise**: Hugo-specific patterns and best practices built-in
 - **Context Persistence**: Remembers site architecture across sessions  
 - **Systematic Workflows**: Reproducible processes instead of one-off generation
@@ -33,24 +33,24 @@ Hugo AI Way: Domain expertise → Systematic workflows → Context management �
 
 #### Core Components:
 
-**1. Hugo AI CLI (`hugo-ai`)**
+**1. GOdoc CLI (`godoc`)**
 ```bash
-npm install -g hugo-ai-cli
+npm install -g godoc-cli
 
 # Initialize intelligent Hugo project
-hugo-ai init --describe "API documentation for a fintech startup with dark mode and code examples"
+godoc init --describe "API documentation for a fintech startup with dark mode and code examples"
 
 # Generate content conversationally  
-hugo-ai generate --request "Create onboarding guide for junior developers with interactive examples"
+godoc generate --request "Create onboarding guide for junior developers with interactive examples"
 
 # Analyze and refactor existing Hugo sites
-hugo-ai analyze --existing-site ./my-docs --suggestions --performance
+godoc analyze --existing-site ./my-docs --suggestions --performance
 
 # Refactor legacy Hugo sites intelligently
-hugo-ai refactor --upgrade-theme --optimize-structure --preserve-content
+godoc refactor --upgrade-theme --optimize-structure --preserve-content
 
 # Deploy with optimized pipeline
-hugo-ai deploy --platform netlify --performance-budget=95
+godoc deploy --platform netlify --performance-budget=95
 ```
 
 **2. Claude Code Integration Layer**
@@ -67,7 +67,7 @@ hugo-ai deploy --platform netlify --performance-budget=95
 
 #### CLI Structure:
 ```
-hugo-ai/
+godoc/
 ├── src/
 │   ├── commands/
 │   │   ├── init.js          # Project initialization
@@ -105,37 +105,37 @@ hugo-ai/
 
 ## Phase 2: Advanced Features (Extended Development)
 
-### Hugo AI Refactoring Engine:
+### GOdoc Refactoring Engine:
 
 #### **Legacy Site Intelligence:**
 ```bash
 # Comprehensive site analysis
-hugo-ai audit --site-path ./legacy-docs --detailed-report
+godoc audit --site-path ./legacy-docs --detailed-report
 
 # Results: Hugo version, theme compatibility, content gaps, performance issues
 # Intelligent upgrade path with risk assessment and rollback plans
 
 # Incremental modernization
-hugo-ai refactor --phase=safe-improvements --no-breaking-changes
-hugo-ai refactor --phase=structure-optimization --backup-first  
-hugo-ai refactor --phase=modern-features --progressive-enhancement
+godoc refactor --phase=safe-improvements --no-breaking-changes
+godoc refactor --phase=structure-optimization --backup-first  
+godoc refactor --phase=modern-features --progressive-enhancement
 ```
 
 #### **Migration Workflows:**
 ```bash
 # Platform migrations with intelligent content mapping
-hugo-ai migrate --from=gitbook --analyze-structure --preserve-seo
-hugo-ai migrate --from=confluence --content-taxonomy --url-mapping
+godoc migrate --from=gitbook --analyze-structure --preserve-seo
+godoc migrate --from=confluence --content-taxonomy --url-mapping
 
 # Theme modernization with brand consistency
-hugo-ai modernize-theme --preserve-brand --mobile-first --accessibility
+godoc modernize-theme --preserve-brand --mobile-first --accessibility
 ```
 
 ### Advanced Claude Code Integration:
 
 #### **1. Conversational Site Architecture**
 ```bash
-hugo-ai architect --conversation
+godoc architect --conversation
 > "I need documentation for a GraphQL API with user guides and admin docs"
 > Claude Code analyzes requirements and suggests optimal site structure
 > Generates navigation, page hierarchy, and content templates
@@ -149,7 +149,7 @@ hugo-ai architect --conversation
 
 #### **3. Dynamic Template Generation**
 ```bash
-hugo-ai generate-theme --analyze-content --style=minimal --features=search,dark-mode
+godoc generate-theme --analyze-content --style=minimal --features=search,dark-mode
 > Claude Code analyzes your content structure
 > Generates custom Hugo theme optimized for your specific needs
 > Creates responsive, accessible, performance-optimized templates
@@ -209,31 +209,31 @@ hugo-ai generate-theme --analyze-content --style=minimal --features=search,dark-
 
 ### **Core Commands:**
 
-#### `hugo-ai init`
+#### `godoc init`
 - Conversational project setup with domain expertise
 - Intelligent theme selection based on content type
 - Hugo best practices applied automatically
 - Git repository initialization with optimized workflows
 
-#### `hugo-ai generate`  
+#### `godoc generate`  
 - Content creation from natural language descriptions
 - Hugo-optimized template application
 - Automatic SEO and performance optimization
 - Cross-referencing and navigation generation
 
-#### `hugo-ai analyze`
+#### `godoc analyze`
 - Hugo-specific performance analysis
 - Content gap identification with Hugo context
 - SEO recommendations for static sites
 - Accessibility audit with Hugo theme awareness
 
-#### `hugo-ai refactor`
+#### `godoc refactor`
 - **NEW**: Legacy Hugo site analysis and upgrade planning
 - **NEW**: Incremental modernization with rollback capabilities
 - **NEW**: Content reorganization with URL preservation
 - **NEW**: Theme migration with brand consistency
 
-#### `hugo-ai deploy`
+#### `godoc deploy`
 - **NEW**: Hugo-optimized deployment pipelines
 - **NEW**: Performance budgets and monitoring
 - **NEW**: CDN configuration for static sites
@@ -244,45 +244,45 @@ hugo-ai generate-theme --analyze-content --style=minimal --features=search,dark-
 ### **API Documentation Workflow:**
 ```bash
 # Initialize new API docs site
-hugo-ai init --describe "REST API documentation for payment processing with interactive examples"
+godoc init --describe "REST API documentation for payment processing with interactive examples"
 
 # Generate specific content
-hugo-ai generate --content "Authentication guide with OAuth 2.0 examples"
-hugo-ai generate --content "Error handling documentation with real response examples"  
-hugo-ai generate --content "SDK quickstart guides for Python, Node.js, and cURL"
+godoc generate --content "Authentication guide with OAuth 2.0 examples"
+godoc generate --content "Error handling documentation with real response examples"  
+godoc generate --content "SDK quickstart guides for Python, Node.js, and cURL"
 
 # Optimize and deploy
-hugo-ai analyze --performance --seo
-hugo-ai optimize --mobile --speed
-hugo-ai deploy --platform netlify
+godoc analyze --performance --seo
+godoc optimize --mobile --speed
+godoc deploy --platform netlify
 ```
 
 ### **Legacy Site Refactoring Workflow:**
 ```bash
 # Corporate documentation modernization
-hugo-ai audit --site ./corporate-docs --comprehensive
+godoc audit --site ./corporate-docs --comprehensive
 
 # Results: "Hugo v0.68, deprecated theme, 47 pages, mobile issues, broken search"
 
 # Phase 1: Safe improvements (no content changes)
-hugo-ai refactor --performance --accessibility --hugo-version-upgrade
+godoc refactor --performance --accessibility --hugo-version-upgrade
 
 # Phase 2: Structure optimization with content analysis  
-hugo-ai refactor --reorganize-content --smart-navigation --user-journey=developer
+godoc refactor --reorganize-content --smart-navigation --user-journey=developer
 
 # Phase 3: Modern features with progressive enhancement
-hugo-ai refactor --add-search --dark-mode --interactive-elements --maintain-brand
+godoc refactor --add-search --dark-mode --interactive-elements --maintain-brand
 ```
 
 ### **Platform Migration Workflow:**
 ```bash
 # Intelligent content migration with Hugo optimization
-hugo-ai migrate --from=gitbook --to=hugo --content-analysis
+godoc migrate --from=gitbook --to=hugo --content-analysis
 > Analyzes GitBook structure and maps to optimal Hugo taxonomy
 > Preserves SEO with 301 redirects and meta tag migration
 > Converts interactive elements to Hugo shortcodes
 
-hugo-ai optimize --post-migration --performance-budget=95
+godoc optimize --post-migration --performance-budget=95
 > Hugo-specific optimizations (image processing, bundle optimization)
 > Static site CDN configuration and caching strategies
 ```
@@ -310,10 +310,10 @@ hugo-ai optimize --post-migration --performance-budget=95
 ## Documentation Strategy:
 
 ### **Meta-Documentation Approach:**
-Build the Hugo AI documentation site using Hugo AI itself, creating a recursive demonstration of the tool's capabilities.
+Build the GOdoc documentation site using GOdoc itself, creating a recursive demonstration of the tool's capabilities.
 
 ### **Case Study Library:**
-- **Before/After**: Traditional Hugo setup vs Hugo AI
+- **Before/After**: Traditional Hugo setup vs GOdoc
 - **Time Comparisons**: Development speed improvements
 - **Quality Analysis**: Generated sites vs manual builds
 - **User Stories**: Teams who adopted the conversational approach
@@ -386,7 +386,7 @@ Community-driven development with professional workflows and enterprise support
 
 ### **Week 2**: 
 - Template system expansion and advanced refactoring features
-- Comprehensive documentation site (built with Hugo AI itself)
+- Comprehensive documentation site (built with GOdoc itself)
 - Legacy migration tools and workflows
 - Performance optimization and deployment automation
 

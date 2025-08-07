@@ -1,4 +1,4 @@
-# Hugo AI: The First Conversational Static Site Generator 🚀
+# GOdoc: The First Conversational Static Site Generator 🚀
 
 > **Built with Claude Code** | Demonstrating advanced context management and AI-assisted development workflows
 
@@ -17,19 +17,19 @@ Using Claude Code directly for Hugo development has critical limitations:
 - **No systematic workflows**: Each interaction is isolated
 - **No domain optimization**: Generic code generation vs Hugo-specific patterns
 
-## 💡 The Solution: Hugo AI
+## 💡 The Solution: GOdoc
 
-Hugo AI is an intelligent orchestration layer that makes Claude Code "Hugo-smart":
+GOdoc is an intelligent orchestration layer that makes Claude Code "Hugo-smart":
 
 ```
-User Intent → Hugo AI (Domain Expert) → Claude Code API → Optimized Hugo Site
+User Intent → GOdoc (Domain Expert) → Claude Code API → Optimized Hugo Site
 ```
 
 ## 🏗️ Architecture & Context Management
 
 ### Context Management Strategy
 
-Hugo AI maintains three levels of context to ensure coherent site generation:
+GOdoc maintains three levels of context to ensure coherent site generation:
 
 1. **Project Level Context**
    - Site purpose and audience
@@ -52,7 +52,7 @@ Hugo AI maintains three levels of context to ensure coherent site generation:
 ### Context Persistence Implementation
 
 ```javascript
-// Context is maintained in .hugo-ai/context.json
+// Context is maintained in .godoc/context.json
 {
   "project": {
     "name": "API Documentation",
@@ -83,11 +83,11 @@ Hugo AI maintains three levels of context to ensure coherent site generation:
 ### Installation
 
 ```bash
-npm install -g hugo-ai-cli
+npm install -g godoc-cli
 
 # Or for development
-git clone https://github.com/tbelskie/hugo-ai
-cd hugo-ai
+git clone https://github.com/tbelskie/godoc
+cd godoc
 npm install
 npm link
 ```
@@ -96,23 +96,23 @@ npm link
 
 ```bash
 # Initialize a new Hugo site with conversation
-hugo-ai init --describe "API documentation for a fintech startup with dark mode"
+godoc init --describe "API documentation for a fintech startup with dark mode"
 
 # Generate content conversationally
-hugo-ai generate --content "Authentication guide with OAuth 2.0 examples"
+godoc generate --content "Authentication guide with OAuth 2.0 examples"
 
 # Analyze and improve existing Hugo sites
-hugo-ai analyze --site ./my-docs --performance --seo
+godoc analyze --site ./my-docs --performance --seo
 
 # Refactor legacy Hugo sites intelligently
-hugo-ai refactor --modernize --preserve-urls --add-search
+godoc refactor --modernize --preserve-urls --add-search
 ```
 
 ## 🛠️ Claude Code Integration Details
 
-### How Hugo AI Uses Claude Code
+### How GOdoc Uses Claude Code
 
-1. **Prompt Engineering**: Hugo AI constructs specialized prompts with Hugo context
+1. **Prompt Engineering**: GOdoc constructs specialized prompts with Hugo context
 2. **Response Processing**: Validates Claude's output against Hugo best practices
 3. **Error Recovery**: Handles API failures gracefully with retry logic
 4. **Token Optimization**: Batches requests to minimize API usage
@@ -120,7 +120,7 @@ hugo-ai refactor --modernize --preserve-urls --add-search
 ### Example Claude Code Interaction
 
 ```javascript
-// Hugo AI enhances Claude Code with domain knowledge
+// GOdoc enhances Claude Code with domain knowledge
 async function generateHugoContent(userRequest) {
   const hugoContext = await loadProjectContext();
   
@@ -143,7 +143,7 @@ async function generateHugoContent(userRequest) {
 
 ## 📊 Performance & Optimization
 
-Hugo AI includes built-in performance optimization:
+GOdoc includes built-in performance optimization:
 
 - **Intelligent Caching**: Reduces Claude API calls by 60%
 - **Batch Processing**: Groups related content generation
@@ -182,7 +182,7 @@ npm run test:integration
 
 ## 📝 Documentation
 
-- [Development Guide](./DEVELOPMENT.md) - Building and extending Hugo AI
+- [Development Guide](./DEVELOPMENT.md) - Building and extending GOdoc
 - [Context Management](./docs/context-management.md) - Deep dive into context strategies
 - [Claude Code Integration](./docs/claude-integration.md) - API usage patterns
 - [Performance Optimization](./docs/performance.md) - Optimization techniques
@@ -191,17 +191,17 @@ npm run test:integration
 
 ### 1. New Documentation Sites
 ```bash
-hugo-ai init --type api-docs --style minimal --features "search,dark-mode"
+godoc init --type api-docs --style minimal --features "search,dark-mode"
 ```
 
 ### 2. Legacy Site Modernization
 ```bash
-hugo-ai refactor --analyze ./old-docs --modernize --safe-mode
+godoc refactor --analyze ./old-docs --modernize --safe-mode
 ```
 
 ### 3. Content Generation at Scale
 ```bash
-hugo-ai generate --bulk ./content-plan.yaml --consistent-voice
+godoc generate --bulk ./content-plan.yaml --consistent-voice
 ```
 
 ## 🚧 Current Limitations

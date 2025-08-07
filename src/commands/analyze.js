@@ -12,7 +12,7 @@ class AnalyzeCommand {
   }
 
   async execute(options) {
-    console.log(chalk.blue.bold('\n🔍 Hugo AI Site Analyzer\n'));
+    console.log(chalk.blue.bold('\n🔍 GOdoc Site Analyzer\n'));
     
     const sitePath = options.path || process.cwd();
     const spinner = ora('Analyzing Hugo site...').start();
@@ -22,7 +22,7 @@ class AnalyzeCommand {
       const isHugoSite = await this.verifyHugoSite(sitePath);
       if (!isHugoSite) {
         spinner.fail(chalk.red('Not a Hugo site'));
-        console.log(chalk.yellow('No Hugo configuration found. Run "hugo-ai init" to create a new site.'));
+        console.log(chalk.yellow('No Hugo configuration found. Run "godoc init" to create a new site.'));
         process.exit(1);
       }
       
@@ -583,10 +583,10 @@ class AnalyzeCommand {
     
     console.log(chalk.cyan('\n🎯 Next Steps:'));
     if (this.issues.length > 0) {
-      console.log(chalk.white('  1. Fix critical issues with'), chalk.yellow('hugo-ai refactor'));
+      console.log(chalk.white('  1. Fix critical issues with'), chalk.yellow('godoc refactor'));
     }
-    console.log(chalk.white('  2. Generate missing content with'), chalk.yellow('hugo-ai generate'));
-    console.log(chalk.white('  3. Optimize performance with'), chalk.yellow('hugo-ai refactor --modernize'));
+    console.log(chalk.white('  2. Generate missing content with'), chalk.yellow('godoc generate'));
+    console.log(chalk.white('  3. Optimize performance with'), chalk.yellow('godoc refactor --modernize'));
     
     console.log(chalk.green('\n✨ Analysis complete!\n'));
   }

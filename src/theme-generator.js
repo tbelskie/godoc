@@ -30,7 +30,7 @@ class ThemeGenerator {
     await this.generatePartials(themeDir, features);
     
     return {
-      name: `hugo-ai-${style}`,
+      name: `godoc-${style}`,
       files: await this.getGeneratedFiles(sitePath)
     };
   }
@@ -392,7 +392,7 @@ ${features.includes('navigation') ? `
     return `<footer class="site-footer">
     <div class="footer-content">
         <div class="footer-info">
-            <p>&copy; {{ now.Year }} {{ .Site.Title }}. Built with Hugo AI.</p>
+            <p>&copy; {{ now.Year }} {{ .Site.Title }}. Built with GOdoc.</p>
         </div>
         
         {{ if .Site.Menus.social }}
@@ -452,7 +452,7 @@ ${features.includes('navigation') ? `
     const primaryColor = colors?.primary || '#007bff';
     const secondaryColor = colors?.secondary || '#6c757d';
     
-    return `/* Hugo AI Generated Theme - ${style} */
+    return `/* GOdoc Generated Theme - ${style} */
 :root {
     --primary-color: ${primaryColor};
     --secondary-color: ${secondaryColor};
@@ -836,9 +836,9 @@ a:hover {
   }
 
   buildMainJS(features) {
-    return `// Hugo AI Generated JavaScript
+    return `// GOdoc Generated JavaScript
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('Hugo AI site loaded');
+    console.log('GOdoc site loaded');
     
     // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {

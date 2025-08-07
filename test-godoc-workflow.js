@@ -7,10 +7,10 @@ const fs = require('fs-extra');
 const path = require('path');
 
 /**
- * DocGo Workflow Demo
+ * GOdoc Workflow Demo
  * 
- * This script demonstrates the complete DocGo workflow:
- * 1. Initialize DocGo with natural language description
+ * This script demonstrates the complete GOdoc workflow:
+ * 1. Initialize GOdoc with natural language description
  * 2. Parse colors, pages, and style preferences
  * 3. Generate complete Hugo site with custom theme
  * 4. Preview the site locally
@@ -18,15 +18,15 @@ const path = require('path');
  * 6. Maintain context for continuing work
  */
 
-class DocGoDemo {
+class GOdocDemo {
   constructor() {
-    this.testDir = 'docgo-demo-test';
+    this.testDir = 'godoc-demo-test';
     this.originalDir = process.cwd();
   }
 
   async run() {
-    console.log(chalk.blue.bold('\n🚀 DocGo Workflow Demonstration\n'));
-    console.log(chalk.white('This demo shows the complete DocGo workflow for creating'));
+    console.log(chalk.blue.bold('\n🚀 GOdoc Workflow Demonstration\n'));
+    console.log(chalk.white('This demo shows the complete GOdoc workflow for creating'));
     console.log(chalk.white('professional documentation sites with AI assistance.\n'));
 
     try {
@@ -53,7 +53,7 @@ class DocGoDemo {
   }
 
   async step1_Initialize() {
-    console.log(chalk.cyan.bold('📋 Step 1: DocGo Initialization'));
+    console.log(chalk.cyan.bold('📋 Step 1: GOdoc Initialization'));
     console.log(chalk.white('Creating a fintech documentation site with natural language...'));
 
     const description = 'I want a clean, modern doc site for my fintech product, use black and green for primary colors. I need a home page, an overview page, and an API reference page, plus a Quickstart guide';
@@ -61,17 +61,17 @@ class DocGoDemo {
     console.log(chalk.yellow('Description:'), chalk.italic(`"${description}"`));
     console.log();
 
-    const spinner = ora('Initializing Hugo AI site...').start();
+    const spinner = ora('Initializing GOdoc site...').start();
     
     try {
       await fs.ensureDir(this.testDir);
       process.chdir(this.testDir);
       
-      execSync(`node ${path.join(this.originalDir, 'hugo-ai.js')} init --describe "${description}"`, {
+      execSync(`node ${path.join(this.originalDir, 'godoc.js')} init --describe "${description}"`, {
         stdio: 'inherit'
       });
       
-      spinner.succeed('Hugo AI site initialized successfully!');
+      spinner.succeed('GOdoc site initialized successfully!');
     } catch (error) {
       spinner.fail('Initialization failed');
       throw error;
@@ -80,7 +80,7 @@ class DocGoDemo {
 
   async step2_ShowGeneratedAssets() {
     console.log(chalk.cyan.bold('\n🎨 Step 2: Generated Assets'));
-    console.log(chalk.white('Let\'s examine what DocGo created for us...\n'));
+    console.log(chalk.white('Let\'s examine what GOdoc created for us...\n'));
 
     // Show directory structure
     console.log(chalk.yellow('📁 Project Structure:'));
@@ -114,7 +114,7 @@ class DocGoDemo {
     console.log(chalk.cyan.bold('\\n👀 Step 3: Live Preview'));
     console.log(chalk.white('Starting preview server to see our site...\\n'));
 
-    console.log(chalk.yellow('Command:'), 'hugo-ai preview');
+    console.log(chalk.yellow('Command:'), 'godoc preview');
     console.log(chalk.white('This would start a live development server at http://localhost:1313'));
     console.log(chalk.white('✓ Site would be viewable in browser'));
     console.log(chalk.white('✓ Auto-reload enabled for live editing'));
@@ -125,7 +125,7 @@ class DocGoDemo {
 
   async step4_ShowGitHubCapabilities() {
     console.log(chalk.cyan.bold('\\n📦 Step 4: GitHub Integration'));
-    console.log(chalk.white('DocGo can create GitHub repositories with CI/CD...\\n'));
+    console.log(chalk.white('GOdoc can create GitHub repositories with CI/CD...\\n'));
 
     console.log(chalk.yellow('Available GitHub Features:'));
     console.log(chalk.green('  ✓ Create public or private repositories'));
@@ -135,7 +135,7 @@ class DocGoDemo {
     console.log(chalk.green('  ✓ Initial commit with descriptive message'));
     
     console.log(chalk.yellow('\\nExample command:'));
-    console.log(chalk.cyan('  hugo-ai github --deployment netlify'));
+    console.log(chalk.cyan('  godoc github --deployment netlify'));
     
     console.log(chalk.white('\\nThis would:'));
     console.log(chalk.white('  1. Create GitHub repository'));
@@ -148,7 +148,7 @@ class DocGoDemo {
 
   async step5_ShowAnalysis() {
     console.log(chalk.cyan.bold('\\n🔍 Step 5: Site Analysis'));
-    console.log(chalk.white('DocGo can analyze your site for optimization...\\n'));
+    console.log(chalk.white('GOdoc can analyze your site for optimization...\\n'));
 
     console.log(chalk.yellow('Available Analysis:'));
     console.log(chalk.green('  ✓ Performance optimization'));
@@ -158,14 +158,14 @@ class DocGoDemo {
     console.log(chalk.green('  ✓ Theme and styling review'));
     
     console.log(chalk.yellow('\\nExample command:'));
-    console.log(chalk.cyan('  hugo-ai analyze --performance --seo --accessibility'));
+    console.log(chalk.cyan('  godoc analyze --performance --seo --accessibility'));
     
     console.log(chalk.green('\\n✨ Analysis capabilities ready!'));
   }
 
   async step6_ShowContentGeneration() {
     console.log(chalk.cyan.bold('\\n✏️  Step 6: AI Content Generation'));
-    console.log(chalk.white('DocGo can generate rich, contextual content...\\n'));
+    console.log(chalk.white('GOdoc can generate rich, contextual content...\\n'));
 
     console.log(chalk.yellow('Content Generation Features:'));
     console.log(chalk.green('  ✓ Natural language content requests'));
@@ -175,8 +175,8 @@ class DocGoDemo {
     console.log(chalk.green('  ✓ Tutorial and guide creation'));
     
     console.log(chalk.yellow('\\nExample commands:'));
-    console.log(chalk.cyan('  hugo-ai generate --content "OAuth 2.0 authentication guide"'));
-    console.log(chalk.cyan('  hugo-ai generate --content "Payment API integration tutorial"'));
+    console.log(chalk.cyan('  godoc generate --content "OAuth 2.0 authentication guide"'));
+    console.log(chalk.cyan('  godoc generate --content "Payment API integration tutorial"'));
     
     // Show sample generated content
     if (await fs.pathExists('content/docs/getting-started.md')) {
@@ -195,8 +195,8 @@ class DocGoDemo {
   }
 
   async displaySummary() {
-    console.log(chalk.blue.bold('\\n🎯 DocGo Workflow Summary'));
-    console.log(chalk.white('Successfully demonstrated complete DocGo capabilities:\\n'));
+    console.log(chalk.blue.bold('\\n🎯 GOdoc Workflow Summary'));
+    console.log(chalk.white('Successfully demonstrated complete GOdoc capabilities:\\n'));
 
     console.log(chalk.green('✅ Step 1: Intelligent site initialization'));
     console.log(chalk.green('   • Natural language description parsing'));
@@ -230,13 +230,13 @@ class DocGoDemo {
     console.log(chalk.green('   • Multi-language code examples'));
     console.log(chalk.green('   • Professional documentation'));
 
-    console.log(chalk.yellow('\\n🚀 DocGo is ready for production use!'));
+    console.log(chalk.yellow('\\n🚀 GOdoc is ready for production use!'));
     console.log(chalk.cyan('\\nTry it yourself:'));
     console.log(chalk.white('  1. mkdir my-docs && cd my-docs'));
-    console.log(chalk.white('  2. hugo-ai init'));
+    console.log(chalk.white('  2. godoc init'));
     console.log(chalk.white('  3. Follow the interactive prompts'));
-    console.log(chalk.white('  4. hugo-ai preview'));
-    console.log(chalk.white('  5. hugo-ai github'));
+    console.log(chalk.white('  4. godoc preview'));
+    console.log(chalk.white('  5. godoc github'));
     
     console.log(chalk.green('\\n✨ Happy documenting!\\n'));
   }
@@ -293,11 +293,11 @@ class DocGoDemo {
 
 // Run the demo if this script is executed directly
 if (require.main === module) {
-  const demo = new DocGoDemo();
+  const demo = new GOdocDemo();
   demo.run().catch(error => {
     console.error(chalk.red('Demo failed:'), error);
     process.exit(1);
   });
 }
 
-module.exports = DocGoDemo;
+module.exports = GOdocDemo;

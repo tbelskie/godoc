@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /**
- * Demo test script for Hugo AI
+ * Demo test script for GOdoc
  * Tests the core commands without requiring Hugo installation
  */
 
@@ -13,7 +13,7 @@ const chalk = require('chalk');
 const DEMO_DIR = path.join(__dirname, 'demo-test-site');
 
 async function runDemo() {
-  console.log(chalk.blue.bold('🧪 Hugo AI Demo Test\n'));
+  console.log(chalk.blue.bold('🧪 GOdoc Demo Test\n'));
   
   try {
     // Clean up previous demo
@@ -29,13 +29,13 @@ async function runDemo() {
     console.log(chalk.cyan('📁 Created demo directory:', DEMO_DIR));
     
     // Test 1: Initialize a site
-    console.log(chalk.cyan('\n1. Testing hugo-ai init...'));
-    execSync('node ../hugo-ai.js init --describe "API documentation for payment processing"', {
+    console.log(chalk.cyan('\n1. Testing godoc init...'));
+    execSync('node ../godoc.js init --describe "API documentation for payment processing"', {
       stdio: 'inherit'
     });
     
     // Verify files were created
-    const expectedFiles = ['hugo.toml', 'content/_index.md', '.hugo-ai/context.json'];
+    const expectedFiles = ['hugo.toml', 'content/_index.md', '.godoc/context.json'];
     for (const file of expectedFiles) {
       if (await fs.pathExists(file)) {
         console.log(chalk.green(`   ✓ Created ${file}`));
@@ -45,14 +45,14 @@ async function runDemo() {
     }
     
     // Test 2: Generate content
-    console.log(chalk.cyan('\n2. Testing hugo-ai generate...'));
-    execSync('node ../hugo-ai.js generate --content "Authentication guide" --type doc', {
+    console.log(chalk.cyan('\n2. Testing godoc generate...'));
+    execSync('node ../godoc.js generate --content "Authentication guide" --type doc', {
       stdio: 'inherit'
     });
     
     // Test 3: Analyze site
-    console.log(chalk.cyan('\n3. Testing hugo-ai analyze...'));
-    execSync('node ../hugo-ai.js analyze', {
+    console.log(chalk.cyan('\n3. Testing godoc analyze...'));
+    execSync('node ../godoc.js analyze', {
       stdio: 'inherit'
     });
     

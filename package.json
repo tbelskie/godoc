@@ -1,19 +1,19 @@
 {
-    "name": "hugo-ai-cli",
+    "name": "godoc-cli",
     "version": "0.1.0",
-    "description": "Conversational Static Site Generator - Built with Claude Code",
-    "main": "hugo-ai.js",
+    "description": "GOdoc - Conversational Documentation Generator",
+    "main": "godoc.js",
     "bin": {
-      "hugo-ai": "./hugo-ai.js"
+      "godoc": "./godoc.js"
     },
     "scripts": {
-      "start": "node hugo-ai.js",
+      "start": "node godoc.js",
       "test": "jest",
       "demo": "node test-demo.js",
       "link": "npm link",
-      "unlink": "npm unlink -g hugo-ai-cli"
+      "unlink": "npm unlink -g godoc-cli"
     },
-    "keywords": ["hugo", "ai", "claude", "documentation"],
+    "keywords": ["godoc", "hugo", "documentation", "ai", "claude"],
     "author": "Tom Belskie",
     "license": "MIT",
     "dependencies": {

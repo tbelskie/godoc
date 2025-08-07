@@ -10,7 +10,7 @@ class PreviewCommand {
   }
 
   async execute(options) {
-    console.log(chalk.blue.bold('\n🌐 Hugo AI Site Preview\n'));
+    console.log(chalk.blue.bold('\n🌐 GOdoc Site Preview\n'));
     
     const sitePath = options.path || process.cwd();
     const port = options.port || 1313;
@@ -21,7 +21,7 @@ class PreviewCommand {
       const isHugoSite = await this.verifyHugoSite(sitePath);
       if (!isHugoSite) {
         spinner.fail(chalk.red('Not a Hugo site'));
-        console.log(chalk.yellow('Run "hugo-ai init" first to initialize a site'));
+        console.log(chalk.yellow('Run "godoc init" first to initialize a site'));
         process.exit(1);
       }
       
@@ -202,9 +202,9 @@ class PreviewCommand {
     console.log(chalk.white('  • Edit files to see live changes'));
     
     console.log(chalk.cyan('\n📝 Quick Actions:'));
-    console.log(chalk.white('  • Generate content:'), chalk.yellow('hugo-ai generate --content "new page"'));
-    console.log(chalk.white('  • Analyze site:'), chalk.yellow('hugo-ai analyze --performance'));
-    console.log(chalk.white('  • Refactor site:'), chalk.yellow('hugo-ai refactor --modernize'));
+    console.log(chalk.white('  • Generate content:'), chalk.yellow('godoc generate --content "new page"'));
+    console.log(chalk.white('  • Analyze site:'), chalk.yellow('godoc analyze --performance'));
+    console.log(chalk.white('  • Refactor site:'), chalk.yellow('godoc refactor --modernize'));
     
     console.log(chalk.green('\n✨ Happy previewing! Your changes will appear automatically.\n'));
   }
