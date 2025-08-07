@@ -160,8 +160,8 @@ class GitHubCommand {
 /assets/jsconfig.json
 hugo_stats.json
 
-# Hugo AI
-.hugo-ai/
+# GOdoc
+.godoc/
 
 # OS
 .DS_Store
