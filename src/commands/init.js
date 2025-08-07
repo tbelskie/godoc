@@ -405,10 +405,19 @@ title = '${siteDetails.name}'
   }
 
   async generateInitialContent(siteDetails, theme, context) {
-    // Create homepage with full context
+    // Pass the full user description to enable vision-driven content generation
+    const fullPrompt = `${siteDetails.description}\n\nGenerate homepage content for this vision.`;
+    
+    // Create homepage with vision-driven approach
     const homepageContent = await this.claude.generateContent(
-      `Create homepage content for: ${siteDetails.description}`,
-      { theme, type: 'homepage', project: context.project }
+      fullPrompt,
+      { 
+        theme, 
+        type: 'homepage', 
+        project: context.project,
+        siteDetails,
+        colors: siteDetails.colors
+      }
     );
     
     await fs.writeFile(
@@ -416,10 +425,17 @@ title = '${siteDetails.name}'
       homepageContent
     );
     
-    // Create getting started guide
+    // Create getting started guide with full context
+    const gettingStartedPrompt = `${siteDetails.description}\n\nGenerate a getting started guide for this vision.`;
     const gettingStartedContent = await this.claude.generateContent(
-      `Create getting started guide for: ${siteDetails.description}`,
-      { theme, type: 'tutorial', project: context.project }
+      gettingStartedPrompt,
+      { 
+        theme, 
+        type: 'tutorial', 
+        project: context.project,
+        siteDetails,
+        colors: siteDetails.colors
+      }
     );
     
     await fs.writeFile(
@@ -427,13 +443,21 @@ title = '${siteDetails.name}'
       gettingStartedContent
     );
     
-    // Create additional content based on project type
+    // Create additional content based on project type with vision context
     const additionalContent = this.getAdditionalContentForType(context.project.type);
     
     for (const content of additionalContent) {
+      // Enhance the prompt with the full user vision
+      const visionPrompt = `${siteDetails.description}\n\n${content.prompt}`;
       const contentData = await this.claude.generateContent(
-        content.prompt,
-        { theme, type: content.type, project: context.project }
+        visionPrompt,
+        { 
+          theme, 
+          type: content.type, 
+          project: context.project,
+          siteDetails,
+          colors: siteDetails.colors
+        }
       );
       
       const filePath = path.join(siteDetails.path, 'content', content.path);

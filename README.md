@@ -13,7 +13,13 @@ GOdoc transforms simple descriptions into complete Hugo sites with custom themes
 ### Installation
 
 ```bash
-npm install -g godoc-cli
+# Clone the repository
+git clone https://github.com/tbelskie/godoc.git
+cd godoc
+
+# Install dependencies and link globally
+npm install
+npm link
 ```
 
 ### Create Your First Site
@@ -208,7 +214,8 @@ MIT License - see [LICENSE](LICENSE) file for details.
 **Ready to revolutionize your documentation workflow?**
 
 ```bash
-npm install -g godoc-cli
+git clone https://github.com/tbelskie/godoc.git
+cd godoc && npm install && npm link
 godoc init --describe "your documentation vision"
 ```
 

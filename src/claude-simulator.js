@@ -1,112 +1,181 @@
 class ClaudeSimulator {
   constructor() {
-    this.contentTemplates = this.initContentTemplates();
+    this.visionPatterns = this.initVisionPatterns();
   }
   
   async generateContent(prompt, context) {
     // Simulate thinking time
     await this.delay(1500);
     
-    // Analyze prompt for content type and generate rich content
-    const contentType = this.analyzeContentType(prompt);
-    const theme = context?.theme || 'default';
+    // Analyze the vision to understand intent, audience, and purpose
+    const vision = this.analyzeVision(prompt, context);
     
-    return this.generateRichContent(prompt, contentType, theme, context);
+    return this.generateVisionDrivenContent(prompt, vision, context);
   }
 
-  initContentTemplates() {
+  initVisionPatterns() {
     return {
-      authentication: {
-        title: "Authentication Guide",
-        sections: [
-          "Overview", "Quick Start", "API Keys", "OAuth Flow", "Examples", "Troubleshooting"
-        ],
-        codeExamples: ["curl", "javascript", "python", "php"]
+      portfolio: {
+        keywords: ['portfolio', 'personal', 'showcase', 'work', 'projects', 'freelance'],
+        roles: ['designer', 'developer', 'writer', 'photographer', 'consultant', 'architect'],
+        structure: {
+          homepage: 'hero_intro',
+          about: 'professional_story', 
+          portfolio: 'work_showcase',
+          services: 'offerings',
+          contact: 'get_in_touch',
+          blog: 'thought_leadership'
+        }
       },
-      api: {
-        title: "API Reference",
-        sections: [
-          "Introduction", "Endpoints", "Request Format", "Response Format", "Error Codes", "Rate Limiting"
-        ],
-        codeExamples: ["curl", "javascript", "python"]
+      business: {
+        keywords: ['company', 'business', 'startup', 'agency', 'firm', 'services'],
+        types: ['saas', 'consulting', 'marketing', 'development', 'design', 'fintech'],
+        structure: {
+          homepage: 'value_proposition',
+          about: 'company_story',
+          services: 'solutions',
+          pricing: 'investment',
+          contact: 'partnership'
+        }
       },
-      tutorial: {
-        title: "Tutorial",
-        sections: [
-          "Prerequisites", "Getting Started", "Step-by-Step Guide", "Best Practices", "Next Steps"
-        ],
-        codeExamples: ["code", "configuration"]
+      documentation: {
+        keywords: ['api', 'docs', 'documentation', 'guide', 'reference'],
+        types: ['api', 'sdk', 'library', 'framework', 'tool', 'platform'],
+        structure: {
+          homepage: 'quick_start',
+          reference: 'comprehensive_docs',
+          guides: 'how_to',
+          examples: 'code_samples'
+        }
       },
-      guide: {
-        title: "Guide",
-        sections: [
-          "Introduction", "Core Concepts", "Implementation", "Examples", "FAQ"
-        ],
-        codeExamples: ["examples", "configuration"]
-      },
-      homepage: {
-        title: "Welcome",
-        sections: ["Introduction", "Features", "Getting Started"],
-        codeExamples: []
+      blog: {
+        keywords: ['blog', 'writing', 'thoughts', 'articles', 'news'],
+        niches: ['tech', 'design', 'business', 'personal', 'industry'],
+        structure: {
+          homepage: 'latest_posts',
+          about: 'author_bio',
+          archive: 'post_categories',
+          contact: 'newsletter'
+        }
       }
     };
   }
 
-  analyzeContentType(prompt) {
+  analyzeVision(prompt, context = {}) {
     const lower = prompt.toLowerCase();
     
-    if (lower.includes('homepage') || lower.includes('welcome') || lower.includes('home')) {
-      return 'homepage';
-    } else if (lower.includes('auth') || lower.includes('login') || lower.includes('token')) {
-      return 'authentication';
-    } else if (lower.includes('api') || lower.includes('endpoint') || lower.includes('reference')) {
-      return 'api';
-    } else if (lower.includes('tutorial') || lower.includes('step') || lower.includes('how to')) {
-      return 'tutorial';
-    } else if (lower.includes('guide') || lower.includes('setup') || lower.includes('getting started')) {
-      return 'guide';
+    // Detect the primary intent/category
+    let category = 'documentation'; // default
+    let role = 'professional';
+    let industry = 'general';
+    let tone = 'professional';
+    let audience = 'general';
+    
+    // Analyze category
+    for (const [cat, pattern] of Object.entries(this.visionPatterns)) {
+      if (pattern.keywords.some(keyword => lower.includes(keyword))) {
+        category = cat;
+        break;
+      }
     }
     
-    return 'guide'; // default
+    // Detect specific role/profession
+    if (lower.includes('writer') || lower.includes('technical writer')) {
+      role = 'technical_writer';
+      tone = 'authoritative';
+    } else if (lower.includes('designer')) {
+      role = 'designer';
+      tone = 'creative';
+    } else if (lower.includes('developer')) {
+      role = 'developer';
+      tone = 'technical';
+    } else if (lower.includes('consultant')) {
+      role = 'consultant';
+      tone = 'advisory';
+    } else if (lower.includes('freelance')) {
+      role = 'freelancer';
+      tone = 'approachable';
+    }
+    
+    // Detect industry context
+    if (lower.includes('fintech') || lower.includes('finance')) {
+      industry = 'fintech';
+    } else if (lower.includes('saas') || lower.includes('software')) {
+      industry = 'saas';
+    } else if (lower.includes('api') || lower.includes('platform')) {
+      industry = 'developer_tools';
+    } else if (lower.includes('startup')) {
+      industry = 'startup';
+    }
+    
+    // Detect target audience
+    if (lower.includes('enterprise') || lower.includes('business')) {
+      audience = 'enterprise';
+    } else if (lower.includes('developer')) {
+      audience = 'developers';
+    } else if (lower.includes('personal') || lower.includes('individual')) {
+      audience = 'personal';
+    }
+    
+    return {
+      category,
+      role,
+      industry,
+      tone,
+      audience,
+      originalPrompt: prompt,
+      contextualHints: this.extractContextualHints(lower)
+    };
+  }
+  
+  extractContextualHints(lower) {
+    const hints = [];
+    
+    // Style preferences
+    if (lower.includes('modern')) hints.push('modern_design');
+    if (lower.includes('minimal')) hints.push('minimalist');
+    if (lower.includes('professional')) hints.push('professional');
+    if (lower.includes('creative')) hints.push('creative');
+    if (lower.includes('clean')) hints.push('clean_design');
+    
+    // Functionality hints
+    if (lower.includes('showcase')) hints.push('visual_focus');
+    if (lower.includes('contact')) hints.push('contact_priority');
+    if (lower.includes('blog')) hints.push('content_focus');
+    if (lower.includes('services')) hints.push('service_oriented');
+    
+    return hints;
   }
 
-  generateRichContent(prompt, contentType, theme, context) {
-    if (contentType === 'homepage') {
-      return this.generateHomepage(prompt, context);
-    }
-
-    const template = this.contentTemplates[contentType];
+  generateVisionDrivenContent(prompt, vision, context) {
     const title = this.extractTitle(prompt);
     
-    let content = `---
+    // Generate content based on vision analysis
+    const contentGenerator = this.getContentGenerator(vision);
+    const customContent = contentGenerator.generate(prompt, vision, context);
+    
+    return `---
 title: "${title}"
-description: "${this.generateDescription(prompt, contentType)}"
+description: "${customContent.description}"
 date: ${new Date().toISOString()}
 draft: false
-weight: ${this.calculateWeight(contentType)}
-tags: ${JSON.stringify(this.extractTags(prompt))}
+weight: ${customContent.weight || 10}
+tags: ${JSON.stringify(customContent.tags)}
+${customContent.customFrontMatter || ''}
 ---
 
-# ${title}
+${customContent.body}`;
+  }
 
-${this.generateIntroduction(prompt, contentType)}
-
-`;
-
-    // Generate rich sections based on content type
-    for (const section of template.sections) {
-      content += this.generateSection(section, prompt, contentType);
-    }
-
-    // Add code examples
-    if (template.codeExamples.length > 0) {
-      content += this.generateCodeExamples(prompt, template.codeExamples, contentType);
-    }
-
-    // Add conclusion
-    content += this.generateConclusion(contentType);
-
-    return content;
+  getContentGenerator(vision) {
+    const generators = {
+      portfolio: new PortfolioGenerator(),
+      business: new BusinessGenerator(), 
+      documentation: new DocumentationGenerator(),
+      blog: new BlogGenerator()
+    };
+    
+    return generators[vision.category] || generators.documentation;
   }
 
   generateHomepage(prompt, context) {
@@ -992,6 +1061,233 @@ Happy coding! 🚀`;
 
   delay(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
+  }
+}
+
+// Specialized Content Generators
+class PortfolioGenerator {
+  generate(prompt, vision, context) {
+    const role = vision.role;
+    const industry = vision.industry;
+    
+    if (role === 'technical_writer') {
+      return this.generateTechnicalWriterPortfolio(prompt, vision, context);
+    }
+    
+    return this.generateGenericPortfolio(prompt, vision, context);
+  }
+  
+  generateTechnicalWriterPortfolio(prompt, vision, context) {
+    const name = context?.project?.name || 'My Portfolio';
+    
+    return {
+      description: "Professional technical writing portfolio showcasing expertise in documentation, API guides, and developer resources",
+      weight: 10,
+      tags: ["portfolio", "technical-writing", "documentation", "professional"],
+      customFrontMatter: `
+layout: "portfolio-home"
+hero: true
+showcase: true`,
+      body: `# Technical Writer & Documentation Specialist
+
+Welcome to my portfolio of technical writing and documentation projects. I specialize in transforming complex technical concepts into clear, actionable documentation that developers and users actually want to read.
+
+## Core Expertise
+
+### 📝 **API Documentation**
+I create comprehensive API documentation that goes beyond basic reference material. My approach includes:
+- Clear endpoint descriptions with real-world use cases
+- Interactive code examples in multiple programming languages
+- Authentication flows and error handling guides
+- Getting started tutorials that actually work
+
+### 📚 **Developer Guides**
+My developer guides focus on practical implementation:
+- Step-by-step tutorials with working code samples
+- Best practices and common pitfalls to avoid
+- Architecture decisions explained in plain English
+- Integration guides for popular frameworks and tools
+
+### 🎯 **User Documentation**
+I bridge the gap between technical complexity and user needs:
+- Feature documentation that highlights business value
+- How-to guides organized by user goals
+- Troubleshooting guides with actual solutions
+- Onboarding flows that reduce support tickets
+
+## Recent Projects
+
+### SaaS Platform Documentation Overhaul
+**Challenge**: Legacy documentation scattered across wikis with 40% of users dropping off during onboarding.
+
+**Solution**: Complete information architecture redesign with user journey mapping.
+
+**Results**: 
+- 60% reduction in support tickets
+- 25% improvement in user activation rates
+- Developer onboarding time reduced from 2 weeks to 3 days
+
+### API Reference Modernization
+**Challenge**: REST API documentation that developers called "impossible to use."
+
+**Solution**: Interactive documentation with live code examples and sandbox environment.
+
+**Results**:
+- Developer satisfaction scores increased from 2.1 to 4.6/5
+- API adoption increased 40% within 6 months
+- Integration time reduced by 50%
+
+### Open Source Documentation Strategy
+**Challenge**: Popular GitHub project with great code but no documentation.
+
+**Solution**: Contributor-friendly documentation system with templates and guidelines.
+
+**Results**:
+- Community contributions increased 300%
+- Project stars grew from 2K to 15K
+- Featured in GitHub's "exemplary documentation" showcase
+
+## My Documentation Philosophy
+
+> "Documentation isn't just about explaining how something works—it's about helping people accomplish their goals as quickly and confidently as possible."
+
+### I believe in:
+- **User-first thinking**: Start with what users need to accomplish
+- **Show, don't just tell**: Working examples beat abstract explanations
+- **Iterate based on data**: Analytics and user feedback drive improvements
+- **Accessible by design**: Clear language, logical structure, mobile-friendly
+
+## Writing Samples
+
+### API Guides
+- [OAuth 2.0 Implementation Guide](./samples/oauth-guide) - Complete integration tutorial
+- [Webhook Configuration Guide](./samples/webhooks) - Event handling and security
+- [Error Handling Best Practices](./samples/error-handling) - Comprehensive error documentation
+
+### Developer Tutorials  
+- [Building Your First Integration](./samples/first-integration) - Beginner-friendly walkthrough
+- [Advanced Authentication Patterns](./samples/auth-patterns) - Security implementation guide
+- [SDK Quick Start Guide](./samples/sdk-quickstart) - Get up and running in 5 minutes
+
+### Process Documentation
+- [API Versioning Strategy](./samples/versioning) - Backward compatibility approach
+- [Documentation Style Guide](./samples/style-guide) - Consistency standards
+- [Content Review Process](./samples/review-process) - Quality assurance workflow
+
+## Tools & Technologies
+
+**Documentation Platforms**: GitBook, Notion, Confluence, Hugo, MkDocs, Docusaurus  
+**API Tools**: Postman, Insomnia, OpenAPI, Swagger  
+**Content Management**: GitHub, GitLab, Contentful, Strapi  
+**Analytics**: Google Analytics, Mixpanel, documentation-specific tools  
+**Design**: Figma, Sketch, information architecture tools
+
+## Let's Work Together
+
+I'm passionate about making complex technology accessible and helping teams build documentation that actually serves their users.
+
+**Perfect for:**
+- API documentation projects
+- Developer experience improvements  
+- Documentation strategy and architecture
+- Technical content audits and optimization
+- Team training and process development
+
+Ready to transform your technical documentation? Let's discuss your project.
+
+[**Get in touch →**](./contact)`
+    };
+  }
+  
+  generateGenericPortfolio(prompt, vision, context) {
+    return {
+      description: "Professional portfolio showcasing work, skills, and expertise",
+      weight: 10,
+      tags: ["portfolio", "professional", "showcase"],
+      body: `# Professional Portfolio
+
+Welcome to my professional portfolio. Here you'll find examples of my work, skills, and experience.
+
+## Featured Work
+
+### Project Showcase
+A collection of my best professional work and personal projects.
+
+### Skills & Expertise  
+Technical skills and professional competencies.
+
+### Experience
+Professional background and career highlights.
+
+## Get In Touch
+Ready to collaborate? I'd love to hear about your project.`
+    };
+  }
+}
+
+class BusinessGenerator {
+  generate(prompt, vision, context) {
+    return {
+      description: "Professional business website showcasing services and expertise",
+      weight: 10,
+      tags: ["business", "services", "professional"],
+      body: `# Welcome to Our Business
+
+We provide professional services and solutions for businesses of all sizes.
+
+## Our Services
+Comprehensive solutions tailored to your needs.
+
+## Why Choose Us
+Experienced team, proven results, client-focused approach.
+
+## Get Started
+Ready to work together? Contact us to discuss your project.`
+    };
+  }
+}
+
+class DocumentationGenerator {
+  generate(prompt, vision, context) {
+    return {
+      description: "Comprehensive documentation and guides",
+      weight: 10, 
+      tags: ["documentation", "guide", "reference"],
+      body: `# Documentation
+
+Welcome to our comprehensive documentation.
+
+## Getting Started
+Quick start guide and basic concepts.
+
+## Guides
+Step-by-step tutorials and how-to guides.
+
+## Reference
+Complete API and feature reference.`
+    };
+  }
+}
+
+class BlogGenerator {
+  generate(prompt, vision, context) {
+    return {
+      description: "Thoughts, insights, and articles on topics that matter",
+      weight: 10,
+      tags: ["blog", "writing", "thoughts"],
+      body: `# Welcome to My Blog
+
+Sharing thoughts, insights, and discoveries on topics I'm passionate about.
+
+## Latest Posts
+Recent articles and updates.
+
+## Categories
+Browse posts by topic and theme.
+
+## About
+Learn more about the author and this blog's mission.`
+    };
   }
 }
 

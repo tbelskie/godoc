@@ -372,22 +372,56 @@ draft: false
   objectToToml(obj, prefix = '') {
     let toml = '';
     
-    for (const [key, value] of Object.entries(obj)) {
-      if (typeof value === 'object' && !Array.isArray(value)) {
-        toml += `[${prefix}${key}]\n`;
-        for (const [subKey, subValue] of Object.entries(value)) {
-          if (typeof subValue === 'boolean') {
-            toml += `  ${subKey} = ${subValue}\n`;
+    // Collect all sections that need to be created
+    const allSections = this.flattenObjectToSections(obj, prefix);
+    
+    // Sort sections by depth to ensure parent sections come before child sections
+    const sectionEntries = Object.entries(allSections).sort((a, b) => {
+      const depthA = a[0].split('.').length;
+      const depthB = b[0].split('.').length;
+      return depthA - depthB;
+    });
+    
+    // Generate TOML for each section
+    for (const [sectionPath, properties] of sectionEntries) {
+      if (Object.keys(properties).length > 0) {
+        toml += `[${sectionPath}]\n`;
+        for (const [key, value] of Object.entries(properties)) {
+          if (typeof value === 'boolean') {
+            toml += `${key} = ${value}\n`;
+          } else if (typeof value === 'string') {
+            toml += `${key} = "${value}"\n`;
           } else {
-            toml += `  ${subKey} = "${subValue}"\n`;
+            toml += `${key} = ${value}\n`;
           }
         }
-      } else {
-        toml += `${key} = ${JSON.stringify(value)}\n`;
+        toml += '\n';
       }
     }
     
     return toml;
+  }
+  
+  flattenObjectToSections(obj, prefix = '') {
+    const sections = {};
+    
+    for (const [key, value] of Object.entries(obj)) {
+      const currentPath = prefix ? `${prefix}.${key}` : key;
+      
+      if (typeof value === 'object' && !Array.isArray(value) && value !== null) {
+        // This is an object - recurse into it
+        const nestedSections = this.flattenObjectToSections(value, currentPath);
+        Object.assign(sections, nestedSections);
+      } else {
+        // This is a primitive value - add it to the appropriate section
+        if (!sections[prefix]) {
+          sections[prefix] = {};
+        }
+        sections[prefix][key] = value;
+      }
+    }
+    
+    return sections;
   }
 
   generateReport() {
