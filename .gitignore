@@ -43,3 +43,6 @@ coverage/
 tmp/
 temp/
 *.tmp
+
+# Internal product documentation
+product docs/
