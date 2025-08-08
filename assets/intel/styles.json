@@ -1,0 +1,101 @@
+{
+  "styles": [
+    {
+      "id": "fintech-devfriendly",
+      "name": "Fintech – Developer Friendly",
+      "tone": ["clear", "direct", "trustworthy", "concise"],
+      "rules": {
+        "person": "second",
+        "voice": "active", 
+        "tense": "present",
+        "terminology": ["cardholder", "merchant", "issuer", "tokenization", "PCI compliance", "webhook"],
+        "banned": ["simply", "obviously", "just", "easy"]
+      },
+      "formatting": {
+        "codeLanguages": ["bash", "javascript", "python", "curl"],
+        "examplesPerSection": 1,
+        "apiTabs": true,
+        "callouts": ["note", "warning", "tip", "security"]
+      }
+    },
+    {
+      "id": "devtools-crisp",
+      "name": "DevTools – Crisp",
+      "tone": ["succinct", "practical", "no-fluff"],
+      "rules": {
+        "person": "second",
+        "voice": "active",
+        "tense": "present",
+        "terminology": ["CLI", "API", "SDK", "endpoint", "authentication"],
+        "banned": ["very", "extremely", "quite", "really"]
+      },
+      "formatting": {
+        "codeLanguages": ["bash", "javascript", "go", "python"],
+        "examplesPerSection": 1,
+        "apiTabs": true,
+        "callouts": ["note", "warning", "tip"]
+      }
+    },
+    {
+      "id": "saas-friendly",
+      "name": "SaaS – User Friendly", 
+      "tone": ["helpful", "approachable", "clear", "supportive"],
+      "rules": {
+        "person": "second",
+        "voice": "active",
+        "tense": "present",
+        "terminology": ["dashboard", "account", "subscription", "integration"],
+        "banned": ["obviously", "simply", "just", "merely"]
+      },
+      "formatting": {
+        "codeLanguages": ["javascript", "python", "curl"],
+        "examplesPerSection": 1,
+        "apiTabs": false,
+        "callouts": ["note", "tip", "success"]
+      }
+    },
+    {
+      "id": "enterprise-formal",
+      "name": "Enterprise – Formal",
+      "tone": ["professional", "comprehensive", "authoritative"],
+      "rules": {
+        "person": "second",
+        "voice": "active",
+        "tense": "present", 
+        "terminology": ["organization", "administrator", "deployment", "configuration"],
+        "banned": ["easy", "simple", "quick"]
+      },
+      "formatting": {
+        "codeLanguages": ["bash", "yaml", "json", "powershell"],
+        "examplesPerSection": 2,
+        "apiTabs": true,
+        "callouts": ["note", "warning", "important", "caution"]
+      }
+    },
+    {
+      "id": "opensource-community",
+      "name": "Open Source – Community",
+      "tone": ["inclusive", "collaborative", "encouraging"],
+      "rules": {
+        "person": "second",
+        "voice": "active",
+        "tense": "present",
+        "terminology": ["contributor", "maintainer", "community", "fork", "pull request"],
+        "banned": ["obviously", "clearly", "of course"]
+      },
+      "formatting": {
+        "codeLanguages": ["bash", "javascript", "python", "go"],
+        "examplesPerSection": 1,
+        "apiTabs": false,
+        "callouts": ["note", "tip", "community"]
+      }
+    }
+  ],
+  "defaults": {
+    "tone": ["clear", "concise"],
+    "voice": "active",
+    "person": "second",
+    "tense": "present",
+    "banned": ["simply", "obviously", "just"]
+  }
+}

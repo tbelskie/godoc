@@ -1,0 +1,13 @@
+{
+  "name": "godoc-intel",
+  "version": "0.1.0",
+  "generatedAt": "2025-08-08T20:30:00Z",
+  "schemaVersion": "1",
+  "checksum": {
+    "themes.json": "sha256-pending",
+    "styles.json": "sha256-pending", 
+    "patterns.json": "sha256-pending",
+    "rules.json": "sha256-pending"
+  },
+  "notes": "Bundled, offline-first intel snapshot for CLI 0.1.x"
+}

@@ -1,0 +1,164 @@
+{
+  "themes": [
+    {
+      "id": "docsy",
+      "name": "Docsy",
+      "repo": "https://github.com/google/docsy",
+      "stars": 2100,
+      "lastUpdated": "2025-06-15",
+      "license": "Apache-2.0",
+      "bestFor": ["api-docs", "technical-docs", "large-sites"],
+      "avoidFor": ["simple-blogs", "portfolios"],
+      "features": ["search", "dark-mode", "multilingual", "edit-on-github", "versioning"],
+      "complexity": "intermediate",
+      "customizability": "high",
+      "requires": ["hugo-extended", "nodejs"],
+      "score": {
+        "performance": 0.95,
+        "maintenance": 0.9,
+        "ux": 0.9,
+        "docsFit": 0.95
+      },
+      "examples": ["https://kubernetes.io/docs/"]
+    },
+    {
+      "id": "hugo-book",
+      "name": "Hugo Book",
+      "repo": "https://github.com/alex-shpak/hugo-book",
+      "stars": 3000,
+      "lastUpdated": "2025-05-20",
+      "license": "MIT",
+      "bestFor": ["guides", "handbooks", "small-to-medium-docs"],
+      "avoidFor": ["heavy-api-reference"],
+      "features": ["search", "dark-mode"],
+      "complexity": "beginner",
+      "customizability": "medium",
+      "requires": ["hugo-extended"],
+      "score": {
+        "performance": 0.92,
+        "maintenance": 0.85,
+        "ux": 0.88,
+        "docsFit": 0.82
+      },
+      "examples": []
+    },
+    {
+      "id": "doks",
+      "name": "Doks",
+      "repo": "https://github.com/h-enk/doks",
+      "stars": 1900,
+      "lastUpdated": "2025-06-30",
+      "license": "MIT",
+      "bestFor": ["developer-docs", "api-docs", "starter-kits"],
+      "avoidFor": [],
+      "features": ["search", "dark-mode", "algolia-ready"],
+      "complexity": "intermediate",
+      "customizability": "high",
+      "requires": ["hugo-extended", "nodejs"],
+      "score": {
+        "performance": 0.93,
+        "maintenance": 0.88,
+        "ux": 0.9,
+        "docsFit": 0.9
+      },
+      "examples": []
+    },
+    {
+      "id": "papermod",
+      "name": "PaperMod",
+      "repo": "https://github.com/adityatelange/hugo-PaperMod",
+      "stars": 1500,
+      "lastUpdated": "2025-07-01",
+      "license": "MIT",
+      "bestFor": ["blogs", "personal-sites", "minimal-docs"],
+      "avoidFor": ["complex-api-docs"],
+      "features": ["search", "dark-mode", "fast-loading"],
+      "complexity": "beginner",
+      "customizability": "medium",
+      "requires": ["hugo-extended"],
+      "score": {
+        "performance": 0.96,
+        "maintenance": 0.9,
+        "ux": 0.85,
+        "docsFit": 0.7
+      },
+      "examples": []
+    },
+    {
+      "id": "academic",
+      "name": "Hugo Academic",
+      "repo": "https://github.com/wowchemy/starter-hugo-academic",
+      "stars": 2000,
+      "lastUpdated": "2025-05-30",
+      "license": "MIT",
+      "bestFor": ["portfolios", "resumes", "research-sites"],
+      "avoidFor": ["api-docs", "technical-reference"],
+      "features": ["portfolio", "blog", "publications", "projects"],
+      "complexity": "intermediate",
+      "customizability": "high",
+      "requires": ["hugo-extended"],
+      "score": {
+        "performance": 0.88,
+        "maintenance": 0.85,
+        "ux": 0.92,
+        "docsFit": 0.6
+      },
+      "examples": []
+    },
+    {
+      "id": "clarity",
+      "name": "Clarity",
+      "repo": "https://github.com/chipzoller/hugo-clarity",
+      "stars": 800,
+      "lastUpdated": "2025-04-15",
+      "license": "MIT",
+      "bestFor": ["blogs", "content-sites", "marketing"],
+      "avoidFor": ["technical-docs", "api-reference"],
+      "features": ["dark-mode", "search", "responsive", "fast"],
+      "complexity": "beginner",
+      "customizability": "medium",
+      "requires": ["hugo-extended"],
+      "score": {
+        "performance": 0.94,
+        "maintenance": 0.8,
+        "ux": 0.87,
+        "docsFit": 0.65
+      },
+      "examples": []
+    }
+  ],
+  "matchRules": [
+    {
+      "when": { 
+        "keywords": ["api", "technical", "developer", "reference"],
+        "industry": ["fintech", "saas", "devtools"] 
+      },
+      "recommend": ["docsy", "doks"]
+    },
+    {
+      "when": { 
+        "keywords": ["guide", "handbook", "internal", "onboarding"],
+        "teamSize": { "lte": 50 }
+      },
+      "recommend": ["hugo-book", "doks"]
+    },
+    {
+      "when": { 
+        "keywords": ["blog", "writing", "content", "marketing"]
+      },
+      "recommend": ["papermod", "clarity"]
+    },
+    {
+      "when": { 
+        "keywords": ["portfolio", "resume", "personal", "academic", "research"]
+      },
+      "recommend": ["academic"]
+    },
+    {
+      "when": { 
+        "keywords": ["simple", "minimal", "lightweight"]
+      },
+      "recommend": ["hugo-book", "papermod"]
+    }
+  ]
+}

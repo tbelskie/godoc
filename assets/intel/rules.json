@@ -1,0 +1,102 @@
+{
+  "rules": [
+    {
+      "id": "style.banned-words",
+      "description": "Avoid filler like 'simply', 'just', 'obviously'.",
+      "severity": "warn", 
+      "type": "regex",
+      "pattern": "\\b(simply|just|obviously|clearly|of course|easy|trivial)\\b",
+      "suggest": "Remove filler words; be direct."
+    },
+    {
+      "id": "style.passive-voice",
+      "description": "Flag likely passive voice.",
+      "severity": "info",
+      "type": "regex", 
+      "pattern": "\\b(be|is|are|was|were|been|being)\\b\\s+\\b\\w+ed\\b",
+      "suggest": "Prefer active voice when possible."
+    },
+    {
+      "id": "links.http",
+      "description": "Discourage http links.",
+      "severity": "error",
+      "type": "regex",
+      "pattern": "\\]\\(http:\\/\\/",
+      "suggest": "Use https links."
+    },
+    {
+      "id": "headings.max-h1", 
+      "description": "One H1 per page.",
+      "severity": "error",
+      "type": "count",
+      "target": "markdown.h1",
+      "max": 1
+    },
+    {
+      "id": "code.block-required",
+      "description": "Ensure at least one code block in API or Quickstart pages.",
+      "severity": "warn",
+      "type": "presence",
+      "when": { "pathIncludes": ["quickstart", "api", "tutorial"] },
+      "target": "markdown.codeblock", 
+      "min": 1
+    },
+    {
+      "id": "a11y.alt-text",
+      "description": "Images should include alt text.",
+      "severity": "warn",
+      "type": "regex",
+      "pattern": "!\\[\\s*\\]\\([^\\)]+\\)",
+      "suggest": "Add descriptive alt text: ![description](image.png)"
+    },
+    {
+      "id": "structure.intro-paragraph",
+      "description": "Pages should start with an introductory paragraph.",
+      "severity": "info",
+      "type": "presence",
+      "target": "first.paragraph",
+      "min": 1,
+      "suggest": "Start with a brief introduction explaining what this page covers."
+    },
+    {
+      "id": "api.example-required",
+      "description": "API documentation should include examples.",
+      "severity": "warn", 
+      "type": "presence",
+      "when": { "pathIncludes": ["api"] },
+      "target": "codeblock.bash|javascript|python|curl",
+      "min": 1,
+      "suggest": "Include practical code examples."
+    },
+    {
+      "id": "links.broken-internal",
+      "description": "Check for broken internal links.",
+      "severity": "error",
+      "type": "regex",
+      "pattern": "\\]\\(\\.\\./[^\\)]*\\)",
+      "suggest": "Verify internal links are correct."
+    },
+    {
+      "id": "style.sentence-length",
+      "description": "Flag very long sentences (>40 words).",
+      "severity": "info",
+      "type": "custom",
+      "suggest": "Consider breaking long sentences for clarity."
+    },
+    {
+      "id": "security.credentials-exposed",
+      "description": "Flag potential credential exposure.",
+      "severity": "error",
+      "type": "regex",
+      "pattern": "(api_key|secret|password|token)\\s*[=:]\\s*[\"']?[a-zA-Z0-9]{8,}",
+      "suggest": "Replace real credentials with placeholders like 'your_api_key_here'."
+    },
+    {
+      "id": "formatting.consistent-code-lang",
+      "description": "Ensure consistent code block language tags.",
+      "severity": "info", 
+      "type": "custom",
+      "suggest": "Use consistent language identifiers: bash, javascript, python, json, yaml."
+    }
+  ]
+}

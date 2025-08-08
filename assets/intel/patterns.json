@@ -1,0 +1,141 @@
+{
+  "contentPatterns": {
+    "quickstart": {
+      "title": "Quickstart",
+      "sections": [
+        "Prerequisites",
+        "Installation",
+        "Authentication", 
+        "Make your first request",
+        "Next steps"
+      ],
+      "required": ["Prerequisites", "Authentication"],
+      "meta": { "estTimeMins": 10 }
+    },
+    "api-docs": {
+      "title": "API Reference",
+      "sections": [
+        "Authentication",
+        "Endpoints", 
+        "Request/Response Format",
+        "Error Handling",
+        "Rate Limits",
+        "SDKs",
+        "Webhooks"
+      ],
+      "required": ["Authentication", "Endpoints", "Error Handling"]
+    },
+    "tutorial": {
+      "title": "Tutorial",
+      "sections": [
+        "Overview",
+        "What you'll build", 
+        "Prerequisites",
+        "Setup",
+        "Step-by-step walkthrough",
+        "Testing your implementation",
+        "Troubleshooting",
+        "Next steps"
+      ],
+      "required": ["Overview", "Prerequisites", "Step-by-step walkthrough"]
+    },
+    "integration-guide": {
+      "title": "Integration Guide",
+      "sections": [
+        "Overview",
+        "Prerequisites", 
+        "Installation",
+        "Configuration",
+        "Testing the integration",
+        "Production deployment",
+        "Monitoring",
+        "Troubleshooting"
+      ],
+      "required": ["Prerequisites", "Configuration", "Testing the integration"]
+    },
+    "onboarding": {
+      "title": "Developer Onboarding",
+      "sections": [
+        "Welcome",
+        "Development environment setup",
+        "Codebase overview", 
+        "Local development workflow",
+        "Testing guidelines",
+        "Deployment process",
+        "Getting help"
+      ],
+      "required": ["Development environment setup", "Local development workflow"]
+    },
+    "changelog": {
+      "title": "Changelog",
+      "sections": [
+        "Latest Release",
+        "Previous Releases",
+        "Migration Guides"
+      ],
+      "required": ["Latest Release"]
+    }
+  },
+  "navArchetypes": {
+    "getting-started-first": [
+      "Quickstart", 
+      "Guides", 
+      "API Reference", 
+      "Examples",
+      "FAQ"
+    ],
+    "reference-heavy": [
+      "API Reference",
+      "SDKs", 
+      "Examples",
+      "Guides",
+      "Changelog"
+    ],
+    "tutorial-focused": [
+      "Overview",
+      "Tutorials",
+      "Guides", 
+      "API Reference",
+      "Community"
+    ],
+    "internal-docs": [
+      "Onboarding",
+      "Architecture",
+      "Development Guide",
+      "Deployment",
+      "Troubleshooting"
+    ]
+  },
+  "impactHeuristics": [
+    {
+      "signal": "mentions auth scope/version change",
+      "pattern": "(OAuth|Auth|JWT|token|scope|permission|version|authentication)",
+      "likelyImpacts": ["Authentication", "Quickstart", "API Reference: Endpoints", "Examples"]
+    },
+    {
+      "signal": "adds new endpoint",
+      "pattern": "(POST|GET|PUT|DELETE|PATCH)\\s+\\/[a-zA-Z0-9\\-\\/_]+",
+      "likelyImpacts": ["API Reference: Endpoints", "SDKs", "Examples", "Changelog"]
+    },
+    {
+      "signal": "breaking changes",
+      "pattern": "(breaking|deprecated|removed|incompatible|migration)",
+      "likelyImpacts": ["Migration Guides", "Changelog", "API Reference", "SDKs"]
+    },
+    {
+      "signal": "webhook changes", 
+      "pattern": "(webhook|callback|event|notification)",
+      "likelyImpacts": ["Webhooks", "Integration Guide", "Examples"]
+    },
+    {
+      "signal": "SDK updates",
+      "pattern": "(SDK|library|client|package)",
+      "likelyImpacts": ["SDKs", "Examples", "Installation", "Changelog"]
+    },
+    {
+      "signal": "error handling changes",
+      "pattern": "(error|exception|status code|4\\d\\d|5\\d\\d)",
+      "likelyImpacts": ["Error Handling", "Troubleshooting", "API Reference"]
+    }
+  ]
+}

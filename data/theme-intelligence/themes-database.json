@@ -1,0 +1,131 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2025-08-08T00:00:00.000Z",
+  "themes": [
+    {
+      "name": "docsy",
+      "title": "Docsy",
+      "description": "A Hugo theme for technical documentation sites",
+      "author": "Google",
+      "githubUrl": "https://github.com/google/docsy",
+      "demoUrl": "https://docsy.dev",
+      "tags": ["documentation", "technical", "google"],
+      "category": "documentation",
+      "characteristics": {
+        "responsive": true,
+        "darkMode": true,
+        "search": true,
+        "multilingual": true,
+        "customizable": true,
+        "minimal": false,
+        "modern": true
+      },
+      "colors": ["blue", "white"],
+      "features": ["documentation", "search", "multilingual"],
+      "complexity": 3,
+      "popularity": 5,
+      "suitability": 5,
+      "qualityScore": 4.5
+    },
+    {
+      "name": "academic",
+      "title": "Academic",
+      "description": "Build a beautiful academic resume, personal website, or portfolio",
+      "author": "George Cushen",
+      "githubUrl": "https://github.com/wowchemy/starter-hugo-academic",
+      "demoUrl": "https://academic-demo.netlify.app",
+      "tags": ["academic", "portfolio", "research"],
+      "category": "portfolio",
+      "characteristics": {
+        "responsive": true,
+        "darkMode": true,
+        "search": true,
+        "multilingual": true,
+        "customizable": true,
+        "minimal": false,
+        "modern": true
+      },
+      "colors": ["blue", "white"],
+      "features": ["portfolio", "blog", "search"],
+      "complexity": 4,
+      "popularity": 5,
+      "suitability": 4,
+      "qualityScore": 4.3
+    },
+    {
+      "name": "ananke",
+      "title": "Ananke",
+      "description": "Ananke is a simple, clean blog theme for Hugo",
+      "author": "Bud Parr",
+      "githubUrl": "https://github.com/theNewDynamic/gohugo-theme-ananke",
+      "demoUrl": "https://gohugo-ananke-theme-demo.netlify.app",
+      "tags": ["blog", "simple", "clean"],
+      "category": "blog",
+      "characteristics": {
+        "responsive": true,
+        "darkMode": false,
+        "search": false,
+        "multilingual": false,
+        "customizable": true,
+        "minimal": true,
+        "modern": true
+      },
+      "colors": ["neutral"],
+      "features": ["blog"],
+      "complexity": 2,
+      "popularity": 4,
+      "suitability": 4,
+      "qualityScore": 3.8
+    },
+    {
+      "name": "papermod",
+      "title": "PaperMod",
+      "description": "A fast, clean, responsive Hugo theme",
+      "author": "Aditya Telange",
+      "githubUrl": "https://github.com/adityatelange/hugo-PaperMod",
+      "demoUrl": "https://adityatelange.github.io/hugo-PaperMod",
+      "tags": ["blog", "minimal", "fast"],
+      "category": "blog",
+      "characteristics": {
+        "responsive": true,
+        "darkMode": true,
+        "search": true,
+        "multilingual": false,
+        "customizable": true,
+        "minimal": true,
+        "modern": true
+      },
+      "colors": ["neutral"],
+      "features": ["blog", "search"],
+      "complexity": 2,
+      "popularity": 4,
+      "suitability": 4,
+      "qualityScore": 4.0
+    },
+    {
+      "name": "hugo-book",
+      "title": "Book",
+      "description": "A simple Hugo theme for documentation and books",
+      "author": "Alex Shpak",
+      "githubUrl": "https://github.com/alex-shpak/hugo-book",
+      "demoUrl": "https://hugo-book-demo.netlify.app",
+      "tags": ["documentation", "book", "simple"],
+      "category": "documentation",
+      "characteristics": {
+        "responsive": true,
+        "darkMode": true,
+        "search": true,
+        "multilingual": false,
+        "customizable": true,
+        "minimal": true,
+        "modern": true
+      },
+      "colors": ["neutral"],
+      "features": ["documentation", "search"],
+      "complexity": 2,
+      "popularity": 4,
+      "suitability": 4,
+      "qualityScore": 4.1
+    }
+  ]
+}

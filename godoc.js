@@ -21,9 +21,26 @@ program
 program
   .command('init')
   .description('Initialize a new Hugo site')
+  .argument('[directory]', 'Directory name to create (optional)')
   .option('-d, --describe <description>', 'Describe your site')
   .option('-t, --theme <name>', 'Use specific Hugo theme (e.g., docsy, academic, ananke)')
-  .action(async (options) => {
+  .action(async (directory, options) => {
+    // Handle directory creation if specified
+    if (directory) {
+      const fs = require('fs-extra');
+      const path = require('path');
+      
+      const targetDirectory = path.resolve(directory);
+      if (!fs.existsSync(targetDirectory)) {
+        console.log(`📁 Creating directory: ${directory}`);
+        await fs.ensureDir(targetDirectory);
+      }
+      
+      // Change to target directory
+      process.chdir(targetDirectory);
+      console.log(`📂 Working in: ${directory}/`);
+    }
+    
     const InitCommand = require('./src/commands/init');
     const initCmd = new InitCommand();
     await initCmd.execute(options);

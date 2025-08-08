@@ -287,16 +287,12 @@ class ThemeIntelligence {
   }
 
   /**
-   * Get theme database, loading from cache or discovering if needed
+   * Get theme database from static data (no runtime scraping)
    * @returns {Promise<Array>} Theme database
    */
   async getThemeDatabase() {
     if (!this.themeDatabase) {
-      this.themeDatabase = await this.loadCachedThemes();
-      
-      if (!this.themeDatabase) {
-        this.themeDatabase = await this.discoverThemes();
-      }
+      this.themeDatabase = await this.loadStaticThemeDatabase();
     }
     
     return this.themeDatabase;
@@ -727,7 +723,25 @@ class ThemeIntelligence {
     return Math.max(0, 3 - diff); // 3 for perfect match, decreasing
   }
 
-  // Caching methods
+  // Static database methods
+  async loadStaticThemeDatabase() {
+    try {
+      const staticDbPath = path.join(__dirname, '..', 'data', 'theme-intelligence', 'themes-database.json');
+      const exists = await fs.pathExists(staticDbPath);
+      if (!exists) {
+        console.warn(chalk.yellow('Warning: Static theme database not found, using fallback themes'));
+        return this.getSampleThemes();
+      }
+      
+      const data = await fs.readJSON(staticDbPath);
+      return data.themes || this.getSampleThemes();
+    } catch (error) {
+      console.warn(chalk.yellow('Warning: Could not load static theme database:', error.message));
+      return this.getSampleThemes();
+    }
+  }
+
+  // Caching methods (kept for backward compatibility)
   async loadCachedThemes() {
     try {
       const exists = await fs.pathExists(this.databasePath);

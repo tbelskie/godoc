@@ -9,7 +9,7 @@ const AdvancedContextManager = require('../context-manager');
 const HugoExpertise = require('../hugo-expertise');
 const ClaudeSimulator = require('../claude-simulator');
 const ThemeGenerator = require('../theme-generator');
-const ThemeIntelligence = require('../theme-intelligence');
+const IntelLoader = require('../intel/loadIntel');
 
 class InitCommand {
   constructor() {
@@ -17,7 +17,7 @@ class InitCommand {
     this.expertise = new HugoExpertise();
     this.claude = new ClaudeSimulator();
     this.themeGenerator = new ThemeGenerator();
-    this.themeIntelligence = new ThemeIntelligence();
+    this.intel = IntelLoader;
   }
 
   async execute(options) {
@@ -66,9 +66,9 @@ class InitCommand {
         }
         console.log(chalk.green(`✅ Using theme: ${selectedTheme.name} by ${selectedTheme.author}`));
       } else {
-        // Use AI-powered theme recommendation
+        // Use Intel Pack for theme recommendation
         spinner.text = 'Finding best theme match with AI...';
-        const recommendations = await this.themeIntelligence.matchThemes(siteDetails.description, 1);
+        const recommendations = await this.intel.getThemeRecommendations(siteDetails.description, 1);
         if (recommendations.length > 0) {
           selectedTheme = recommendations[0];
           console.log(chalk.green(`✅ Recommended theme: ${selectedTheme.name} (score: ${selectedTheme.matchScore})`));
