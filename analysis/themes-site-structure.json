@@ -1,0 +1,52 @@
+{
+  "pageInfo": {
+    "title": "Hugo Themes",
+    "url": "https://themes.gohugo.io/",
+    "totalElements": 3346
+  },
+  "possibleThemeContainers": [
+    {
+      "selector": "[class*=\"item\"]",
+      "count": 16,
+      "sample": {
+        "tagName": "HEADER",
+        "className": "print:hidden sticky top-0 z-50 bg-blue-950 flex flex-none flex-wrap items-center justify-between px-4 py-5 shadow-md shadow-slate-900/5 transition duration-500 sm:px-6 lg:px-8 dark:shadow-none",
+        "id": "",
+        "textContent": "HUGONews\nDocs\nThemes\nCommunity\nGitHubBuilt with Hugo\nv0.148.2\n\nSearch docs\n/Search byQR code linking"
+      }
+    },
+    {
+      "selector": "div[class*=\"grid\"]",
+      "count": 2,
+      "sample": {
+        "tagName": "DIV",
+        "className": "xl:grid xl:grid-cols-3 xl:gap-8",
+        "id": "",
+        "textContent": "By the\nHugo Authors@GoHugoIO@spf13@bepsaysFile an issueGet helpFind a themeHugo Sponsors.st0{clip-pa"
+      }
+    }
+  ],
+  "commonClasses": {
+    "pointer-events-none": 555,
+    "relative": 282,
+    "cursor-pointer": 281,
+    "inset-0": 281,
+    "overflow-hidden": 280,
+    "text-sm": 280,
+    "group": 280,
+    "absolute": 279,
+    "dark:text-gray-100": 278,
+    "bg-gray-100": 278,
+    "mt-2": 278,
+    "rounded-lg": 277,
+    "focus-within:ring-2": 277,
+    "focus-within:ring-blue-500": 277,
+    "focus-within:ring-offset-2": 277,
+    "focus-within:ring-offset-gray-100": 277,
+    "aspect-10/7": 277,
+    "object-cover": 277,
+    "group-hover:opacity-75": 277,
+    "focus:outline-hidden": 277
+  },
+  "themeCards": []
+}

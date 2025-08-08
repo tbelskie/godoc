@@ -1,0 +1,187 @@
+{
+  "themes": [
+    {
+      "name": "docsy",
+      "title": "Docsy",
+      "description": "A Hugo theme for technical documentation sites",
+      "author": "Google",
+      "githubUrl": "https://github.com/google/docsy",
+      "demoUrl": "https://docsy.dev",
+      "tags": [
+        "documentation",
+        "technical",
+        "google"
+      ],
+      "stars": 1200,
+      "license": "Apache 2.0",
+      "category": "documentation",
+      "characteristics": {
+        "responsive": true,
+        "darkMode": false,
+        "search": false,
+        "multilingual": false,
+        "customizable": false,
+        "minimal": false,
+        "modern": false
+      },
+      "colors": [
+        "neutral"
+      ],
+      "features": [
+        "documentation"
+      ],
+      "complexity": 1,
+      "popularity": 3,
+      "suitability": 3,
+      "aiScore": 0,
+      "qualityScore": 2.1999999999999997
+    },
+    {
+      "name": "ananke",
+      "title": "Ananke",
+      "description": "Ananke is a simple, clean blog theme for Hugo",
+      "author": "Bud Parr",
+      "githubUrl": "https://github.com/theNewDynamic/gohugo-theme-ananke",
+      "demoUrl": "https://gohugo-ananke-theme-demo.netlify.app",
+      "tags": [
+        "blog",
+        "simple",
+        "clean"
+      ],
+      "stars": 800,
+      "license": "MIT",
+      "category": "blog",
+      "characteristics": {
+        "responsive": true,
+        "darkMode": false,
+        "search": false,
+        "multilingual": false,
+        "customizable": false,
+        "minimal": true,
+        "modern": false
+      },
+      "colors": [
+        "minimal"
+      ],
+      "features": [
+        "blog"
+      ],
+      "complexity": 1,
+      "popularity": 3,
+      "suitability": 4,
+      "aiScore": 0,
+      "qualityScore": 2.5
+    },
+    {
+      "name": "academic",
+      "title": "Academic",
+      "description": "Build a beautiful academic resume, personal website, or portfolio",
+      "author": "George Cushen",
+      "githubUrl": "https://github.com/wowchemy/starter-hugo-academic",
+      "demoUrl": "https://academic-demo.netlify.app",
+      "tags": [
+        "academic",
+        "portfolio",
+        "research"
+      ],
+      "stars": 2000,
+      "license": "MIT",
+      "category": "portfolio",
+      "characteristics": {
+        "responsive": true,
+        "darkMode": false,
+        "search": true,
+        "multilingual": false,
+        "customizable": false,
+        "minimal": false,
+        "modern": false
+      },
+      "colors": [
+        "neutral"
+      ],
+      "features": [
+        "portfolio",
+        "search"
+      ],
+      "complexity": 1,
+      "popularity": 3,
+      "suitability": 4,
+      "aiScore": 0,
+      "qualityScore": 2.6999999999999997
+    },
+    {
+      "name": "kross",
+      "title": "Kross",
+      "description": "Kross is a creative portfolio theme",
+      "author": "Themefisher",
+      "githubUrl": "https://github.com/themefisher/kross-hugo",
+      "demoUrl": "https://demo.gethugothemes.com/kross",
+      "tags": [
+        "portfolio",
+        "creative",
+        "personal"
+      ],
+      "stars": 300,
+      "license": "MIT",
+      "category": "portfolio",
+      "characteristics": {
+        "responsive": true,
+        "darkMode": false,
+        "search": false,
+        "multilingual": false,
+        "customizable": false,
+        "minimal": false,
+        "modern": false
+      },
+      "colors": [
+        "neutral"
+      ],
+      "features": [
+        "portfolio"
+      ],
+      "complexity": 1,
+      "popularity": 3,
+      "suitability": 4,
+      "aiScore": 0,
+      "qualityScore": 2.5
+    },
+    {
+      "name": "papermod",
+      "title": "PaperMod",
+      "description": "A fast, clean, responsive Hugo theme",
+      "author": "Aditya Telange",
+      "githubUrl": "https://github.com/adityatelange/hugo-PaperMod",
+      "demoUrl": "https://adityatelange.github.io/hugo-PaperMod",
+      "tags": [
+        "blog",
+        "minimal",
+        "fast"
+      ],
+      "stars": 1500,
+      "license": "MIT",
+      "category": "blog",
+      "characteristics": {
+        "responsive": true,
+        "darkMode": false,
+        "search": false,
+        "multilingual": false,
+        "customizable": false,
+        "minimal": true,
+        "modern": false
+      },
+      "colors": [
+        "minimal"
+      ],
+      "features": [
+        "blog"
+      ],
+      "complexity": 1,
+      "popularity": 3,
+      "suitability": 4,
+      "aiScore": 0,
+      "qualityScore": 2.5
+    }
+  ],
+  "lastUpdated": "2025-08-07T18:55:06.124Z",
+  "version": "1.0.0"
+}

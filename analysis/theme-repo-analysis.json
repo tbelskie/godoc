@@ -1,0 +1,225 @@
+{
+  "themes": [
+    {
+      "name": "simple-dark",
+      "title": "Simple Dark",
+      "githubUrl": "https://github.com/MichaelSchaecher/simple-dark",
+      "detailUrl": "https://themes.gohugo.io/themes/simple-dark/",
+      "basicInfo": {
+        "lastCommit": "2025-01-03T11:51:32.000Z",
+        "description": "",
+        "language": "HTML\n          50.6%"
+      },
+      "fileStructure": {
+        "hasConfigToml": false,
+        "hasConfigYaml": false,
+        "hasHugoToml": false,
+        "hasLayouts": false,
+        "hasStatic": false,
+        "hasAssets": false,
+        "hasContent": false,
+        "hasExampleSite": false,
+        "hasI18n": false,
+        "hasData": false,
+        "hasArchetypes": false,
+        "hasPackageJson": false,
+        "hasThemeToml": false,
+        "hasReadme": false,
+        "allFiles": []
+      },
+      "hugoConfig": {},
+      "bestPractices": {
+        "mentionsHugoVersion": false,
+        "hasInstallInstructions": false,
+        "hasConfigExample": false,
+        "mentionsShortcodes": false,
+        "mentionsPartials": false,
+        "mentionsArchetypes": false,
+        "hasDemo": false,
+        "hasScreenshots": false,
+        "readmeLength": 0
+      },
+      "analyzedAt": "2025-08-08T16:37:05.967Z"
+    },
+    {
+      "name": "hugo-book",
+      "title": "Book",
+      "githubUrl": "https://github.com/alex-shpak/hugo-book",
+      "detailUrl": "https://themes.gohugo.io/themes/hugo-book/",
+      "basicInfo": {
+        "lastCommit": "2025-08-07T11:18:21.000Z",
+        "description": "",
+        "language": "SCSS\n          47.1%"
+      },
+      "fileStructure": {
+        "hasConfigToml": false,
+        "hasConfigYaml": false,
+        "hasHugoToml": false,
+        "hasLayouts": false,
+        "hasStatic": false,
+        "hasAssets": false,
+        "hasContent": false,
+        "hasExampleSite": false,
+        "hasI18n": false,
+        "hasData": false,
+        "hasArchetypes": false,
+        "hasPackageJson": false,
+        "hasThemeToml": false,
+        "hasReadme": false,
+        "allFiles": []
+      },
+      "hugoConfig": {},
+      "bestPractices": {
+        "mentionsHugoVersion": false,
+        "hasInstallInstructions": false,
+        "hasConfigExample": false,
+        "mentionsShortcodes": false,
+        "mentionsPartials": false,
+        "mentionsArchetypes": false,
+        "hasDemo": false,
+        "hasScreenshots": false,
+        "readmeLength": 0
+      },
+      "analyzedAt": "2025-08-08T16:37:10.639Z"
+    },
+    {
+      "name": "blox-tailwind",
+      "title": "Hugo Blox - Tailwind",
+      "githubUrl": "https://github.com/HugoBlox/hugo-blox-builder",
+      "detailUrl": "https://themes.gohugo.io/themes/blox-tailwind/",
+      "basicInfo": {
+        "lastCommit": "2025-03-01T20:11:44.000Z",
+        "description": "",
+        "language": "HTML\n          49.5%"
+      },
+      "fileStructure": {
+        "hasConfigToml": false,
+        "hasConfigYaml": false,
+        "hasHugoToml": false,
+        "hasLayouts": false,
+        "hasStatic": false,
+        "hasAssets": false,
+        "hasContent": false,
+        "hasExampleSite": false,
+        "hasI18n": false,
+        "hasData": false,
+        "hasArchetypes": false,
+        "hasPackageJson": false,
+        "hasThemeToml": false,
+        "hasReadme": false,
+        "allFiles": []
+      },
+      "hugoConfig": {},
+      "bestPractices": {
+        "mentionsHugoVersion": false,
+        "hasInstallInstructions": false,
+        "hasConfigExample": false,
+        "mentionsShortcodes": false,
+        "mentionsPartials": false,
+        "mentionsArchetypes": false,
+        "hasDemo": false,
+        "hasScreenshots": false,
+        "readmeLength": 0
+      },
+      "analyzedAt": "2025-08-08T16:37:15.621Z"
+    },
+    {
+      "name": "loveit",
+      "title": "LoveIt",
+      "githubUrl": "https://github.com/dillonzq/LoveIt",
+      "detailUrl": "https://themes.gohugo.io/themes/loveit/",
+      "basicInfo": {
+        "lastCommit": "2025-03-27T13:56:27.000Z",
+        "description": "",
+        "language": "JavaScript\n          69.8%"
+      },
+      "fileStructure": {
+        "hasConfigToml": false,
+        "hasConfigYaml": false,
+        "hasHugoToml": false,
+        "hasLayouts": false,
+        "hasStatic": false,
+        "hasAssets": false,
+        "hasContent": false,
+        "hasExampleSite": false,
+        "hasI18n": false,
+        "hasData": false,
+        "hasArchetypes": false,
+        "hasPackageJson": false,
+        "hasThemeToml": false,
+        "hasReadme": false,
+        "allFiles": []
+      },
+      "hugoConfig": {},
+      "bestPractices": {
+        "mentionsHugoVersion": false,
+        "hasInstallInstructions": false,
+        "hasConfigExample": false,
+        "mentionsShortcodes": false,
+        "mentionsPartials": false,
+        "mentionsArchetypes": false,
+        "hasDemo": false,
+        "hasScreenshots": false,
+        "readmeLength": 0
+      },
+      "analyzedAt": "2025-08-08T16:37:20.410Z"
+    },
+    {
+      "name": "hugo-papermod",
+      "title": "PaperMod",
+      "githubUrl": "https://github.com/adityatelange/hugo-PaperMod",
+      "detailUrl": "https://themes.gohugo.io/themes/hugo-papermod/",
+      "basicInfo": {
+        "lastCommit": "2025-05-24T04:58:29.000Z",
+        "description": "",
+        "language": "HTML\n          89.1%"
+      },
+      "fileStructure": {
+        "hasConfigToml": false,
+        "hasConfigYaml": false,
+        "hasHugoToml": false,
+        "hasLayouts": false,
+        "hasStatic": false,
+        "hasAssets": false,
+        "hasContent": false,
+        "hasExampleSite": false,
+        "hasI18n": false,
+        "hasData": false,
+        "hasArchetypes": false,
+        "hasPackageJson": false,
+        "hasThemeToml": false,
+        "hasReadme": false,
+        "allFiles": []
+      },
+      "hugoConfig": {},
+      "bestPractices": {
+        "mentionsHugoVersion": false,
+        "hasInstallInstructions": false,
+        "hasConfigExample": false,
+        "mentionsShortcodes": false,
+        "mentionsPartials": false,
+        "mentionsArchetypes": false,
+        "hasDemo": false,
+        "hasScreenshots": false,
+        "readmeLength": 0
+      },
+      "analyzedAt": "2025-08-08T16:37:25.126Z"
+    }
+  ],
+  "analyzedAt": "2025-08-08T16:37:27.128Z",
+  "totalCount": 5,
+  "bestPracticesSummary": {
+    "commonConfigFiles": {},
+    "commonDirectories": {},
+    "averageStars": 0,
+    "commonLanguages": {
+      "HTML\n          50.6%": 1,
+      "SCSS\n          47.1%": 1,
+      "HTML\n          49.5%": 1,
+      "JavaScript\n          69.8%": 1,
+      "HTML\n          89.1%": 1
+    },
+    "commonLicenses": {},
+    "bestPracticePatterns": []
+  }
+}

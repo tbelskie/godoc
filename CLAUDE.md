@@ -1,41 +1,71 @@
-# GOdoc - GOdoc Documentation Generator
+# GOdoc - The World's Smartest AI Docs-as-Code Platform
 
-**Status:** Production Ready ✅  
-**Version:** 1.1.0 (Vision-Driven Content Generation)  
-**Next Major Release:** Version 1.2.0 (Theme Intelligence Revolution)  
-**Last Updated:** August 7, 2025
+**Status:** Sprint 0 Complete - Ready for Monday Sprint 1 ✅  
+**Platform Version:** 2.0.0 (7-Engine Intelligence Architecture)  
+**Current Sprint:** Sprint 1 - Knowledge Ingestion Engine Foundation  
+**Last Updated:** August 8, 2025
 
-## Overview
+## Platform Overview
 
-GOdoc is revolutionizing documentation by transforming "docs-as-code" into "docs-as-convos". Our conversational platform creates professional documentation sites through natural language interaction, leveraging AI to learn from 500+ Hugo themes and deploy to any platform in minutes.
+GOdoc is the **world's first AI Documentation Intelligence Platform** with 7 specialized engines that eliminate every documentation pain point. Teams focus 99% on content, 1% on infrastructure.
 
-**NEW VISION**: Complete conversation-to-publication pipeline - from idea to live professional site in under 3 minutes.
+**REVOLUTIONARY VISION**: From feature planning to live deployment, GOdoc handles the complete documentation lifecycle through natural language conversation.
 
 ## Quick Start
 
 ```bash
-# Current (Version 1.1.0):
+# Current Platform (Sprint 0 Complete):
 godoc init --describe "API docs for fintech startup"
 godoc preview
 godoc github
 
-# Coming Soon (Version 1.2.0):
-godoc init --describe "portfolio for UX designer" --theme "kross" --deploy netlify
-# → Result: Professional site live in 2 minutes with zero configuration
+# Sprint 1 Goal (Knowledge Ingestion Engine):
+godoc init --describe "fintech API docs"
+# → Uses intelligence from 100+ real Hugo themes
+# → Returns perfect theme matches (docsy, academic, etc.)
+# → Intelligent recommendations vs generic suggestions
+
+# Sprint 2 Vision (Content Planning Intelligence):
+godoc plan --spec "oauth-2.1-upgrade.md"
+# → Analyzes spec for documentation impacts
+# → Creates GitHub epic with effort estimates
+# → Feature-driven documentation workflow
 ```
 
-## 🚀 Upcoming Major Features (Version 1.2.0)
+## 🧠 7-Engine Intelligence Platform
 
-### Theme Intelligence Revolution
-- **500+ Hugo Themes**: Access entire Hugo theme ecosystem
-- **AI Theme Matching**: "Portfolio for designer" → Perfect theme suggestions
-- **Hybrid Theme Generation**: Create unique themes combining best elements
-- **One-Command Setup**: `--theme docsy` and it just works
+### **Phase 1: Foundation Intelligence (Months 1-3)**
+1. **Knowledge Ingestion Engine** - Learn from 500+ themes & 50+ style guides *(Sprint 1)*
+2. **Theme Intelligence System** - Generate better themes than any existing theme *(Sprint 2)*  
+3. **Content Intelligence + Content Planning** - AI generation + spec→roadmap automation *(Sprint 3)*
 
-### One-Click Publishing Pipeline  
-- **Multi-Platform Deployment**: GitHub Pages, Netlify, Vercel, GitLab Pages
-- **Complete Workflow**: Conversation → Professional site → Live URL in <3 minutes
-- **Enterprise Ready**: AWS, GCP, Azure integration for teams
+### **Phase 2: Complete Intelligence Platform (Months 4-6)**
+4. **Quality Assurance Intelligence** - Automated review like CodeRabbit for docs
+5. **Infrastructure Intelligence** - Zero build failures, auto-fix pipeline
+6. **Workflow Intelligence** - Natural language Git and deployment operations
+7. **[Future Engine Slot]** - Room for platform growth and innovation
+
+### Revolutionary Workflows
+```bash
+# Content Planning: Feature-driven documentation  
+godoc plan --spec "oauth-2.1-upgrade.md" --release "Q1-2025"
+# → Analyzes spec for doc impacts across entire site
+# → Creates GitHub epic with 6 tasks and effort estimates
+# → Sets up review workflows and dependencies
+
+# Quality Assurance: Zero overhead
+godoc validate --deep  # Prevents all build failures before CI/CD
+# → Grammar, spelling, link validation
+# → Style guide compliance  
+# → Accessibility auditing
+# → Performance optimization
+
+# Infrastructure: Eliminate debugging
+godoc deploy --staging
+# → Pre-build validation catches all issues
+# → Auto-fixes 90% of common problems
+# → Deploys successfully first time, every time
+```
 
 ## Core Commands
 
@@ -306,38 +336,92 @@ GOdoc with GOdoc workflow is ready for production use. The system successfully t
 
 **Key Achievement:** Fintech demo successfully created and tested - from natural language input to live, browsable documentation site in under 2 minutes.
 
-## Current Development Status
+## 🚀 Current Sprint Status
 
-**Last Updated**: August 7, 2025, 9:25 PM  
-**Phase**: Phase 0 - MVP Foundation **[COMPLETED & COMMITTED]** ✅  
-**Current Status**: Production-ready MVP with full functionality  
-**Progress**: 100% MVP complete - ready for user adoption  
-**Repository**: All work committed and pushed (commit f4a8c89)  
+**Sprint 0 COMPLETE**: August 8, 2025  
+**Sprint 1 READY**: Knowledge Ingestion Engine Foundation  
+**Platform Status**: 7-Engine Architecture Designed & Committed  
+**Repository**: All Sprint 0 work committed (commit e2f5718) ✅  
 
-**Phase 0 Achievements**:
-1. ✅ Fixed package.json for global npm installation
-2. ✅ Implemented complete search index generation with markdown parsing
-3. ✅ Added comprehensive error handling and dependency validation
-4. ✅ Created professional README with installation guide and examples
-5. ✅ Enhanced context management system for bulletproof session continuity
-6. ✅ All CLI commands fully functional and tested
+### **Sprint 0 Achievements (Vision & Architecture)**:
+1. ✅ **7-Engine Intelligence Platform Architecture** - Complete system design
+2. ✅ **Content Planning Intelligence** - Revolutionary feature for product teams
+3. ✅ **Quality Assurance Intelligence** - Automated review like CodeRabbit  
+4. ✅ **Infrastructure Intelligence** - Zero build failures, auto-fix pipeline
+5. ✅ **Sprint 1 Strategy** - Knowledge Ingestion Engine foundation locked
+6. ✅ **GitHub Issues Updated** - Sprint 1 detailed implementation plan
+7. ✅ **UNIFIED_PLATFORM_VISION.md** - Single source of truth created
 
-**Version 1.1.0 New Features**:
-1. ✅ **Vision-Driven Content Generation**: Replaced generic templates with intelligent, role-specific content
-2. ✅ **Technical Writer Portfolio**: Specialized generator with real project examples and metrics
-3. ✅ **Fixed Refactor Command**: Resolved TOML parsing issues that broke preview after modernize
-4. ✅ **Recursive TOML Generator**: Proper handling of nested Hugo configuration structures
+### **Sprint 1 Plan (Starting Monday - 4 Weeks)**:
+**Goal**: Build Knowledge Ingestion Engine foundation that enables all 7 intelligence engines
 
-**Version 1.2.0 Roadmap (Next 30 Days)**:
-1. 🚧 **Theme Intelligence System**: Learn from 500+ Hugo themes to create perfect matches
-2. 🚧 **Direct Theme Usage**: `--theme docsy` instantly sets up any Hugo theme
-3. 🚧 **One-Click Publishing**: Deploy to GitHub Pages, Netlify, Vercel, GitLab in one command
-4. 🚧 **Hybrid Theme Generation**: AI creates unique themes combining best elements
+#### **Week 1: Foundation Infrastructure**
+- Fix themes.hugo.io scraping with proper HTML analysis
+- Build robust Playwright-based scraping framework  
+- Implement rate limiting, error handling, caching
+- Test scraping with first 20 themes
 
-## 📋 Complete Implementation Plan
+#### **Week 2: Intelligence Processing**
+- Analyze 100+ themes for patterns and categorization
+- Build theme scoring algorithms (quality, popularity, suitability)
+- Create recommendation engine with real theme data
+- Pattern recognition for theme features and characteristics
 
-**See `DOCS_AS_CONVOS_ROADMAP.md` for the complete "docs-as-code to docs-as-convos" transformation plan**
+#### **Week 3: Integration & Testing**
+- Integrate real theme intelligence with `godoc init` command
+- Test intelligent recommendations with various user descriptions
+- Performance optimization for theme analysis pipeline
+- Error handling and fallback systems
 
-**Current Status**: Version 1.1.0 Complete - Ready for Theme Intelligence Revolution  
-**Next 30 Days**: Theme Intelligence + Publishing Pipeline  
-**Long-term Vision**: Complete conversational documentation platform
+#### **Week 4: Sprint Review & Validation**
+- Demo intelligent theme recommendations working with 100+ real themes
+- Validate scraping scales to 500+ themes
+- Performance benchmarking and optimization
+- Plan Sprint 2: Content Planning Intelligence
+
+**Success Criteria**: 
+- ✅ 100+ Hugo themes analyzed and intelligently categorized
+- ✅ `godoc init --describe "fintech API docs"` returns perfect theme matches
+- ✅ Foundation ready for Content Planning Intelligence (Sprint 2)
+
+## 📋 Complete Platform Roadmap
+
+**See `UNIFIED_PLATFORM_VISION.md` for complete 7-Engine Intelligence Platform details**
+
+### **Sprint Timeline**:
+- **Sprint 0** ✅: Platform vision & architecture (Aug 8)
+- **Sprint 1** 🚧: Knowledge Ingestion Engine (Aug 11-Sep 1)
+- **Sprint 2** 📋: Content Planning Intelligence (Sep 1-Sep 22)
+- **Sprint 3** 📋: Theme Intelligence System (Sep 22-Oct 13)
+
+### **Platform Evolution**:
+**3 Months**: Foundation Intelligence Platform with planning automation  
+**6 Months**: Complete Intelligence Platform with zero technical overhead  
+**12 Months**: Industry standard for enterprise documentation workflows
+
+### **The Vision**: 
+Every documentation team uses GOdoc as central platform for entire workflow - from feature planning to deployment to maintenance. Teams never deal with technical overhead again.
+
+## 🧠 Claude Project Memory
+
+### **Sprint 0 Key Decisions & Context**:
+- **7-Engine Architecture**: Knowledge Ingestion → Theme Intelligence → Content Planning → Quality Assurance → Infrastructure → Workflow → Future
+- **Content Planning as Phase 1 Core**: Upload spec → auto-generate documentation roadmap with GitHub epics
+- **Sprint 1 Strategy**: Knowledge Ingestion foundation first (enables everything else)
+- **Technical Focus**: Playwright-based scraping, theme intelligence, pattern recognition
+- **Business Impact**: Transform from docs tool → documentation lifecycle platform
+- **Competitive Moat**: Learned intelligence from 500+ themes + 50+ style guides
+
+### **Current Sprint Context**:
+- **Sprint 1 Goal**: Real theme intelligence from 100+ Hugo themes
+- **Week 1 Focus**: Fix themes.hugo.io scraping with proper selectors
+- **Expected Outcome**: Intelligent theme recommendations that prove platform superiority
+- **Foundation**: Enables Content Planning Intelligence (Sprint 2) and all other engines
+
+### **Technical Architecture Notes**:
+- **Scraping**: Playwright for JS-heavy sites, ethical rate limiting (1 req/2s)
+- **Storage**: Structured JSON with database migration path
+- **Analysis**: Pattern recognition, ML-style scoring, categorization algorithms
+- **Integration**: Enhanced Claude Code prompts with learned intelligence
+
+**Status**: Ready for Monday Sprint 1 - Foundation Intelligence Engine 🚀

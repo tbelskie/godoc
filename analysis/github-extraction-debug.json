@@ -1,0 +1,386 @@
+{
+  "allLinks": [
+    {
+      "href": "https://themes.gohugo.io/",
+      "text": "HUGO",
+      "className": "text-white text-xl font-bold upper"
+    },
+    {
+      "href": "https://gohugo.io/news/",
+      "text": "News",
+      "className": "font-semibold text-gray-300 hover:text-gray-400 ml-4"
+    },
+    {
+      "href": "https://gohugo.io/documentation/",
+      "text": "Docs",
+      "className": "font-semibold text-gray-300 hover:text-gray-400 ml-4"
+    },
+    {
+      "href": "https://themes.gohugo.io/",
+      "text": "Themes",
+      "className": "font-semibold text-gray-300 hover:text-gray-400 ml-4"
+    },
+    {
+      "href": "https://discourse.gohugo.io/",
+      "text": "Community",
+      "className": "font-semibold text-gray-300 hover:text-gray-400 ml-4"
+    },
+    {
+      "href": "https://github.com/gohugoio/hugo",
+      "text": "GitHub",
+      "className": "font-semibold text-gray-300 hover:text-gray-400 ml-4"
+    },
+    {
+      "href": "https://github.com/gohugoio/hugo/releases/tag/v0.148.2",
+      "text": "v0.148.2",
+      "className": "text-blue-600 hover:text-blue-500 ml-1"
+    },
+    {
+      "href": "https://github.com/gohugoio/hugo",
+      "text": "Star\n82718\n82.7k",
+      "className": "font-normal font-mono tracking-tighter flex items-center bg-gray-100 hover:bg-gray-200 dark:bg-gray-600 dark:hover:bg-gray-700 text-sm text-black dark:text-white h-10 border-none cursor-pointer relative py-1 px-2 rounded-md"
+    },
+    {
+      "href": "https://fosstodon.org/@gohugoio",
+      "text": "",
+      "className": ""
+    },
+    {
+      "href": "https://themes.gohugo.io/",
+      "text": "Home",
+      "className": "truncate text-blue-600 hover:text-blue-500 dark:text-blue-500 dark:hover:text-blue-400"
+    },
+    {
+      "href": "https://themes.gohugo.io/themes/",
+      "text": "Themes",
+      "className": "truncate text-blue-600 hover:text-blue-500 dark:text-blue-500 dark:hover:text-blue-400\ncurrent-section"
+    },
+    {
+      "href": "https://themes.gohugo.io/themes/hugo-book/",
+      "text": "Next",
+      "className": "bottom-0 right-0 mr-6 ml-6 fixed mb-6 flex items-center justify-center rounded-md bg-white/80 dark:bg-dark px-3.5 py-2.5 text-sm font-semibold text-black dark:text-white outline-solid outline-gray-300 dark:outline-gray-800 shadow-xs hover:bg-gray-50 dark:hover:bg-gray-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-400"
+    },
+    {
+      "href": "https://blackstewie.com/",
+      "text": "Michael Schächer",
+      "className": "text-blue-600 hover:text-blue-600\ndark:hover:text-blue-200 dark:text-blue-200"
+    },
+    {
+      "href": "https://themes.gohugo.io/tags/blog/",
+      "text": "blog",
+      "className": "text-blue-600 hover:text-blue-600\ndark:hover:text-blue-200 dark:text-blue-200 tracking-wide"
+    },
+    {
+      "href": "https://themes.gohugo.io/tags/dark/",
+      "text": "dark",
+      "className": "text-blue-600 hover:text-blue-600\ndark:hover:text-blue-200 dark:text-blue-200 tracking-wide"
+    },
+    {
+      "href": "https://themes.gohugo.io/tags/docs/",
+      "text": "docs",
+      "className": "text-blue-600 hover:text-blue-600\ndark:hover:text-blue-200 dark:text-blue-200 tracking-wide"
+    },
+    {
+      "href": "https://themes.gohugo.io/tags/personal/",
+      "text": "personal",
+      "className": "text-blue-600 hover:text-blue-600\ndark:hover:text-blue-200 dark:text-blue-200 tracking-wide"
+    },
+    {
+      "href": "https://themes.gohugo.io/tags/portfolio/",
+      "text": "portfolio",
+      "className": "text-blue-600 hover:text-blue-600\ndark:hover:text-blue-200 dark:text-blue-200 tracking-wide"
+    },
+    {
+      "href": "https://github.com/MichaelSchaecher/simple-dark",
+      "text": "Download",
+      "className": "rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-blue-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+    },
+    {
+      "href": "https://simple-dark.pages.dev/",
+      "text": "Demo",
+      "className": "rounded-md bg-green-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-green-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+    },
+    {
+      "href": "https://github.com/gohugoio/hugo/graphs/contributors",
+      "text": "Hugo Authors",
+      "className": "text-blue-300 hover:underline"
+    },
+    {
+      "href": "https://fosstodon.org/@gohugoio",
+      "text": "@GoHugoIO",
+      "className": ""
+    },
+    {
+      "href": "https://twitter.com/spf13",
+      "text": "@spf13",
+      "className": ""
+    },
+    {
+      "href": "https://twitter.com/bepsays",
+      "text": "@bepsays",
+      "className": ""
+    },
+    {
+      "href": "https://github.com/gohugoio/hugo/issues/new",
+      "text": "File an issue",
+      "className": "text-sm/6 text-gray-200 hover:text-white"
+    },
+    {
+      "href": "https://discourse.gohugo.io/",
+      "text": "Get help",
+      "className": "text-sm/6 text-gray-200 hover:text-white"
+    },
+    {
+      "href": "https://themes.gohugo.io/",
+      "text": "Find a theme",
+      "className": "text-sm/6 text-gray-200 hover:text-white"
+    },
+    {
+      "href": "https://www.linode.com/?utm_campaign=hugosponsor&utm_content=gohugoio&utm_medium=banner&utm_source=hugofooter",
+      "text": "",
+      "className": "group inline-block w-full h-full shadow-md dark:shadow-gray-600"
+    },
+    {
+      "href": "https://www.jetbrains.com/go/?utm_source=OSS&utm_medium=referral&utm_campaign=hugo",
+      "text": "",
+      "className": "group inline-block w-full h-full shadow-md dark:shadow-gray-600"
+    },
+    {
+      "href": "https://pinme.eth.limo/?s=hugo",
+      "text": ".st0{clip-path:url(#SVGID_2_)}.st1{fill:#414141}.st2{fill:#3d4df4}",
+      "className": "group inline-block w-full h-full shadow-md dark:shadow-gray-600"
+    }
+  ],
+  "githubLinks": [
+    {
+      "href": "https://github.com/gohugoio/hugo",
+      "text": "GitHub",
+      "className": "font-semibold text-gray-300 hover:text-gray-400 ml-4"
+    },
+    {
+      "href": "https://github.com/gohugoio/hugo/releases/tag/v0.148.2",
+      "text": "v0.148.2",
+      "className": "text-blue-600 hover:text-blue-500 ml-1"
+    },
+    {
+      "href": "https://github.com/gohugoio/hugo",
+      "text": "Star\n82718\n82.7k",
+      "className": "font-normal font-mono tracking-tighter flex items-center bg-gray-100 hover:bg-gray-200 dark:bg-gray-600 dark:hover:bg-gray-700 text-sm text-black dark:text-white h-10 border-none cursor-pointer relative py-1 px-2 rounded-md"
+    },
+    {
+      "href": "https://github.com/MichaelSchaecher/simple-dark",
+      "text": "Download",
+      "className": "rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-blue-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+    },
+    {
+      "href": "https://github.com/gohugoio/hugo/graphs/contributors",
+      "text": "Hugo Authors",
+      "className": "text-blue-300 hover:underline"
+    },
+    {
+      "href": "https://github.com/gohugoio/hugo/issues/new",
+      "text": "File an issue",
+      "className": "text-sm/6 text-gray-200 hover:text-white"
+    }
+  ],
+  "potentialThemeRepos": [
+    {
+      "href": "https://github.com/MichaelSchaecher/simple-dark",
+      "text": "Download",
+      "className": "rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-blue-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+    }
+  ],
+  "pageContent": "<script src=\"/js/body-start.02e9d5b15cc0520d2638a5c7a692c75065c6bdb802535ef6c14f412a52b715e1.js\" integrity=\"sha256-AunVsVzAUg0mOKXHppLHUGXGvbgCU172wU9BKlK3FeE=\" crossorigin=\"anonymous\"></script><header x-data=\"navbar\" class=\"print:hidden sticky top-0 z-50 bg-blue-950 flex flex-none flex-wrap items-center justify-between px-4 py-5 shadow-md shadow-slate-900/5 transition duration-500 sm:px-6 lg:px-8 dark:shadow-none\" :class=\"$store.nav.scroll.atTop ? '': 'bg-blue-950/80'\"><div class=\"relative flex basis-0 items-center mr-2 lg:mr-8\"><a class=\"text-white text-xl font-bold upper\" href=\"/\" aria-label=\"Home\">HUGO</a></div><div class=\"relative flex flex-grow basis-0 items-center min-w-24 max-w-3xl overflow-x-auto\"><a href=\"https://gohugo.io/news/\" class=\"font-semibold text-gray-300 hover:text-gray-400 ml-4\">News</a>\n<a href=\"https://gohugo.io/documentation/\" class=\"font-semibold text-gray-300 hover:text-gray-400 ml-4\">Docs</a>\n<a href=\"https://themes.gohugo.io/\" class=\"font-semibold text-gray-300 hover:text-gray-400 ml-4\">Themes</a>\n<a href=\"https://discourse.gohugo.io/\" class=\"font-semibold text-gray-300 hover:text-gray-400 ml-4\">Community</a>\n<a href=\"https://github.com/gohugoio/hugo\" class=\"font-semibold text-gray-300 hover:text-gray-400 ml-4\">GitHub</a><div class=\"hidden 2xl:block ml-8 text-xs text-gray-400 dark:text-gray-400\">Built with Hugo\n<a class=\"text-blue-600 hover:text-blue-500 ml-1\" href=\"https://github.com/gohugoio/hugo/releases/tag/v0.148.2\">v0.148.2</a></div></div><div class=\"-my-5 pl-2 grow-0\"><div x-data=\"search\" class=\"flex w-full\"><button type=\"button\" aria-label=\"Search\" class=\"text-gray-300 grid cursor-pointer w-full lg:w-56 grid-cols-[auto_1fr_auto] items-center rounded-md px-2 sm:px-4 py-2 text-left text-xs/6 lg:text-sm/6 outline-0 sm:outline-1 -outline-offset-1 outline-gray-600\">\n<svg class=\"fill-slate-400 dark:fill-slate-500 pointer-events-none -ml-0.5 mr-2 size-5 sm:size-4\"><use href=\"#icon--search\"></use></svg>\n<span class=\"hidden lg:inline\">Sear",
+  "buttonAnalysis": [
+    {
+      "tagName": "A",
+      "text": "HUGO",
+      "href": "https://themes.gohugo.io/",
+      "className": "text-white text-xl font-bold upper"
+    },
+    {
+      "tagName": "A",
+      "text": "News",
+      "href": "https://gohugo.io/news/",
+      "className": "font-semibold text-gray-300 hover:text-gray-400 ml-4"
+    },
+    {
+      "tagName": "A",
+      "text": "Docs",
+      "href": "https://gohugo.io/documentation/",
+      "className": "font-semibold text-gray-300 hover:text-gray-400 ml-4"
+    },
+    {
+      "tagName": "A",
+      "text": "Themes",
+      "href": "https://themes.gohugo.io/",
+      "className": "font-semibold text-gray-300 hover:text-gray-400 ml-4"
+    },
+    {
+      "tagName": "A",
+      "text": "Community",
+      "href": "https://discourse.gohugo.io/",
+      "className": "font-semibold text-gray-300 hover:text-gray-400 ml-4"
+    },
+    {
+      "tagName": "A",
+      "text": "GitHub",
+      "href": "https://github.com/gohugoio/hugo",
+      "className": "font-semibold text-gray-300 hover:text-gray-400 ml-4"
+    },
+    {
+      "tagName": "A",
+      "text": "v0.148.2",
+      "href": "https://github.com/gohugoio/hugo/releases/tag/v0.148.2",
+      "className": "text-blue-600 hover:text-blue-500 ml-1"
+    },
+    {
+      "tagName": "BUTTON",
+      "text": "Search docs\n/",
+      "className": "text-gray-300 grid cursor-pointer w-full lg:w-56 grid-cols-[auto_1fr_auto] items-center rounded-md px-2 sm:px-4 py-2 text-left text-xs/6 lg:text-sm/6 outline-0 sm:outline-1 -outline-offset-1 outline-gray-600"
+    },
+    {
+      "tagName": "BUTTON",
+      "text": "",
+      "className": "inline-flex cursor-pointer items-center p-2 bg-orange-600 hover:bg-orange-700 dark:bg-gray-600 dark:hover:bg-gray-700 border border-transparent rounded-full shadow-sm text-white hover:text-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-500"
+    },
+    {
+      "tagName": "A",
+      "text": "Star\n82718\n82.7k",
+      "href": "https://github.com/gohugoio/hugo",
+      "className": "font-normal font-mono tracking-tighter flex items-center bg-gray-100 hover:bg-gray-200 dark:bg-gray-600 dark:hover:bg-gray-700 text-sm text-black dark:text-white h-10 border-none cursor-pointer relative py-1 px-2 rounded-md"
+    },
+    {
+      "tagName": "A",
+      "text": "",
+      "href": "https://fosstodon.org/@gohugoio",
+      "className": ""
+    },
+    {
+      "tagName": "A",
+      "text": "Home",
+      "href": "https://themes.gohugo.io/",
+      "className": "truncate text-blue-600 hover:text-blue-500 dark:text-blue-500 dark:hover:text-blue-400"
+    },
+    {
+      "tagName": "A",
+      "text": "Themes",
+      "href": "https://themes.gohugo.io/themes/",
+      "className": "truncate text-blue-600 hover:text-blue-500 dark:text-blue-500 dark:hover:text-blue-400\ncurrent-section"
+    },
+    {
+      "tagName": "A",
+      "text": "Next",
+      "href": "https://themes.gohugo.io/themes/hugo-book/",
+      "className": "bottom-0 right-0 mr-6 ml-6 fixed mb-6 flex items-center justify-center rounded-md bg-white/80 dark:bg-dark px-3.5 py-2.5 text-sm font-semibold text-black dark:text-white outline-solid outline-gray-300 dark:outline-gray-800 shadow-xs hover:bg-gray-50 dark:hover:bg-gray-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-400"
+    },
+    {
+      "tagName": "A",
+      "text": "Michael Schächer",
+      "href": "https://blackstewie.com/",
+      "className": "text-blue-600 hover:text-blue-600\ndark:hover:text-blue-200 dark:text-blue-200"
+    },
+    {
+      "tagName": "A",
+      "text": "blog",
+      "href": "https://themes.gohugo.io/tags/blog/",
+      "className": "text-blue-600 hover:text-blue-600\ndark:hover:text-blue-200 dark:text-blue-200 tracking-wide"
+    },
+    {
+      "tagName": "A",
+      "text": "dark",
+      "href": "https://themes.gohugo.io/tags/dark/",
+      "className": "text-blue-600 hover:text-blue-600\ndark:hover:text-blue-200 dark:text-blue-200 tracking-wide"
+    },
+    {
+      "tagName": "A",
+      "text": "docs",
+      "href": "https://themes.gohugo.io/tags/docs/",
+      "className": "text-blue-600 hover:text-blue-600\ndark:hover:text-blue-200 dark:text-blue-200 tracking-wide"
+    },
+    {
+      "tagName": "A",
+      "text": "personal",
+      "href": "https://themes.gohugo.io/tags/personal/",
+      "className": "text-blue-600 hover:text-blue-600\ndark:hover:text-blue-200 dark:text-blue-200 tracking-wide"
+    },
+    {
+      "tagName": "A",
+      "text": "portfolio",
+      "href": "https://themes.gohugo.io/tags/portfolio/",
+      "className": "text-blue-600 hover:text-blue-600\ndark:hover:text-blue-200 dark:text-blue-200 tracking-wide"
+    },
+    {
+      "tagName": "A",
+      "text": "Download",
+      "href": "https://github.com/MichaelSchaecher/simple-dark",
+      "className": "rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-blue-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+    },
+    {
+      "tagName": "A",
+      "text": "Demo",
+      "href": "https://simple-dark.pages.dev/",
+      "className": "rounded-md bg-green-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-green-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+    },
+    {
+      "tagName": "A",
+      "text": "Hugo Authors",
+      "href": "https://github.com/gohugoio/hugo/graphs/contributors",
+      "className": "text-blue-300 hover:underline"
+    },
+    {
+      "tagName": "A",
+      "text": "@GoHugoIO",
+      "href": "https://fosstodon.org/@gohugoio",
+      "className": ""
+    },
+    {
+      "tagName": "A",
+      "text": "@spf13",
+      "href": "https://twitter.com/spf13",
+      "className": ""
+    },
+    {
+      "tagName": "A",
+      "text": "@bepsays",
+      "href": "https://twitter.com/bepsays",
+      "className": ""
+    },
+    {
+      "tagName": "A",
+      "text": "File an issue",
+      "href": "https://github.com/gohugoio/hugo/issues/new",
+      "className": "text-sm/6 text-gray-200 hover:text-white"
+    },
+    {
+      "tagName": "A",
+      "text": "Get help",
+      "href": "https://discourse.gohugo.io/",
+      "className": "text-sm/6 text-gray-200 hover:text-white"
+    },
+    {
+      "tagName": "A",
+      "text": "Find a theme",
+      "href": "https://themes.gohugo.io/",
+      "className": "text-sm/6 text-gray-200 hover:text-white"
+    },
+    {
+      "tagName": "A",
+      "text": "",
+      "href": "https://www.linode.com/?utm_campaign=hugosponsor&utm_content=gohugoio&utm_medium=banner&utm_source=hugofooter",
+      "className": "group inline-block w-full h-full shadow-md dark:shadow-gray-600"
+    },
+    {
+      "tagName": "A",
+      "text": "",
+      "href": "https://www.jetbrains.com/go/?utm_source=OSS&utm_medium=referral&utm_campaign=hugo",
+      "className": "group inline-block w-full h-full shadow-md dark:shadow-gray-600"
+    },
+    {
+      "tagName": "A",
+      "text": ".st0{clip-path:url(#SVGID_2_)}.st1{fill:#414141}.st2{fill:#3d4df4}",
+      "href": "https://pinme.eth.limo/?s=hugo",
+      "className": "group inline-block w-full h-full shadow-md dark:shadow-gray-600"
+    }
+  ]
+}

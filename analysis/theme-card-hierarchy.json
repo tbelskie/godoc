@@ -1,0 +1,735 @@
+{
+  "themeCards": [
+    {
+      "name": "simple-dark",
+      "cardLevel": 1,
+      "cardInfo": {
+        "level": 1,
+        "tagName": "DIV",
+        "className": "group overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-blue-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100",
+        "id": "",
+        "childCount": 2,
+        "textLength": 29,
+        "textPreview": "View details for Simple Dark",
+        "hasLinks": 1,
+        "linkCount": 1,
+        "isLikelyThemeCard": true,
+        "links": [
+          {
+            "href": "https://themes.gohugo.io/themes/simple-dark/",
+            "text": "View details for Simple Dark",
+            "className": "cursor-pointer absolute inset-0 focus:outline-hidden"
+          }
+        ]
+      },
+      "image": {
+        "src": "https://themes.gohugo.io/themes/simple-dark/tn-featured_hu_187b3abe4a4c79d9.png",
+        "alt": ""
+      }
+    },
+    {
+      "name": "hugo-book",
+      "cardLevel": 1,
+      "cardInfo": {
+        "level": 1,
+        "tagName": "DIV",
+        "className": "group overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-blue-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100",
+        "id": "",
+        "childCount": 2,
+        "textLength": 22,
+        "textPreview": "View details for Book",
+        "hasLinks": 1,
+        "linkCount": 1,
+        "isLikelyThemeCard": true,
+        "links": [
+          {
+            "href": "https://themes.gohugo.io/themes/hugo-book/",
+            "text": "View details for Book",
+            "className": "cursor-pointer absolute inset-0 focus:outline-hidden"
+          }
+        ]
+      },
+      "image": {
+        "src": "https://themes.gohugo.io/themes/hugo-book/tn-featured_hu_8ef29194fc46314f.png",
+        "alt": ""
+      }
+    },
+    {
+      "name": "blox-tailwind",
+      "cardLevel": 1,
+      "cardInfo": {
+        "level": 1,
+        "tagName": "DIV",
+        "className": "group overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-blue-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100",
+        "id": "",
+        "childCount": 2,
+        "textLength": 38,
+        "textPreview": "View details for Hugo Blox - Tailwind",
+        "hasLinks": 1,
+        "linkCount": 1,
+        "isLikelyThemeCard": true,
+        "links": [
+          {
+            "href": "https://themes.gohugo.io/themes/blox-tailwind/",
+            "text": "View details for Hugo Blox - Tailwind",
+            "className": "cursor-pointer absolute inset-0 focus:outline-hidden"
+          }
+        ]
+      },
+      "image": {
+        "src": "https://themes.gohugo.io/themes/blox-tailwind/tn-featured_hu_b773dfa6c72bc5e7.png",
+        "alt": ""
+      }
+    },
+    {
+      "name": "loveit",
+      "cardLevel": 1,
+      "cardInfo": {
+        "level": 1,
+        "tagName": "DIV",
+        "className": "group overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-blue-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100",
+        "id": "",
+        "childCount": 2,
+        "textLength": 24,
+        "textPreview": "View details for LoveIt",
+        "hasLinks": 1,
+        "linkCount": 1,
+        "isLikelyThemeCard": true,
+        "links": [
+          {
+            "href": "https://themes.gohugo.io/themes/loveit/",
+            "text": "View details for LoveIt",
+            "className": "cursor-pointer absolute inset-0 focus:outline-hidden"
+          }
+        ]
+      },
+      "image": {
+        "src": "https://themes.gohugo.io/themes/loveit/tn-featured_hu_3abf5eda02d98e28.png",
+        "alt": ""
+      }
+    },
+    {
+      "name": "hugo-papermod",
+      "cardLevel": 1,
+      "cardInfo": {
+        "level": 1,
+        "tagName": "DIV",
+        "className": "group overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-blue-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100",
+        "id": "",
+        "childCount": 2,
+        "textLength": 26,
+        "textPreview": "View details for PaperMod",
+        "hasLinks": 1,
+        "linkCount": 1,
+        "isLikelyThemeCard": true,
+        "links": [
+          {
+            "href": "https://themes.gohugo.io/themes/hugo-papermod/",
+            "text": "View details for PaperMod",
+            "className": "cursor-pointer absolute inset-0 focus:outline-hidden"
+          }
+        ]
+      },
+      "image": {
+        "src": "https://themes.gohugo.io/themes/hugo-papermod/tn-featured_hu_90af72210e3d2e5.png",
+        "alt": ""
+      }
+    }
+  ],
+  "domHierarchy": [
+    {
+      "imageIndex": 0,
+      "imageName": "simple-dark",
+      "hierarchy": [
+        {
+          "level": 0,
+          "tagName": "PICTURE",
+          "className": "",
+          "id": "",
+          "childCount": 5,
+          "textLength": 1,
+          "textPreview": "",
+          "hasLinks": 0,
+          "linkCount": 0
+        },
+        {
+          "level": 1,
+          "tagName": "DIV",
+          "className": "group overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-blue-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100",
+          "id": "",
+          "childCount": 2,
+          "textLength": 29,
+          "textPreview": "View details for Simple Dark",
+          "hasLinks": 1,
+          "linkCount": 1,
+          "isLikelyThemeCard": true,
+          "links": [
+            {
+              "href": "https://themes.gohugo.io/themes/simple-dark/",
+              "text": "View details for Simple Dark",
+              "className": "cursor-pointer absolute inset-0 focus:outline-hidden"
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "tagName": "LI",
+          "className": "relative",
+          "id": "",
+          "childCount": 2,
+          "textLength": 40,
+          "textPreview": "View details for Simple DarkSimple Dark",
+          "hasLinks": 1,
+          "linkCount": 1,
+          "isLikelyThemeCard": true,
+          "links": [
+            {
+              "href": "https://themes.gohugo.io/themes/simple-dark/",
+              "text": "View details for Simple Dark",
+              "className": "cursor-pointer absolute inset-0 focus:outline-hidden"
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "tagName": "UL",
+          "className": "grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8",
+          "id": "",
+          "childCount": 277,
+          "textLength": 10164,
+          "textPreview": "View details for Simple DarkSimple Dark\nView details for BookBook\nView details for Hugo Blox - Tailw",
+          "hasLinks": 277,
+          "linkCount": 277
+        },
+        {
+          "level": 4,
+          "tagName": "MAIN",
+          "className": "flex-1 mx-auto lg:mx-0 w-full max-w-3x lg:max-w-3x pt-8 lg:pt-14 pb-20 px-main print:pt-0",
+          "id": "",
+          "childCount": 1,
+          "textLength": 10164,
+          "textPreview": "View details for Simple DarkSimple Dark\nView details for BookBook\nView details for Hugo Blox - Tailw",
+          "hasLinks": 277,
+          "linkCount": 277
+        },
+        {
+          "level": 5,
+          "tagName": "DIV",
+          "className": "flex w-full xl:w-6xl h-full flex-auto mx-auto",
+          "id": "",
+          "childCount": 2,
+          "textLength": 10407,
+          "textPreview": "View details for Simple DarkSimple Dark\nView details for BookBook\nView details for Hugo Blox - Tailw",
+          "hasLinks": 297,
+          "linkCount": 297
+        },
+        {
+          "level": 6,
+          "tagName": "BODY",
+          "className": "flex flex-col min-h-full bg-white dark:bg-blue-950 kind-home",
+          "id": "",
+          "childCount": 15,
+          "textLength": 10834,
+          "textPreview": "HUGONews\nDocs\nThemes\nCommunity\nGitHubBuilt with Hugo\nv0.148.2\n\nSearch docs\n/Search byQR code linking",
+          "hasLinks": 316,
+          "linkCount": 316
+        },
+        {
+          "level": 7,
+          "tagName": "HTML",
+          "className": "h-full antialiased scheme-light dark:scheme-dark os-macos",
+          "id": "",
+          "childCount": 2,
+          "textLength": 11563,
+          "textPreview": ".turbo-progress-bar {\n  position: fixed;\n  display: block;\n  top: 0;\n  left: 0;\n  height: 3px;\n  bac",
+          "hasLinks": 316,
+          "linkCount": 316
+        }
+      ]
+    },
+    {
+      "imageIndex": 1,
+      "imageName": "hugo-book",
+      "hierarchy": [
+        {
+          "level": 0,
+          "tagName": "PICTURE",
+          "className": "",
+          "id": "",
+          "childCount": 5,
+          "textLength": 1,
+          "textPreview": "",
+          "hasLinks": 0,
+          "linkCount": 0
+        },
+        {
+          "level": 1,
+          "tagName": "DIV",
+          "className": "group overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-blue-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100",
+          "id": "",
+          "childCount": 2,
+          "textLength": 22,
+          "textPreview": "View details for Book",
+          "hasLinks": 1,
+          "linkCount": 1,
+          "isLikelyThemeCard": true,
+          "links": [
+            {
+              "href": "https://themes.gohugo.io/themes/hugo-book/",
+              "text": "View details for Book",
+              "className": "cursor-pointer absolute inset-0 focus:outline-hidden"
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "tagName": "LI",
+          "className": "relative",
+          "id": "",
+          "childCount": 2,
+          "textLength": 26,
+          "textPreview": "View details for BookBook",
+          "hasLinks": 1,
+          "linkCount": 1,
+          "isLikelyThemeCard": true,
+          "links": [
+            {
+              "href": "https://themes.gohugo.io/themes/hugo-book/",
+              "text": "View details for Book",
+              "className": "cursor-pointer absolute inset-0 focus:outline-hidden"
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "tagName": "UL",
+          "className": "grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8",
+          "id": "",
+          "childCount": 277,
+          "textLength": 10164,
+          "textPreview": "View details for Simple DarkSimple Dark\nView details for BookBook\nView details for Hugo Blox - Tailw",
+          "hasLinks": 277,
+          "linkCount": 277
+        },
+        {
+          "level": 4,
+          "tagName": "MAIN",
+          "className": "flex-1 mx-auto lg:mx-0 w-full max-w-3x lg:max-w-3x pt-8 lg:pt-14 pb-20 px-main print:pt-0",
+          "id": "",
+          "childCount": 1,
+          "textLength": 10164,
+          "textPreview": "View details for Simple DarkSimple Dark\nView details for BookBook\nView details for Hugo Blox - Tailw",
+          "hasLinks": 277,
+          "linkCount": 277
+        },
+        {
+          "level": 5,
+          "tagName": "DIV",
+          "className": "flex w-full xl:w-6xl h-full flex-auto mx-auto",
+          "id": "",
+          "childCount": 2,
+          "textLength": 10407,
+          "textPreview": "View details for Simple DarkSimple Dark\nView details for BookBook\nView details for Hugo Blox - Tailw",
+          "hasLinks": 297,
+          "linkCount": 297
+        },
+        {
+          "level": 6,
+          "tagName": "BODY",
+          "className": "flex flex-col min-h-full bg-white dark:bg-blue-950 kind-home",
+          "id": "",
+          "childCount": 15,
+          "textLength": 10834,
+          "textPreview": "HUGONews\nDocs\nThemes\nCommunity\nGitHubBuilt with Hugo\nv0.148.2\n\nSearch docs\n/Search byQR code linking",
+          "hasLinks": 316,
+          "linkCount": 316
+        },
+        {
+          "level": 7,
+          "tagName": "HTML",
+          "className": "h-full antialiased scheme-light dark:scheme-dark os-macos",
+          "id": "",
+          "childCount": 2,
+          "textLength": 11563,
+          "textPreview": ".turbo-progress-bar {\n  position: fixed;\n  display: block;\n  top: 0;\n  left: 0;\n  height: 3px;\n  bac",
+          "hasLinks": 316,
+          "linkCount": 316
+        }
+      ]
+    },
+    {
+      "imageIndex": 2,
+      "imageName": "blox-tailwind",
+      "hierarchy": [
+        {
+          "level": 0,
+          "tagName": "PICTURE",
+          "className": "",
+          "id": "",
+          "childCount": 5,
+          "textLength": 1,
+          "textPreview": "",
+          "hasLinks": 0,
+          "linkCount": 0
+        },
+        {
+          "level": 1,
+          "tagName": "DIV",
+          "className": "group overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-blue-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100",
+          "id": "",
+          "childCount": 2,
+          "textLength": 38,
+          "textPreview": "View details for Hugo Blox - Tailwind",
+          "hasLinks": 1,
+          "linkCount": 1,
+          "isLikelyThemeCard": true,
+          "links": [
+            {
+              "href": "https://themes.gohugo.io/themes/blox-tailwind/",
+              "text": "View details for Hugo Blox - Tailwind",
+              "className": "cursor-pointer absolute inset-0 focus:outline-hidden"
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "tagName": "LI",
+          "className": "relative",
+          "id": "",
+          "childCount": 2,
+          "textLength": 58,
+          "textPreview": "View details for Hugo Blox - TailwindHugo Blox - Tailwind",
+          "hasLinks": 1,
+          "linkCount": 1,
+          "isLikelyThemeCard": true,
+          "links": [
+            {
+              "href": "https://themes.gohugo.io/themes/blox-tailwind/",
+              "text": "View details for Hugo Blox - Tailwind",
+              "className": "cursor-pointer absolute inset-0 focus:outline-hidden"
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "tagName": "UL",
+          "className": "grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8",
+          "id": "",
+          "childCount": 277,
+          "textLength": 10164,
+          "textPreview": "View details for Simple DarkSimple Dark\nView details for BookBook\nView details for Hugo Blox - Tailw",
+          "hasLinks": 277,
+          "linkCount": 277
+        },
+        {
+          "level": 4,
+          "tagName": "MAIN",
+          "className": "flex-1 mx-auto lg:mx-0 w-full max-w-3x lg:max-w-3x pt-8 lg:pt-14 pb-20 px-main print:pt-0",
+          "id": "",
+          "childCount": 1,
+          "textLength": 10164,
+          "textPreview": "View details for Simple DarkSimple Dark\nView details for BookBook\nView details for Hugo Blox - Tailw",
+          "hasLinks": 277,
+          "linkCount": 277
+        },
+        {
+          "level": 5,
+          "tagName": "DIV",
+          "className": "flex w-full xl:w-6xl h-full flex-auto mx-auto",
+          "id": "",
+          "childCount": 2,
+          "textLength": 10407,
+          "textPreview": "View details for Simple DarkSimple Dark\nView details for BookBook\nView details for Hugo Blox - Tailw",
+          "hasLinks": 297,
+          "linkCount": 297
+        },
+        {
+          "level": 6,
+          "tagName": "BODY",
+          "className": "flex flex-col min-h-full bg-white dark:bg-blue-950 kind-home",
+          "id": "",
+          "childCount": 15,
+          "textLength": 10834,
+          "textPreview": "HUGONews\nDocs\nThemes\nCommunity\nGitHubBuilt with Hugo\nv0.148.2\n\nSearch docs\n/Search byQR code linking",
+          "hasLinks": 316,
+          "linkCount": 316
+        },
+        {
+          "level": 7,
+          "tagName": "HTML",
+          "className": "h-full antialiased scheme-light dark:scheme-dark os-macos",
+          "id": "",
+          "childCount": 2,
+          "textLength": 11563,
+          "textPreview": ".turbo-progress-bar {\n  position: fixed;\n  display: block;\n  top: 0;\n  left: 0;\n  height: 3px;\n  bac",
+          "hasLinks": 316,
+          "linkCount": 316
+        }
+      ]
+    },
+    {
+      "imageIndex": 3,
+      "imageName": "loveit",
+      "hierarchy": [
+        {
+          "level": 0,
+          "tagName": "PICTURE",
+          "className": "",
+          "id": "",
+          "childCount": 5,
+          "textLength": 1,
+          "textPreview": "",
+          "hasLinks": 0,
+          "linkCount": 0
+        },
+        {
+          "level": 1,
+          "tagName": "DIV",
+          "className": "group overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-blue-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100",
+          "id": "",
+          "childCount": 2,
+          "textLength": 24,
+          "textPreview": "View details for LoveIt",
+          "hasLinks": 1,
+          "linkCount": 1,
+          "isLikelyThemeCard": true,
+          "links": [
+            {
+              "href": "https://themes.gohugo.io/themes/loveit/",
+              "text": "View details for LoveIt",
+              "className": "cursor-pointer absolute inset-0 focus:outline-hidden"
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "tagName": "LI",
+          "className": "relative",
+          "id": "",
+          "childCount": 2,
+          "textLength": 30,
+          "textPreview": "View details for LoveItLoveIt",
+          "hasLinks": 1,
+          "linkCount": 1,
+          "isLikelyThemeCard": true,
+          "links": [
+            {
+              "href": "https://themes.gohugo.io/themes/loveit/",
+              "text": "View details for LoveIt",
+              "className": "cursor-pointer absolute inset-0 focus:outline-hidden"
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "tagName": "UL",
+          "className": "grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8",
+          "id": "",
+          "childCount": 277,
+          "textLength": 10164,
+          "textPreview": "View details for Simple DarkSimple Dark\nView details for BookBook\nView details for Hugo Blox - Tailw",
+          "hasLinks": 277,
+          "linkCount": 277
+        },
+        {
+          "level": 4,
+          "tagName": "MAIN",
+          "className": "flex-1 mx-auto lg:mx-0 w-full max-w-3x lg:max-w-3x pt-8 lg:pt-14 pb-20 px-main print:pt-0",
+          "id": "",
+          "childCount": 1,
+          "textLength": 10164,
+          "textPreview": "View details for Simple DarkSimple Dark\nView details for BookBook\nView details for Hugo Blox - Tailw",
+          "hasLinks": 277,
+          "linkCount": 277
+        },
+        {
+          "level": 5,
+          "tagName": "DIV",
+          "className": "flex w-full xl:w-6xl h-full flex-auto mx-auto",
+          "id": "",
+          "childCount": 2,
+          "textLength": 10407,
+          "textPreview": "View details for Simple DarkSimple Dark\nView details for BookBook\nView details for Hugo Blox - Tailw",
+          "hasLinks": 297,
+          "linkCount": 297
+        },
+        {
+          "level": 6,
+          "tagName": "BODY",
+          "className": "flex flex-col min-h-full bg-white dark:bg-blue-950 kind-home",
+          "id": "",
+          "childCount": 15,
+          "textLength": 10834,
+          "textPreview": "HUGONews\nDocs\nThemes\nCommunity\nGitHubBuilt with Hugo\nv0.148.2\n\nSearch docs\n/Search byQR code linking",
+          "hasLinks": 316,
+          "linkCount": 316
+        },
+        {
+          "level": 7,
+          "tagName": "HTML",
+          "className": "h-full antialiased scheme-light dark:scheme-dark os-macos",
+          "id": "",
+          "childCount": 2,
+          "textLength": 11563,
+          "textPreview": ".turbo-progress-bar {\n  position: fixed;\n  display: block;\n  top: 0;\n  left: 0;\n  height: 3px;\n  bac",
+          "hasLinks": 316,
+          "linkCount": 316
+        }
+      ]
+    },
+    {
+      "imageIndex": 4,
+      "imageName": "hugo-papermod",
+      "hierarchy": [
+        {
+          "level": 0,
+          "tagName": "PICTURE",
+          "className": "",
+          "id": "",
+          "childCount": 5,
+          "textLength": 1,
+          "textPreview": "",
+          "hasLinks": 0,
+          "linkCount": 0
+        },
+        {
+          "level": 1,
+          "tagName": "DIV",
+          "className": "group overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-blue-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100",
+          "id": "",
+          "childCount": 2,
+          "textLength": 26,
+          "textPreview": "View details for PaperMod",
+          "hasLinks": 1,
+          "linkCount": 1,
+          "isLikelyThemeCard": true,
+          "links": [
+            {
+              "href": "https://themes.gohugo.io/themes/hugo-papermod/",
+              "text": "View details for PaperMod",
+              "className": "cursor-pointer absolute inset-0 focus:outline-hidden"
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "tagName": "LI",
+          "className": "relative",
+          "id": "",
+          "childCount": 2,
+          "textLength": 34,
+          "textPreview": "View details for PaperModPaperMod",
+          "hasLinks": 1,
+          "linkCount": 1,
+          "isLikelyThemeCard": true,
+          "links": [
+            {
+              "href": "https://themes.gohugo.io/themes/hugo-papermod/",
+              "text": "View details for PaperMod",
+              "className": "cursor-pointer absolute inset-0 focus:outline-hidden"
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "tagName": "UL",
+          "className": "grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8",
+          "id": "",
+          "childCount": 277,
+          "textLength": 10164,
+          "textPreview": "View details for Simple DarkSimple Dark\nView details for BookBook\nView details for Hugo Blox - Tailw",
+          "hasLinks": 277,
+          "linkCount": 277
+        },
+        {
+          "level": 4,
+          "tagName": "MAIN",
+          "className": "flex-1 mx-auto lg:mx-0 w-full max-w-3x lg:max-w-3x pt-8 lg:pt-14 pb-20 px-main print:pt-0",
+          "id": "",
+          "childCount": 1,
+          "textLength": 10164,
+          "textPreview": "View details for Simple DarkSimple Dark\nView details for BookBook\nView details for Hugo Blox - Tailw",
+          "hasLinks": 277,
+          "linkCount": 277
+        },
+        {
+          "level": 5,
+          "tagName": "DIV",
+          "className": "flex w-full xl:w-6xl h-full flex-auto mx-auto",
+          "id": "",
+          "childCount": 2,
+          "textLength": 10407,
+          "textPreview": "View details for Simple DarkSimple Dark\nView details for BookBook\nView details for Hugo Blox - Tailw",
+          "hasLinks": 297,
+          "linkCount": 297
+        },
+        {
+          "level": 6,
+          "tagName": "BODY",
+          "className": "flex flex-col min-h-full bg-white dark:bg-blue-950 kind-home",
+          "id": "",
+          "childCount": 15,
+          "textLength": 10834,
+          "textPreview": "HUGONews\nDocs\nThemes\nCommunity\nGitHubBuilt with Hugo\nv0.148.2\n\nSearch docs\n/Search byQR code linking",
+          "hasLinks": 316,
+          "linkCount": 316
+        },
+        {
+          "level": 7,
+          "tagName": "HTML",
+          "className": "h-full antialiased scheme-light dark:scheme-dark os-macos",
+          "id": "",
+          "childCount": 2,
+          "textLength": 11563,
+          "textPreview": ".turbo-progress-bar {\n  position: fixed;\n  display: block;\n  top: 0;\n  left: 0;\n  height: 3px;\n  bac",
+          "hasLinks": 316,
+          "linkCount": 316
+        }
+      ]
+    }
+  ],
+  "linkAnalysis": [
+    {
+      "href": "https://github.com/gohugoio/hugo",
+      "text": "GitHub",
+      "className": "font-semibold text-gray-300 hover:text-gray-400 ml-4",
+      "parentTagName": "DIV",
+      "parentClassName": "relative flex flex-grow basis-0 items-center min-w-24 max-w-3xl overflow-x-auto"
+    },
+    {
+      "href": "https://github.com/gohugoio/hugo/releases/tag/v0.148.2",
+      "text": "v0.148.2",
+      "className": "text-blue-600 hover:text-blue-500 ml-1",
+      "parentTagName": "DIV",
+      "parentClassName": "hidden 2xl:block ml-8 text-xs text-gray-400 dark:text-gray-400"
+    },
+    {
+      "href": "https://github.com/gohugoio/hugo",
+      "text": "Star\n82718\n82.7k",
+      "className": "font-normal font-mono tracking-tighter flex items-center bg-gray-100 hover:bg-gray-200 dark:bg-gray-600 dark:hover:bg-gray-700 text-sm text-black dark:text-white h-10 border-none cursor-pointer relative py-1 px-2 rounded-md",
+      "parentTagName": "DIV",
+      "parentClassName": "hidden sm:block ml-2 sm:ml-6 h-6 fill-slate-400 group-hover:fill-slate-500 dark:group-hover:fill-slate-300"
+    },
+    {
+      "href": "https://themes.gohugo.io/themes/github-style/",
+      "text": "View details for Github Style",
+      "className": "cursor-pointer absolute inset-0 focus:outline-hidden",
+      "parentTagName": "DIV",
+      "parentClassName": "group overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-blue-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100"
+    },
+    {
+      "href": "https://github.com/gohugoio/hugo/graphs/contributors",
+      "text": "Hugo Authors",
+      "className": "text-blue-300 hover:underline",
+      "parentTagName": "DIV",
+      "parentClassName": "text-gray-200"
+    },
+    {
+      "href": "https://github.com/gohugoio/hugo/issues/new",
+      "text": "File an issue",
+      "className": "text-sm/6 text-gray-200 hover:text-white",
+      "parentTagName": "LI",
+      "parentClassName": "mt-6"
+    }
+  ]
+}

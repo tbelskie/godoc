@@ -1,0 +1,208 @@
+{
+  "pageStructure": {
+    "title": "Hugo Themes",
+    "mainContent": {
+      "selector": "main",
+      "count": 1,
+      "innerHTML": "<ul role=\"list\" class=\"grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8\"><li class=\"relative\"><div class=\"group overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-blue-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100\"><picture><source srcset=\"/themes/simple-dark/tn-featured_hu_fc2c7e7e59f8bf9f.webp\" type=\"image/webp\" media=\"(min-width: 1200px)\"><source srcset=\"/themes/simple-dark/tn-featured.png\" type=\"image/jpeg\" media=\"(min-width: 1200px)\"><source srcset=\"/themes/simple-dark/tn-featured_hu_990f0294e48f68db.webp\" type=\"image/webp\"><source srcset=\"/themes/simple-dark/tn-featured_hu_187b3abe4a4c79d9.png\" type=\"image/jpeg\"><img class=\"pointer-events-none aspect-10/7 object-cover group-hover:opacity-75\" src=\"/themes/simple-dark/tn-featured_hu_187b3abe4a4c79d9.png\" alt=\"\" loading=\"eager\" width=\"256\" height=\"119\">\n</picture><a href=\"/themes/simple-dark/\" type=\"button\" class=\"cursor-pointer absolute inset-0 focus:o"
+    },
+    "themeElements": [
+      {
+        "tagName": "HEADER",
+        "className": "print:hidden sticky top-0 z-50 bg-blue-950 flex flex-none flex-wrap items-center justify-between px-4 py-5 shadow-md shadow-slate-900/5 transition duration-500 sm:px-6 lg:px-8 dark:shadow-none",
+        "id": "",
+        "textContent": "HUGONews\nDocs\nThemes\nCommunity\nGitHubBuilt with Hugo\nv0.148.2\n\nSearch docs\n/Search byQR code linking to https://themes.gohugo.io/\n\nStar\n82718\n82.7k",
+        "innerHTML": "<div class=\"relative flex basis-0 items-center mr-2 lg:mr-8\"><a class=\"text-white text-xl font-bold upper\" href=\"/\" aria-label=\"Home\">HUGO</a></div><div class=\"relative flex flex-grow basis-0 items-center min-w-24 max-w-3xl overflow-x-auto\"><a href=\"https://gohugo.io/news/\" class=\"font-semibold text-gray-300 hover:text-gray-400 ml-4\">News</a>\n<a href=\"https://gohugo.io/documentation/\" class=\"font-",
+        "childCount": 4,
+        "attributes": [
+          {
+            "name": "x-data",
+            "value": "navbar"
+          },
+          {
+            "name": "class",
+            "value": "print:hidden sticky top-0 z-50 bg-blue-950 flex flex-none flex-wrap items-center justify-between px-4 py-5 shadow-md shadow-slate-900/5 transition duration-500 sm:px-6 lg:px-8 dark:shadow-none"
+          },
+          {
+            "name": ":class",
+            "value": "$store.nav.scroll.atTop ? '': 'bg-blue-950/80'"
+          }
+        ]
+      },
+      {
+        "tagName": "DIV",
+        "className": "relative flex flex-grow basis-0 items-center min-w-24 max-w-3xl overflow-x-auto",
+        "id": "",
+        "textContent": "News\nDocs\nThemes\nCommunity\nGitHubBuilt with Hugo\nv0.148.2",
+        "innerHTML": "<a href=\"https://gohugo.io/news/\" class=\"font-semibold text-gray-300 hover:text-gray-400 ml-4\">News</a>\n<a href=\"https://gohugo.io/documentation/\" class=\"font-semibold text-gray-300 hover:text-gray-400 ml-4\">Docs</a>\n<a href=\"https://themes.gohugo.io/\" class=\"font-semibold text-gray-300 hover:text-gray-400 ml-4\">Themes</a>\n<a href=\"https://discourse.gohugo.io/\" class=\"font-semibold text-gray-300 h",
+        "childCount": 6,
+        "attributes": [
+          {
+            "name": "class",
+            "value": "relative flex flex-grow basis-0 items-center min-w-24 max-w-3xl overflow-x-auto"
+          }
+        ]
+      },
+      {
+        "tagName": "DIV",
+        "className": "relative ml-0 md:ml-8 flex content-center basis-0 justify-end gap-0 sm:gap-1 xl:grow-1",
+        "id": "",
+        "textContent": "QR code linking to https://themes.gohugo.io/\n\nStar\n82718\n82.7k",
+        "innerHTML": "<div class=\"hidden lg:block cursor-pointer outline-2 hover:outline-3 outline-blue-500 w-10 h-10\"><div x-data=\"{open: false}\"><div @click=\"open = true\"><img src=\"/images/qr/qr_bd4f11b845dfaffa.png\" width=\"132\" height=\"132\" @load=\"$event.target.classList.remove('_opacity-0')\" alt=\"QR code linking to https://themes.gohugo.io/\" class=\"w-10 bg-white view-transition-qr\"></div><div x-show=\"open\" x-transi",
+        "childCount": 4,
+        "attributes": [
+          {
+            "name": "class",
+            "value": "relative ml-0 md:ml-8 flex content-center basis-0 justify-end gap-0 sm:gap-1 xl:grow-1"
+          }
+        ]
+      },
+      {
+        "tagName": "UL",
+        "className": "space-y-2 text-gray-200",
+        "id": "",
+        "textContent": "@GoHugoIO@spf13@bepsaysFile an issueGet helpFind a theme",
+        "innerHTML": "<li class=\"hover:text-white\"><a href=\"https://fosstodon.org/@gohugoio\">@GoHugoIO</a></li><li class=\"hover:text-white\"><a href=\"https://twitter.com/spf13\">@spf13</a></li><li class=\"hover:text-white\"><a href=\"https://twitter.com/bepsays\">@bepsays</a></li><li class=\"mt-6\"><a href=\"https://github.com/gohugoio/hugo/issues/new\" class=\"text-sm/6 text-gray-200 hover:text-white\">File an issue</a></li><li><",
+        "childCount": 6,
+        "attributes": [
+          {
+            "name": "class",
+            "value": "space-y-2 text-gray-200"
+          }
+        ]
+      },
+      {
+        "tagName": "DIV",
+        "className": "flex flex-col items-center justify-between space-y-8",
+        "id": "",
+        "textContent": "By the\nHugo Authors@GoHugoIO@spf13@bepsaysFile an issueGet helpFind a theme",
+        "innerHTML": "<div class=\"text-gray-200\">By the\n<a href=\"https://github.com/gohugoio/hugo/graphs/contributors\" class=\"text-blue-300 hover:underline\">Hugo Authors</a><br></div><img src=\"/images/hugo-logo-wide.svg\" alt=\"Hugo Logo\" class=\"aspect-3/1 w-40\"><ul class=\"space-y-2 text-gray-200\"><li class=\"hover:text-white\"><a href=\"https://fosstodon.org/@gohugoio\">@GoHugoIO</a></li><li class=\"hover:text-white\"><a href",
+        "childCount": 3,
+        "attributes": [
+          {
+            "name": "class",
+            "value": "flex flex-col items-center justify-between space-y-8"
+          }
+        ]
+      },
+      {
+        "tagName": "HTML",
+        "className": "h-full antialiased scheme-light dark:scheme-dark os-macos",
+        "id": "",
+        "textContent": ".turbo-progress-bar {\n  position: fixed;\n  display: block;\n  top: 0;\n  left: 0;\n  height: 3px;\n  background: #0076ff;\n  z-index: 2147483647;\n  transition:\n    width 300ms ease-out,\n    opacity 150ms 1",
+        "innerHTML": "<head><style type=\"text/css\">.turbo-progress-bar {\n  position: fixed;\n  display: block;\n  top: 0;\n  left: 0;\n  height: 3px;\n  background: #0076ff;\n  z-index: 2147483647;\n  transition:\n    width 300ms ease-out,\n    opacity 150ms 150ms ease-in;\n  transform: translate3d(0, 0, 0);\n}\n</style><meta charset=\"utf-8\"><title>Hugo Themes</title><style>[x-cloak]{display:none !important}</style><script src=\"/j",
+        "childCount": 2,
+        "attributes": [
+          {
+            "name": "class",
+            "value": "h-full antialiased scheme-light dark:scheme-dark os-macos"
+          },
+          {
+            "name": "lang",
+            "value": "en"
+          }
+        ]
+      },
+      {
+        "tagName": "DIV",
+        "className": "",
+        "id": "",
+        "textContent": "QR code linking to https://themes.gohugo.io/",
+        "innerHTML": "<div @click=\"open = true\"><img src=\"/images/qr/qr_bd4f11b845dfaffa.png\" width=\"132\" height=\"132\" @load=\"$event.target.classList.remove('_opacity-0')\" alt=\"QR code linking to https://themes.gohugo.io/\" class=\"w-10 bg-white view-transition-qr\"></div><div x-show=\"open\" x-transition:enter.opacity.duration.200ms=\"\" x-transition:leave.opacity.duration.300ms=\"\" x-trap.inert.noscroll=\"open\" @keydown.esc.w",
+        "childCount": 2,
+        "attributes": [
+          {
+            "name": "x-data",
+            "value": "{open: false}"
+          }
+        ]
+      },
+      {
+        "tagName": "DIV",
+        "className": "flex content-center items-center justify-center max-w-lg flex-col overflow-hidden bg-white dark:bg-blue-950 border-2 border-gray-300 dark:border-gray-800 shadow-lg sm:shadow-xl",
+        "id": "",
+        "textContent": "QR code linking to https://themes.gohugo.io/",
+        "innerHTML": "<div class=\"border-b border-outline border-gray-300 dark:border-gray-800 p-2 lg:p-4\"><h3 class=\"text-sm font-semibold\">QR code linking to https://themes.gohugo.io/</h3></div><img src=\"/images/qr/qr_bd4f11b845dfaffa.png\" width=\"132\" height=\"132\" @load=\"$event.target.classList.remove('_opacity-0')\" alt=\"QR code linking to https://themes.gohugo.io/\" class=\"w-64 p-4\">",
+        "childCount": 2,
+        "attributes": [
+          {
+            "name": "x-show",
+            "value": "open"
+          },
+          {
+            "name": "x-transition:enter.opacity.scale.60.origin.top.right.duration.300ms.delay.200ms",
+            "value": ""
+          },
+          {
+            "name": "class",
+            "value": "flex content-center items-center justify-center max-w-lg flex-col overflow-hidden bg-white dark:bg-blue-950 border-2 border-gray-300 dark:border-gray-800 shadow-lg sm:shadow-xl"
+          },
+          {
+            "name": "style",
+            "value": "display: none;"
+          }
+        ]
+      },
+      {
+        "tagName": "DIV",
+        "className": "flex w-full xl:w-6xl h-full flex-auto mx-auto",
+        "id": "",
+        "textContent": "\nView details for Simple DarkSimple Dark\nView details for BookBook\nView details for Hugo Blox - TailwindHugo Blox - Tailwind\nView details for LoveItLoveIt\nView details for PaperModPaperMod\nView detail",
+        "innerHTML": "<main class=\"flex-1 mx-auto lg:mx-0 w-full max-w-3x lg:max-w-3x pt-8 lg:pt-14 pb-20 px-main print:pt-0\"><ul role=\"list\" class=\"grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8\"><li class=\"relative\"><div class=\"group overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-blue-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100\">",
+        "childCount": 2,
+        "attributes": [
+          {
+            "name": "class",
+            "value": "flex w-full xl:w-6xl h-full flex-auto mx-auto"
+          }
+        ]
+      },
+      {
+        "tagName": "LI",
+        "className": "relative",
+        "id": "",
+        "textContent": "\nView details for Hugo Blox - TailwindHugo Blox - Tailwind",
+        "innerHTML": "<div class=\"group overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-blue-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100\"><picture><source srcset=\"/themes/blox-tailwind/tn-featured_hu_dc9155c994695afe.webp\" type=\"image/webp\" media=\"(min-width: 1200px)\"><source srcset=\"/themes/blox-tailwind/tn-featured.png\" type=\"image/jpeg\" media=\"(min-width: 1200px)\"><s",
+        "childCount": 2,
+        "attributes": [
+          {
+            "name": "class",
+            "value": "relative"
+          }
+        ]
+      }
+    ]
+  },
+  "gridContainers": [
+    {
+      "tagName": "BODY",
+      "className": "flex flex-col min-h-full bg-white dark:bg-blue-950 kind-home",
+      "childCount": 15,
+      "innerHTML": "<script src=\"/js/body-start.02e9d5b15cc0520d2638a5c7a692c75065c6bdb802535ef6c14f412a52b715e1.js\" integrity=\"sha256-AunVsVzAUg0mOKXHppLHUGXGvbgCU172wU9BKlK3FeE=\" crossorigin=\"anonymous\"></script><header x-data=\"navbar\" class=\"print:hidden sticky top-0 z-50 bg-blue-950 flex flex-none flex-wrap items-c"
+    },
+    {
+      "tagName": "HEADER",
+      "className": "print:hidden sticky top-0 z-50 bg-blue-950 flex flex-none flex-wrap items-center justify-between px-4 py-5 shadow-md shadow-slate-900/5 transition duration-500 sm:px-6 lg:px-8 dark:shadow-none",
+      "childCount": 4,
+      "innerHTML": "<div class=\"relative flex basis-0 items-center mr-2 lg:mr-8\"><a class=\"text-white text-xl font-bold upper\" href=\"/\" aria-label=\"Home\">HUGO</a></div><div class=\"relative flex flex-grow basis-0 items-center min-w-24 max-w-3xl overflow-x-auto\"><a href=\"https://gohugo.io/news/\" class=\"font-semibold text"
+    },
+    {
+      "tagName": "DIV",
+      "className": "relative flex basis-0 items-center mr-2 lg:mr-8",
+      "childCount": 1,
+      "innerHTML": "<a class=\"text-white text-xl font-bold upper\" href=\"/\" aria-label=\"Home\">HUGO</a>"
+    },
+    {
+      "tagName": "DIV",
+      "className": "relative flex flex-grow basis-0 items-center min-w-24 max-w-3xl overflow-x-auto",
+      "childCount": 6,
+      "innerHTML": "<a href=\"https://gohugo.io/news/\" class=\"font-semibold text-gray-300 hover:text-gray-400 ml-4\">News</a>\n<a href=\"https://gohugo.io/documentation/\" class=\"font-semibold text-gray-300 hover:text-gray-400 ml-4\">Docs</a>\n<a href=\"https://themes.gohugo.io/\" class=\"font-semibold text-gray-300 hover:text-g"
+    },
+    {
+      "tagName": "DIV",
+      "className": "flex w-full",
+      "childCount": 2,
+      "innerHTML": "<button type=\"button\" aria-label=\"Search\" class=\"text-gray-300 grid cursor-pointer w-full lg:w-56 grid-cols-[auto_1fr_auto] items-center rounded-md px-2 sm:px-4 py-2 text-left text-xs/6 lg:text-sm/6 outline-0 sm:outline-1 -outline-offset-1 outline-gray-600\">\n<svg class=\"fill-slate-400 dark:fill-slat"
+    }
+  ]
+}

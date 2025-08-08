@@ -22,6 +22,7 @@ program
   .command('init')
   .description('Initialize a new Hugo site')
   .option('-d, --describe <description>', 'Describe your site')
+  .option('-t, --theme <name>', 'Use specific Hugo theme (e.g., docsy, academic, ananke)')
   .action(async (options) => {
     const InitCommand = require('./src/commands/init');
     const initCmd = new InitCommand();

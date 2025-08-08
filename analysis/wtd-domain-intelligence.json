@@ -1,0 +1,1771 @@
+{
+  "documentationStrategy": [
+    {
+      "content": "- A company's feature-based documentation strategy can sell products.   In this instance, product documentation becomes marketing material.   This approach works for customers who want certain feature",
+      "source": "docs/blog/newsletter-february-2024.rst",
+      "confidence": 0.6000000000000001
+    },
+    {
+      "content": "Test-driven documentation aims to improve upon the typical approaches to automated documentation. It allows you to write the bulk of the documentation by hand while also ensuring its accuracy by using",
+      "source": "docs/guide/writing/style-guides.md",
+      "confidence": 0.6000000000000001
+    },
+    {
+      "content": "What is the importance of good documentation? This question can come up a lot - during an interview, project planning, or just a chat with a colleague. Do you have a good answer?",
+      "source": "docs/blog/newsletter-december-2021.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "In short, your work isn't just documentation; it's strategy, communication, and business transformation. Advocate for yourself and watch your value grow.",
+      "source": "docs/blog/newsletter-february-2025.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "Another strategy was to focus on semantics. This could involve exposing semantic types, rather than keeping them hidden in XML tags. It can also mean making sure you chunk your documentation based on ",
+      "source": "docs/blog/newsletter-february-2025.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "Several people suggested developing an AI/LLM strategy to sell to stakeholders. This could include two lists: where AI could help and where AI should NOT be used. As part of the strategy, consider whe",
+      "source": "docs/blog/newsletter-july-2025.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "* **Getting in on the planning.** Speaking of which, impress upon your team the value of involving you at the planning stages of the cycle. So much of what docs folks can contribute to a product happe",
+      "source": "docs/blog/newsletter-june-2018.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "See more Write the Docs resources about `planning and how we work </topics/#planning-and-how-we-work>`__.",
+      "source": "docs/blog/newsletter-march-2025.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "## How do documentation and content strategy intersect?",
+      "source": "docs/blog/newsletter-november-2016.md",
+      "confidence": 0.5
+    },
+    {
+      "content": "A really interesting discussion about content strategy in technical writing emerged this month. Content strategy, historically, has been strongly associated with the marketing communications side of t",
+      "source": "docs/blog/newsletter-november-2016.md",
+      "confidence": 0.5
+    },
+    {
+      "content": "The high-level takeaway was that the definition of 'Content Strategy' as a practice seems to be shifting pretty significantly. People talked about seeing content strategy encompassing one, some, or al",
+      "source": "docs/blog/newsletter-november-2016.md",
+      "confidence": 0.5
+    },
+    {
+      "content": "Another common practice is for writers to be included in sprint planning meetings, so that the documentation and development of features are agreed on up front.",
+      "source": "docs/blog/newsletter-october-2018.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "* Get input about our `current tech stack <https://github.com/ekline-io>`_ * Brainstorm on an effective documentation strategy",
+      "source": "docs/conf/portland/2023/writing-day.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "Our current organizer(s) spend a few days a month brainstorming ideas and planning the events. We are asking for your help with the planning and/or activities such as: * networking with other tech and",
+      "source": "docs/include/meetups/generic_meetup_help_letter.md",
+      "confidence": 0.5
+    },
+    {
+      "content": "How I decided to do this talk (Gap analysis and pull-apart documentation planning) ==================================================================================",
+      "source": "docs/videos/au/2017/how-i-decided-to-do-this-talk-gap-analysis-and-pull-apart-documentation-planning-laura-bailey.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "Audience, Market, Product: Tips for strategic API documentation planning ========================================================================",
+      "source": "docs/videos/portland/2018/audience-market-product-tips-for-strategic-api-documentation-planning-bob-watson.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "Product Documentation Strategy: What Is It and Why Do We Need It? =================================================================",
+      "source": "docs/videos/portland/2019/product-documentation-strategy-what-is-it-and-why-do-we-need-it-kay-miles.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "Collaborating with teams on content strategy planning: pitfalls and best practices ==================================================================================",
+      "source": "docs/videos/portland/2020/collaborating-with-teams-on-content-strategy-planning-pitfalls-and-best-practices-kateryna-osadchenko.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "Documentation Communities: Sound Strategy or Documentarian's Gambit? ====================================================================",
+      "source": "docs/videos/portland/2021/documentation-communities-sound-strategy-or-documentarian-s-gambit-laura-novich.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "A `list of books </books/>`_ related to technical writing, information architecture, and content strategy.",
+      "source": "docs/about/learning-resources.rst",
+      "confidence": 0.4
+    },
+    {
+      "content": "We are planning a way for our community to support the organization directly. We are proud that all the content that Write the Docs produces is free to everyone, and we don't plan to change that any t",
+      "source": "docs/blog/2021-january-community-update.rst",
+      "confidence": 0.4
+    },
+    {
+      "content": "* `Write the Docs Australia on Meetup.com <https://www.meetup.com/Write-the-Docs-Australia/>`_ - We are planning to continue hosting collaborative APAC meetups via our Australia meetup group that are ",
+      "source": "docs/blog/2021-january-community-update.rst",
+      "confidence": 0.4
+    },
+    {
+      "content": "In the meantime, I can share with you that we have some great ideas from the Meetups team on how to improve our social media strategy, and we'd love to get some more from the community. Stay tuned for",
+      "source": "docs/blog/2023-Q1-community-board.rst",
+      "confidence": 0.4
+    },
+    {
+      "content": "We are still in the planning phrase for our 2024 conferences. We expect Portland to return in-person, and we will make a decision about the other conferences after the 2023 editions happen later this ",
+      "source": "docs/blog/2023-community-update.rst",
+      "confidence": 0.4
+    },
+    {
+      "content": "Tickets ------- **Tickets will go on sale in January 2023**. We will announce ticket prices soon, so that you can start planning your budget.",
+      "source": "docs/blog/2023-conference-announcements.rst",
+      "confidence": 0.4
+    },
+    {
+      "content": "We are still in the planning phase for our 2025 conferences, but expect the structure to remain similar. Our Portland conference will be **May 4-6, 2025**, you can expect more updates about the other ",
+      "source": "docs/blog/2024-community-update.rst",
+      "confidence": 0.4
+    },
+    {
+      "content": "Should your online documentation have long pages with related content or separate pages of focused content (`Every page is page one <https://everypageispageone.com/the-book/>`__)? As a documentarian, ",
+      "source": "docs/blog/newsletter-april-2025.rst",
+      "confidence": 0.4
+    },
+    {
+      "content": "Some content may be more suited to long, comprehensive pages (or modularity) rather than short topics. As part of your content strategy, consider what type of content you need to deliver for your audi",
+      "source": "docs/blog/newsletter-april-2025.rst",
+      "confidence": 0.4
+    },
+    {
+      "content": "One person suggested researching the `Jobs-to-be-Done framework <https://strategyn.com/jobs-to-be-done/>`__ (for product development), which focuses on what readers want to do rather than product feat",
+      "source": "docs/blog/newsletter-april-2025.rst",
+      "confidence": 0.4
+    },
+    {
+      "content": "Success stories arose among the common difficulties. One individual transitioned successfully from technical writing to content strategy and eventually to product management. This story demonstrated t",
+      "source": "docs/blog/newsletter-december-2023.rst",
+      "confidence": 0.4
+    },
+    {
+      "content": "If you're planning on coming to the conference, but you're not sure how to persuade your company to cover the costs, you might be interested in our new `Convince Your Manager <https://www.writethedocs",
+      "source": "docs/blog/newsletter-february-2018.rst",
+      "confidence": 0.4
+    },
+    {
+      "content": "We did discuss a few ways that you could approach writing that documentation:",
+      "source": "docs/blog/newsletter-february-2019.rst",
+      "confidence": 0.4
+    },
+    {
+      "content": "If you have an analytics tool for your product, it can help to use the same tool for your docs. This works even better if people can log in to your docs so you can connect reading the documentation to",
+      "source": "docs/blog/newsletter-february-2024.rst",
+      "confidence": 0.4
+    },
+    {
+      "content": "We were planning to write this up for the newsletter, but very kindly the contributor did it for us! So you can read all about it here: `Real Talk: Freelance/Contract Writing <https://dacharycarey.com",
+      "source": "docs/blog/newsletter-july-2019.rst",
+      "confidence": 0.4
+    },
+    {
+      "content": "Regularly reviewing content keeps it relevant and valuable, preventing the buildup of redundant information. You can even use an \"update-as-you-go\" strategy, focusing on new features and addressing ol",
+      "source": "docs/blog/newsletter-july-2024.rst",
+      "confidence": 0.4
+    },
+    {
+      "content": "The `WTD meetup groups <https://www.writethedocs.org/meetups/>`_ are planning some interesting events--maybe there's one near you. If not...consider `starting a WTD meetup <https://www.writethedocs.or",
+      "source": "docs/blog/newsletter-june-2017.rst",
+      "confidence": 0.4
+    },
+    {
+      "content": "July 3 – Sydney, Australia – `Content strategy and doc fixits <https://www.meetup.com/Write-the-Docs-Australia/events/250791637/>`_",
+      "source": "docs/blog/newsletter-june-2018.rst",
+      "confidence": 0.4
+    },
+    {
+      "content": "When used correctly during team planning, story points can give quick approximations, improve project forecasts, and even provide managers with actual statistics during hiring conversations.",
+      "source": "docs/blog/newsletter-june-2022.rst",
+      "confidence": 0.4
+    },
+    {
+      "content": "Greetings, fellow documentarians! The weather here is warming up and people are already leaving town for summer vacations or planning to. I hope you have a break planned at some point soon that can su",
+      "source": "docs/blog/newsletter-june-2025.rst",
+      "confidence": 0.4
+    },
+    {
+      "content": "Here are some thoughts about how to approach this from a conversation about roadmaps in documentation this month:",
+      "source": "docs/blog/newsletter-march-2019.rst",
+      "confidence": 0.4
+    },
+    {
+      "content": "Whether your manager asks for them, you're craving some structure for your docs planning, or you just want to have the information on hand, how do you figure out what to measure? When this topic came ",
+      "source": "docs/blog/newsletter-march-2019.rst",
+      "confidence": 0.4
+    },
+    {
+      "content": "In community news, the Portland 2024 conference has `announced its schedule </conf/portland/2024/news/announcing-schedule/>`__. So check out all the talks and start planning your experience.",
+      "source": "docs/blog/newsletter-march-2024.rst",
+      "confidence": 0.4
+    },
+    {
+      "content": "The Portland conference is coming up in just two months. So `get your tickets now </conf/portland/2025/tickets/>`__ and start planning for it. If you can't make it in person, you can now even buy a vi",
+      "source": "docs/blog/newsletter-march-2025.rst",
+      "confidence": 0.4
+    },
+    {
+      "content": "And if you're planning to attend one of our European conferences, now's a great time to buy tickets, which are on sale for `Vilnius </conf/vilnius/2019/tickets/>`__ and `Prague </conf/prague/2019/tick",
+      "source": "docs/blog/newsletter-may-2019.rst",
+      "confidence": 0.4
+    },
+    {
+      "content": "The two biggest challenges were prioritizing feedback-based improvements without compromising ongoing documentation efforts, and finding the time to make use of the collected feedback. The main strate",
+      "source": "docs/blog/newsletter-may-2019.rst",
+      "confidence": 0.4
+    },
+    {
+      "content": "If you're looking for podcasts about technical writing, content strategy, knowledge management, and related topics, here's a list courtesy of the WTD community (with links for podcasts with dedicated ",
+      "source": "docs/blog/newsletter-may-2021.rst",
+      "confidence": 0.4
+    },
+    {
+      "content": "- `Content Content with Ed Marsh <http://edmarsh.com/content-content-podcast/>`_ - `Content Rookie <https://contentrookiepod.com/>`_ - `Content Strategy Experts <https://www.scriptorium.com/content-st",
+      "source": "docs/blog/newsletter-may-2021.rst",
+      "confidence": 0.4
+    },
+    {
+      "content": "And after that you can look forward to our third conference of the year, in Australia. Check out the `announcement for the dates </conf/australia/2023/news/welcome/>`__ and start planning for December",
+      "source": "docs/blog/newsletter-may-2023.rst",
+      "confidence": 0.4
+    },
+    {
+      "content": "Relying solely on metrics without context or interpretation can lead to misunderstanding or misaligned goals. Metrics should be part of a comprehensive strategy that aligns with company goals and prio",
+      "source": "docs/blog/newsletter-may-2024.rst",
+      "confidence": 0.4
+    },
+    {
+      "content": "Another approach is to require certain minimum information in the tickets for public-facing docs, which would serve as a loose kind of internal documentation. You could require docs tickets to include",
+      "source": "docs/blog/newsletter-may-2025.rst",
+      "confidence": 0.4
+    }
+  ],
+  "bestPractices": [
+    {
+      "content": "For a longer time investment: Check out `Diversity Inc Best Practices' Webinar Recap: Let's talk Microagressions <https://www.diversityincbestpractices.com/webinar-recap-lets-talk-microaggressions/>`_",
+      "source": "docs/blog/newsletter-december-2021.rst",
+      "confidence": 0.7
+    },
+    {
+      "content": "**We believe that there should be best practices around documentation. They should be simple, concise and easy to follow practical guidelines.**",
+      "source": "docs/guide/about/vision.rst",
+      "confidence": 0.7
+    },
+    {
+      "content": "* :ref:`Tools and best practices for documenting APIs <api-documentation>`. * Documentation best practices. * Developer tools or docs-as-code toolchains and workflows. * High-level discussions of comm",
+      "source": "docs/guide/contributing.rst",
+      "confidence": 0.7
+    },
+    {
+      "content": "Companies and well known technologies or tools should link out to relevant web pages. Company links should redirect to their careers page, if available. Technology and tools links should redirect to t",
+      "source": "docs/organizer-guide/community-spotlight-interviewing-guide.rst",
+      "confidence": 0.6000000000000001
+    },
+    {
+      "content": "This guide exists to provide both novice and expert writers a best practice handbook for building, structuring, and writing software documentation.",
+      "source": "docs/about/learning-resources.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "April 12 – Berkeley, CA, USA – `(East Bay) Let's Talk About Best Practices <https://www.meetup.com/Write-the-Docs-SF/events/249423979/>`_",
+      "source": "docs/blog/newsletter-april-2018.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "When it comes to making support content (like a knowledge base) discoverable and offering a consistent experience for users, what is the best approach? Should you keep support content with the rest of",
+      "source": "docs/blog/newsletter-april-2022.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "- Even if your leadership doesn’t prioritize documentation, write it anyway.     - Create deep-dive guides, whitepapers, or best practices—whether or not someone requested them.     - Treat it as a wa",
+      "source": "docs/blog/newsletter-april-2025.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "- Develop standards and style guides to improve documentation quality.     - Mentor non-writers on best practices to create a stronger writing culture.     - Consider branching into related roles like",
+      "source": "docs/blog/newsletter-april-2025.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "Initially, a few documentarians seemed agree that a \"page\" should refer to a webpage and a \"screen\" should refer to a software interface. However, with so many of us documenting web-based applications",
+      "source": "docs/blog/newsletter-august-2018.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "Should you capitalise \"Boolean\"? It came from a proper noun (named for George Boole), which implies it should be capitalised. However, developer audiences are used to seeing \"boolean\". Decide which wi",
+      "source": "docs/blog/newsletter-december-2018.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "Best practices for creating and managing screenshots aren’t always the clearest. With the overhead of maintaining screenshots and the potential accessibility concerns they present, many people avoid c",
+      "source": "docs/blog/newsletter-december-2022.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "Best practices for changing your docs workflow ----------------------------------------------",
+      "source": "docs/blog/newsletter-february-2017.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "For those valuable conversations in Slack, you should know about the an update to the `guidelines for the Write the Docs Slack </slack/#guidelines>`__. They should help clarify how to keep our Slack c",
+      "source": "docs/blog/newsletter-february-2023.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "Several people suggested some best practices to consider. In general, instead of using animated GIFs, use short videos (MP4 or WebM files) with user controls. (Note: You can convert animated GIFs to s",
+      "source": "docs/blog/newsletter-july-2025.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "------------------------------------ A best practice by any other name... ------------------------------------",
+      "source": "docs/blog/newsletter-march-2021.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "These alternatives might work in some situations, but it's difficult to find an all-purpose replacement that readers will understand just as handily. For better or worse, \"best practices\" is meaningfu",
+      "source": "docs/blog/newsletter-march-2021.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "There was some disagreement on whether it should be \"themselves\" or \"themself\", and so, correspondingly, what the verb form should be also -- \"they themselves are\"? or \"they themself is\"? Interestingl",
+      "source": "docs/blog/newsletter-may-2021.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "This month's Slack discussions included best practices for announcing feature deprecation in documentation. Before you update your docs, it's important to note that deprecation is not the same as remo",
+      "source": "docs/blog/newsletter-may-2024.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "October 15 – Salt Lake City, Utah, USA – `Accessibility Best Practices <https://www.meetup.com/Write-the-Docs-SLC/events/255125405/>`_",
+      "source": "docs/blog/newsletter-october-2018.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "There were also a handful of great suggestions for UI copy best practices:",
+      "source": "docs/blog/newsletter-september-2016.md",
+      "confidence": 0.5
+    },
+    {
+      "content": "This month, documentarians shared their best practices and tips for motivating others to contribute to internal docs, especially in work cultures that share information verbally.",
+      "source": "docs/blog/newsletter-september-2023.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "Any public statements should be handled with care not to divulge personally identifying information about anyone affected, and should serve as a means to ensure that attendees will be comfortable repo",
+      "source": "docs/code-of-conduct-response.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "- Roundtable 1: \"Blogging for non-bloggers\" - Blog writing workshop - Writing Day snack break - Roundtable 2: \"Best practices for turning conversations into blog posts\" - Blog writing workshop",
+      "source": "docs/conf/atlantic/2023/writing-day.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "Join us and share your ideas, best practices, and guidelines for style guides! We want to become a springboard for others attendees who are creating style guides for the OSS  projects, brands, and the",
+      "source": "docs/conf/atlantic/2023/writing-day.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "-  Open-source software documentation -  General documentation writing -  Best practices manual (for your company, or the world) -  Resume, cover letter, and portfolio reviews -  Blog posts -  Tips an",
+      "source": "docs/conf/atlantic/2024/writing-day.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "Organizing local Write the Docs meetup communities is a rewarding way to participate. During Writing Day, we'll have a table where we can share tips and best practices, especially in this time where a",
+      "source": "docs/conf/australia/2021/writing-day.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "We are kicking off a pilot to define best practices for `cross-domain management of glossaries <https://docs.google.com/document/d/1Fjrl34ErnYammel9WmvXJ3rMWFANjoSiiGyyNSYOXUg/>`_. We want help defini",
+      "source": "docs/conf/portland/2020/writing-day.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "- Open-source software documentation - General documentation writing - Best practices manual (for your company, or the world) - Resume, cover letter, and portfolio reviews - Blog posts - Tips and tric",
+      "source": "docs/conf/portland/2025/writing-day.md",
+      "confidence": 0.5
+    },
+    {
+      "content": "**We believe it should be easy for people to start writing documentation. There should be straight-forward guides to getting started with good tools.**",
+      "source": "docs/guide/about/vision.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "People who want to learn should be given the best possible tools for this job. We want to raise the standard of documentation to make it easier for people to learn about the things they want to do.",
+      "source": "docs/guide/about/vision.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "**We believe that knowledge should be available to all people, regardless of their language of choice. Documentation should be written in a way that allows it to be translated easily**",
+      "source": "docs/guide/about/vision.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "* Focus content on general principles and best practices. Arguing over minor points impedes clarity.",
+      "source": "docs/guide/contributing.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "This guide gathers the collective wisdom of the Write the Docs community around best practices for creating software documentation and technical writing. The guide originally started for developers to",
+      "source": "docs/guide/index.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "======================================================================= Getting started: documentation best practices for developers ===================================================================",
+      "source": "docs/guide/starting.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "Use this guide to find relevant documentation best practices depending on your situation.",
+      "source": "docs/guide/starting.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "* Project documentation     * Operations documentation         * Playbooks         * Monitoring Information     * Best Practices     * Style Guides",
+      "source": "docs/guide/writing/mindshare.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "-  Open source software documentation -  General documentation writing -  Best practices manual (For your company, or the world) -  Blog posts -  Tips and tricks -  Great works of fiction -  Love lett",
+      "source": "docs/include/conf/events/writing-day.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "* Open-source software documentation * General documentation writing * Resume, cover letter, and portfolio peer reviews * Best practices manual (for your project or the world) * Blog posts * Tips and ",
+      "source": "docs/include/conf/portland/writing-day-cheatsheet.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "This page lists the requirements and best practices for recording your talk in advance, so that we can maintain consistent quality and streaming stability across all talks.",
+      "source": "docs/include/conf/virtual/talk-recording-guide.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "* The first 10-15 minutes should be used to cover the career story of the interview subject. * The next 10-20 should be used to elaborate on the unique aspects that you the interview deem relevant to ",
+      "source": "docs/organizer-guide/community-spotlight-interviewing-guide.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "Review Process Best Practices ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
+      "source": "docs/organizer-guide/confs/cfp.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "* Talk after lunch (should be high energy) * Last talk of the day (should be memorable)",
+      "source": "docs/organizer-guide/confs/cfp.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "Here are some best practices for recording a Meetup presentation:",
+      "source": "docs/organizer-guide/meetups/livestreaming-meetups.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "Here are some best practices for livestreaming a Meetup presentation:",
+      "source": "docs/organizer-guide/meetups/livestreaming-meetups.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "1. Ensure everyone has a reason to be involved and build experiences and best practices that they can take back to their local meetups. 2. Share some of the responsibilities across the group as a whol",
+      "source": "docs/organizer-guide/meetups/quorum/vm-roles.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "Organizational process and best practices     - Triage incoming WEPs according to the WEP process that is defined in `WEP0 <https://github.com/writethedocs/weps/blob/master/accepted/WEP0000.rst>`__   ",
+      "source": "docs/team.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "Influence your customer outreach with best practices for internationalization =============================================================================",
+      "source": "docs/videos/australia/2020/influence-your-customer-outreach-with-best-practices-for-internationalization-vikram-mulay.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "Building navigation for your doc site: 5 best practices =======================================================",
+      "source": "docs/videos/na/2017/building-navigation-for-your-doc-site-5-best-practices-tom-johnson.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "Collaborating with teams on content strategy planning: pitfalls and best practices ==================================================================================",
+      "source": "docs/videos/portland/2020/collaborating-with-teams-on-content-strategy-planning-pitfalls-and-best-practices-kateryna-osadchenko.rst",
+      "confidence": 0.5
+    }
+  ],
+  "toolingInsights": [
+    {
+      "content": "As for docs tools, this has two sides: GUI-based vs tools in the docs-as-code category. For the first, helpful tools might be: MadCap Flare, Framemaker with and without XML schemas, SnagIt for screen ",
+      "source": "docs/blog/newsletter-february-2022.rst",
+      "confidence": 0.6000000000000001
+    },
+    {
+      "content": "- Document a tool or software that you use regularly - Write out a \"how to\" for defeating the first boss of your favorite game - Create a \"how to\" for an open source tool - Craft a recipe in the style",
+      "source": "docs/hiring-guide/portfolios.rst",
+      "confidence": 0.6000000000000001
+    },
+    {
+      "content": "For those new to software development, focus first on basic technical concepts (such as front-end and back-end), software development lifecycle (SDLC) models, and developer roles.",
+      "source": "docs/blog/newsletter-july-2025.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "* `Sphinx <http://www.sphinx-doc.org/en/master/>`_ * `DocFX <https://dotnet.github.io/docfx/>`_ * `Antora <https://antora.org/>`_ (an Asciidoctor toolchain) * `MadCap Flare <https://www.madcapsoftware",
+      "source": "docs/blog/newsletter-march-2018.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "First up, if you're working on a machine learning (ML) tool, keep an eye on data lineage. It's important to distinguish between the known input for the ML tool and These analysis or predictions that t",
+      "source": "docs/blog/newsletter-march-2023.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "JetBrains is well-known for its software development tools. Writerside is our first solution aimed at technical writers — and developers contributing to documentation.",
+      "source": "docs/blog/newsletter-november-2023.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "We hope to connect with some folks who can combine their technical writing skill with their  knowledge of Codeberg, or similar tools for collaborative software development. We also  believe that the p",
+      "source": "docs/conf/atlantic/2023/writing-day.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "`reStructuredText <http://docutils.sourceforge.net/rst.html>`_ is a lightweight markup language that is used in static site generators like :doc:`Sphinx <../tools/sphinx>`. It contains robust tools fo",
+      "source": "docs/guide/writing/reStructuredText.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": ".. _commercetools: https://commercetools.com/ .. _blackberry: https://www.blackberry.com/us/en/company/careers/students .. _elastic: https://www.elasticpath.com/ .. _path: https://www.elasticpath.com/",
+      "source": "docs/hiring-guide/community-spotlight/interview-celeste-horgan.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "**Chris had a background in communications before becoming a software engineer. Before taking his first job as a software engineer, he worked doing copywriting and marketing.**",
+      "source": "docs/hiring-guide/community-spotlight/interview-chris-bahnweg.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "Yes, I still program, but I enjoy writing more. And the software development I do now is focused on writing and developing tools for writers. After joining Red Hat, and getting to know the development",
+      "source": "docs/hiring-guide/community-spotlight/interview-gaurav-nelson.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "GitBook has everything you need to create beautiful docs for your users — so you don't have to build your own editing tools, CMS, website, and more. You can just focus on writing great content.",
+      "source": "docs/blog/2024-community-update.rst",
+      "confidence": 0.4
+    },
+    {
+      "content": "Docs-as-code typically involves writing in `Markdown <https://daringfireball.net/projects/markdown/>`__ syntax and publishing with tools called static site generators (SSGs). Several documentarians re",
+      "source": "docs/blog/newsletter-april-2025.rst",
+      "confidence": 0.4
+    },
+    {
+      "content": "Many documentarians wrestle with the trials, tribulations, and occasional joys of producing docs with static site generators (SSGs). For anyone new to SSGs, they're a type of publishing tool that take",
+      "source": "docs/blog/newsletter-august-2018.rst",
+      "confidence": 0.4
+    },
+    {
+      "content": "<p>                 Before you make a \"build vs. buy\" decision on your technical content delivery, make sure you understand the long-term implications. <a href=\"https://www.zoominsoftware.com/ebooks-s",
+      "source": "docs/blog/newsletter-december-2022.rst",
+      "confidence": 0.4
+    },
+    {
+      "content": "- 08 December, 18:00 CST (Karlsruhe, DE) - `Kann Software-Doku von KI-Unterstützung profitieren? <https://www.meetup.com/write-the-docs-karlsruhe/events/288624322/>`__ - 20 December, 08:30 EST (New En",
+      "source": "docs/blog/newsletter-december-2022.rst",
+      "confidence": 0.4
+    },
+    {
+      "content": "With GitBook, you can add to your knowledge base from tools like Slack and VS Code, find information faster using AI-powered search, and use smart insights to find and fix old documentation with the l",
+      "source": "docs/blog/newsletter-december-2023.rst",
+      "confidence": 0.4
+    },
+    {
+      "content": "Write the Docs began as a community focused on developer documentation, with an emphasis on tools and workflows programmers are familiar with. But we've grown in breadth and depth since those days, an",
+      "source": "docs/blog/newsletter-february-2022.rst",
+      "confidence": 0.4
+    },
+    {
+      "content": "\"Just enough\" was the watchphrase though -- as with tools more generally, the most important thing is what you need to know and understand to get the work done.",
+      "source": "docs/blog/newsletter-february-2022.rst",
+      "confidence": 0.4
+    },
+    {
+      "content": "Static site generators have been a popular topic for some time, but there are a lot of moving parts that can be intimidating for new users. One Slack participant wondered how static site tools like Sp",
+      "source": "docs/blog/newsletter-june-2017.rst",
+      "confidence": 0.4
+    },
+    {
+      "content": "- Some use a `Headless CMS <https://headlesscms.org/>`_ or browser-based CMS like Paligo. Some tools have direct commenting features. Others create a Git PR from a draft, which opens up other commenti",
+      "source": "docs/blog/newsletter-june-2019.rst",
+      "confidence": 0.4
+    },
+    {
+      "content": "DITA also emphasizes certain features, like content reuse, that don't come out of the box with most docs-as-code tools. However, you can often add those features in - Tom Johnson's `blog series compar",
+      "source": "docs/blog/newsletter-june-2019.rst",
+      "confidence": 0.4
+    },
+    {
+      "content": "* If you're writing docs in Confluence or knowledgebase articles in Zendesk, both tools support limited access * You can implement per-location authentication requirements in an NGINX server. This sup",
+      "source": "docs/blog/newsletter-june-2021.rst",
+      "confidence": 0.4
+    },
+    {
+      "content": "Your choice should be based on how willing you are to learn and understand a certain tool, how many resources you have, and your long-term goals for managing and delivering documentation. To find the ",
+      "source": "docs/blog/newsletter-june-2023.rst",
+      "confidence": 0.4
+    },
+    {
+      "content": "**First of all, is there any tool that could automatically take all those screenshots?**",
+      "source": "docs/blog/newsletter-june-2025.rst",
+      "confidence": 0.4
+    },
+    {
+      "content": "While docs-as-code can bring testing and other process improvements to the docs, those also require the investment of significant resources. Using free and open-source software means your initial mone",
+      "source": "docs/blog/newsletter-may-2024.rst",
+      "confidence": 0.4
+    },
+    {
+      "content": "Some advice focused on asking people to explain why they did certain things in the assignment at an interview. One suggestion was to ask candidates to specifically use an AI tool and talk about how an",
+      "source": "docs/blog/newsletter-may-2025.rst",
+      "confidence": 0.4
+    },
+    {
+      "content": "All of that said, a handful of solutions and platforms were mentioned in the conversation, if you're looking to check out some of the options: * [Read the Docs](https://readthedocs.org/) – open source",
+      "source": "docs/blog/newsletter-november-2016.md",
+      "confidence": 0.4
+    },
+    {
+      "content": "The general consensus was that lack of experience with a specific tool shouldn’t prevent someone from applying for a position. Documentation managers want people who can understand and write clearly a",
+      "source": "docs/blog/newsletter-november-2024.rst",
+      "confidence": 0.4
+    },
+    {
+      "content": "* **If your resume doesn’t mention ANY tool specified in a job posting, the application may get rejected automatically.** This is particularly true if you’re going through a recruiter. It may be worth",
+      "source": "docs/blog/newsletter-november-2024.rst",
+      "confidence": 0.4
+    },
+    {
+      "content": "Creating redirects can be difficult to manage when there are lots of external links or when lots of URLs are changing. Sadly, most documentation tools – with the notable exception of MindTouch – don't",
+      "source": "docs/blog/newsletter-october-2017.rst",
+      "confidence": 0.4
+    },
+    {
+      "content": "There was some consensus around establishing your specific business requirements before selecting a tool. What outputs do you need to publish? How much do you need to reuse content? Does OS compatibil",
+      "source": "docs/blog/newsletter-october-2019.rst",
+      "confidence": 0.4
+    },
+    {
+      "content": "Finally, a request. Like we did `last year </surveys/salary-survey/2019/>`__, we’re running an anonymous salary survey, to help the community understand the pay scales and benefits in the software ind",
+      "source": "docs/blog/newsletter-october-2020.rst",
+      "confidence": 0.4
+    },
+    {
+      "content": "- 6 October, 18:00 CEST (Karlsruhe) - `Kann Software-Doku von KI-Unterstützung profitieren? <https://www.meetup.com/write-the-docs-karlsruhe/events/288624322/>`_ - 11 October, 08:30 EDT (East Coast Qu",
+      "source": "docs/blog/newsletter-october-2022.rst",
+      "confidence": 0.4
+    },
+    {
+      "content": "* Customers may be confused by differing and conflicting terminology in company materials when groups use different style guides. For example, is it an app, platform, product, service, or something el",
+      "source": "docs/blog/newsletter-september-2016.md",
+      "confidence": 0.4
+    },
+    {
+      "content": "The thing that we're most excited about is our new :doc:`Salary Survey </surveys/salary-survey-sep-2019>`. Our goal is to get a clear idea of the pay scales and benefits in the software industry aroun",
+      "source": "docs/blog/write-the-docs-mid-year-update-2019.rst",
+      "confidence": 0.4
+    },
+    {
+      "content": "* `Reading list <https://techwritertoolkit.com/resources/reading-list/>`_ focused on consultants/freelancers. * `List with books and links to online resources <https://gitlab.com/CrispyCB/Write-The-Do",
+      "source": "docs/books.rst",
+      "confidence": 0.4
+    },
+    {
+      "content": "* Each Write the Docs conference has a Code of Conduct team. * For online platforms, reports are made to conduct@writethedocs.org. * For meetups, the first point of contact are the local organizers.",
+      "source": "docs/code-of-conduct-response.rst",
+      "confidence": 0.4
+    },
+    {
+      "content": "For those of you who already purchased your tickets, you should have already received an email with our online conference platform (Hopin) registration link. We will also send a reminder on September ",
+      "source": "docs/conf/atlantic/2023/news/get-ready.rst",
+      "confidence": 0.4
+    },
+    {
+      "content": "* **TUESDAY**: The Sponsor Expo will be on Tuesday in the first 3 hours, in the Expo area of the online platform. It will take place in existing sponsorship booths. If you do not have a booth, a tempo",
+      "source": "docs/conf/atlantic/2023/sponsors/prospectus.rst",
+      "confidence": 0.4
+    },
+    {
+      "content": "Take advantage of AsciiDoc consultants and practitioners to get a head start on migrating to AsciiDoc-based tools or just kick-start a project.",
+      "source": "docs/conf/portland/2019/writing-day.rst",
+      "confidence": 0.4
+    },
+    {
+      "content": "TensorFlow.org [https://www.tensorflow.org] is Google's open source machine learning platform and one of the most popular projects on GitHub. The website documentation is the primary way that develope",
+      "source": "docs/conf/portland/2019/writing-day.rst",
+      "confidence": 0.4
+    },
+    {
+      "content": "We want to be able to convert our markdown templates to your format? What tools, configuration settings, and how-tos should we have for this?",
+      "source": "docs/conf/portland/2020/writing-day.rst",
+      "confidence": 0.4
+    },
+    {
+      "content": "Welcome to Cyclone, we are building an analytics tool that shows how users interact  with your content, starting from your docs to other areas like creating support  tickets and APIs. We are designing",
+      "source": "docs/conf/portland/2023/writing-day.rst",
+      "confidence": 0.4
+    },
+    {
+      "content": "- Give potential contributors an overview of the open-source tool chain we use, Docusaurus and GitHub. - `Address open doc issues <https://github.com/dbt-labs/docs.getdbt.com/issues?q=is%3Aopen+is%3Ai",
+      "source": "docs/conf/portland/2023/writing-day.rst",
+      "confidence": 0.4
+    },
+    {
+      "content": "Already familiar with GitBook? We're looking for people like you to brainstorm features as. Help us make the ultimate documentation platform!",
+      "source": "docs/conf/portland/2024/writing-day.rst",
+      "confidence": 0.4
+    },
+    {
+      "content": "* :ref:`apiary-overview` * Aglio * :doc:`Sphinx </guide/tools/sphinx>`",
+      "source": "docs/guide/api/api-documentation-tools.rst",
+      "confidence": 0.4
+    },
+    {
+      "content": "Welcome! The guides at Write the Docs are meant to address all aspects of software documentation.  To contribute to a guide, read on to understand our guides and how you can help.",
+      "source": "docs/guide/contributing.rst",
+      "confidence": 0.4
+    },
+    {
+      "content": "* Ensure your content is of interest to a general audience. * Avoid advocacy and plugs about your favorite toolchain, even if it's open source. * Present specific use cases, how problems were solved, ",
+      "source": "docs/guide/contributing.rst",
+      "confidence": 0.4
+    },
+    {
+      "content": "* I'd rather be writing: Tom Johnson: `Docs as code tools and workflows presentation <https://www.youtube.com/watch?v=Z3e_38WS-2Q>`_ * Greach, Madrid, Spain: Ralf D. Müller: `Docs as code: arc42, Asci",
+      "source": "docs/guide/docs-as-code.rst",
+      "confidence": 0.4
+    }
+  ],
+  "contentPatterns": [
+    {
+      "content": "Thinking about formatting can help you look at your content anew - several said they reorganize the content when formatting. Similarly, regardless of which tool works better, many people felt that swi",
+      "source": "docs/blog/newsletter-december-2019.rst",
+      "confidence": 0.6000000000000001
+    },
+    {
+      "content": "Overall, folks agreed that the format that uses the fewest extra words and helps readers find the information they need is the best format.",
+      "source": "docs/blog/newsletter-march-2017.md",
+      "confidence": 0.6000000000000001
+    },
+    {
+      "content": "reStructuredText is a lightweight markup language, so it's easier to read in plain-text format compared to heavier markup languages like DITA and other XML-based formats. You can easily find text edit",
+      "source": "docs/guide/writing/reStructuredText.rst",
+      "confidence": 0.6000000000000001
+    },
+    {
+      "content": "* `A ReStructuredText Primer <http://docutils.sourceforge.net/docs/user/rst/quickstart.html>`_ * `reStructuredText Primer <http://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html>`_ * `",
+      "source": "docs/guide/writing/reStructuredText.rst",
+      "confidence": 0.6000000000000001
+    },
+    {
+      "content": "- General style guide information and examples - Writing for accessibility - Including anti-bias information in style guides - Style guides and resources for specific content formats",
+      "source": "docs/guide/writing/style-guides.md",
+      "confidence": 0.6000000000000001
+    },
+    {
+      "content": "If you want to contact one of the conference organizers, select **+Open a direct message** and search for an organizer's name. It's best to use the #helpdesk channel as not all organizers are availabl",
+      "source": "docs/include/conf/virtual/welcome-wagon.rst",
+      "confidence": 0.6000000000000001
+    },
+    {
+      "content": "announcements    ../organizer-guide/meetups/starting    ../organizer-guide/meetups/faq-meetups    ../organizer-guide/meetups/sustainable-meetups",
+      "source": "docs/meetups/index.rst",
+      "confidence": 0.6000000000000001
+    },
+    {
+      "content": "We are happy to promote events that are independently organized by members of our community. They are **not** officially organized by Write the Docs organizers, but they are related events with simila",
+      "source": "docs/organizer-guide/confs/community-events.rst",
+      "confidence": 0.6000000000000001
+    },
+    {
+      "content": "* Official Conferences, which are organized by our :doc:`team </team>` * Meetups, which are organized by local members of the community * Community-Run Conferences, which are organized by members of o",
+      "source": "docs/organizer-guide/confs/community-events.rst",
+      "confidence": 0.6000000000000001
+    },
+    {
+      "content": "This entry format is about putting your information front and centre, and putting the link to your job posting in front of our community. The format is:",
+      "source": "docs/sponsorship/jobs.rst",
+      "confidence": 0.6000000000000001
+    },
+    {
+      "content": "-\tYes - all or most of my co-workers openly share salary information    -\tPartial - some of my co-workers share salary information    -\tNo - salary information is not openly shared    -\tI'm not sure, ",
+      "source": "docs/surveys/salary-survey/2022.rst",
+      "confidence": 0.6000000000000001
+    },
+    {
+      "content": "This is the code that powers [www.writethedocs.org](http://www.writethedocs.org). It contains information about the Write the Docs group, as well as information about writing documentation.",
+      "source": "README.md",
+      "confidence": 0.5
+    },
+    {
+      "content": "If you want to start a new meetup, our :doc:`/organizer-guide/meetups/starting` page has the information that you need.",
+      "source": "docs/about/events-activities.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "The current structure of the board includes the team leads from each of our teams, and each of our conference chairs. This allows us to get a good cross-section of the community, and share information",
+      "source": "docs/blog/2023-community-update.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "The Meetup team is focusing on updating organizer resources and streamlining communication. To support our efforts, the Meetup team lead Rose Williams created an organizer mailing list and distributed",
+      "source": "docs/blog/2023-community-update.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "As always, context is key. Consider your audience and publishing format when determining the formatting fate of your empty cells.",
+      "source": "docs/blog/newsletter-april-2018.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "An `article by Dave Gash on information typing <https://medium.com/@davidagash/a-painless-introduction-to-information-typing-d06041013fd5>`__ might be a good place to start if you find yourself having",
+      "source": "docs/blog/newsletter-april-2023.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "See more Write the Docs resources about `information-architecture </topics/#information-architecture>`__.",
+      "source": "docs/blog/newsletter-april-2025.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "In the original HN conversation, diverse opinions were expressed on a range of subjects. For example, should man pages include tutorial-type information? Is the traditional structure of Synopsis, Desc",
+      "source": "docs/blog/newsletter-december-2017.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "Information architecture (IA) helps a docs team to develop content in a structured and comprehensive manner. A navigation methodology can implement the IA of the documentation system. So, if your team",
+      "source": "docs/blog/newsletter-december-2024.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "* Users who choose the wrong tab for their needs will see unhelpful or confusing information. * Can induce fear of missing out because users are aware that they're only seeing one information pathway.",
+      "source": "docs/blog/newsletter-february-2017.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "Metadata that categorizes documents by purpose and structure may be important because it could help AI tools return relevant information. For example, a \"How do I...\" prompt probably means the user wa",
+      "source": "docs/blog/newsletter-february-2024.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "To focus on customer needs, it can help to talk to end users or get information about support calls. Posters recommended `Diataxis <https://diataxis.fr/>`__ and Dave Gash’s `article on information typ",
+      "source": "docs/blog/newsletter-february-2024.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "* The docs have the right amount of information.   * I easily found the exact information I was looking for.   * The examples are accurate and easy to follow. * If most questions are click-to-answer, ",
+      "source": "docs/blog/newsletter-july-2020.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "You can get actionable information for improving documentation without analytics or metrics. Talking to internal docs users, such as the support team, is a quick way to get information about fixes tha",
+      "source": "docs/blog/newsletter-july-2024.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "Minimizing comments helps keep code samples clear, well formatted, and easy to read. Separating the explanation from the code also gives readers a chance to absorb information about the logic and purp",
+      "source": "docs/blog/newsletter-june-2023.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "Whether your manager asks for them, you're craving some structure for your docs planning, or you just want to have the information on hand, how do you figure out what to measure? When this topic came ",
+      "source": "docs/blog/newsletter-march-2019.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "By implementing alternating formats, structured agendas, and social engagement strategies, you can transform routine meetings into valuable, collaborative touchpoints that enhance productivity and tea",
+      "source": "docs/blog/newsletter-march-2025.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "- Tip: Helpful advice that can make tasks easier but isn’t critical. - Note: Relevant but non-essential information that adds context but doesn’t affect the task’s outcome. - Important: Information th",
+      "source": "docs/blog/newsletter-october-2024.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "If the original writer just did a \"brain dump\", you may have to reorganize the content before editing it. One commenter used AI to group similar content to organize the text before editing it.",
+      "source": "docs/blog/newsletter-september-2024.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "We have built out a `team`_ page that lists all of the roles that people currently play in our community. This doesn't include the wonderful meetup organizers or conference organizers currently, but w",
+      "source": "docs/blog/team-eu-speakers.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "In addition to the official conferences that are organized by our team and carry the formal Write the Docs brand, we have seen a growing number of events that are organized by our community members. W",
+      "source": "docs/blog/write-the-docs-2018-kickoff.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "This part of the chapter was all about sharing information. Some people the Slack group had problems when it came to sharing information - either the team was unwilling to collaborate with the technic",
+      "source": "docs/book-club/splunk-product-docs/7-hiring-training-managing.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "As a result of the meeting, the response team may come to a conclusion about a resolution, or may conclude that additional information should be obtained. In the latter case, this additional informati",
+      "source": "docs/code-of-conduct-response.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "If you don’t communicate all of this information at the time, please still make the report and include as much information as you have.",
+      "source": "docs/code-of-conduct.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "Only the proposal committee will see the information that you include here.   Other Information -----------------",
+      "source": "docs/conf/atlantic/2023/example-proposal.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "Writing Day co-organizer, Rose Williams (she/her), is thankful to have a co-organizer for the Atlantic 2024 event. This inspired her to submit a half-day session focused on updating and consolidating ",
+      "source": "docs/conf/atlantic/2024/news/announcing-wd-projects.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "Our goal is to update the content infrastructure, consolidate resources, and add templates to better support Write the Docs Meetup organizers.",
+      "source": "docs/conf/atlantic/2024/writing-day.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "- Strategize to create a better content infrastructure for Meetup related pages. - Update the `Starting a Meetup <https://www.writethedocs.org/organizer-guide/meetups/starting/>`__ page - Update the `",
+      "source": "docs/conf/atlantic/2024/writing-day.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "Let's discuss information architecture -- can we organize the content better? Provide better navigation?",
+      "source": "docs/conf/australia/2018/writing-day.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "At the unconference, you'll interact closely with others from the community. Anyone can suggest and lead a session on a topic. Session formats vary. You can choose to organize a session around a prese",
+      "source": "docs/conf/australia/2020/unconference.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": ".. If you're an existing sponsor looking for next steps, check out our `Sponsorship Information page <{{site}}/conf/{{shortcode}}/{{year}}/sponsors/information>`_.",
+      "source": "docs/conf/berlin/2025/sponsors/prospectus.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "**We do not share any attendee information with sponsors.** As part of our sponsorships, we allow sponsors to send messages to attendees, but we do not share any personal information about attendees.",
+      "source": "docs/conf/berlin/2025/sponsors/prospectus.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "For more information on getting the most out of your sponsorship, see our  :doc:`/conf/{{shortcode}}/{{year}}/sponsors/information`.",
+      "source": "docs/conf/berlin/2025/sponsors/prospectus.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "We allow shipping ahead of time, but the venue doesn't accept packages. You'll be given shipping information for an organizer, and they will bring your materials to the venue for you. Please contact u",
+      "source": "docs/conf/kenya/2025/sponsors/information.md",
+      "confidence": 0.5
+    },
+    {
+      "content": "Join us for an introduction to Write the Docs. We'll go on a short tour of the venue and review information about the conference. While tours are designed to give first-time attendees all the informat",
+      "source": "docs/conf/portland/2024/attendee-guide.md",
+      "confidence": 0.5
+    },
+    {
+      "content": "Join us for an introduction to Write the Docs. We’ll go on a short tour of the venue and review information about the conference. While tours are designed to give first-time attendees all the informat",
+      "source": "docs/conf/portland/2025/attendee-guide.md",
+      "confidence": 0.5
+    },
+    {
+      "content": "If you're an existing sponsor looking for next steps, check out our `Sponsorship Information page <{{site}}/conf/{{shortcode}}/{{year}}/sponsors/information>`_.",
+      "source": "docs/conf/portland/2025/sponsors/prospectus.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "**Meetup organizer discount**: As a thanks to our meetup organizers, we're happy to offer you a 50% discount on your tickets. Please email us at prague@writethedocs.org, tell us which meetup you organ",
+      "source": "docs/conf/prague/2020/news/announcing-speakers.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": ".. warning::      If you are looking to file a `Code of Conduct <https://www.writethedocs.org/code-of-conduct//#reporting-and-contact-information>`_ issue,     please refer there for contact informati",
+      "source": "docs/contact.rst",
+      "confidence": 0.5
+    }
+  ],
+  "workflowPatterns": [
+    {
+      "content": "If you're interested in joining one of the community teams, check out all the team descriptions and contacts on the `Team page <https://writethedocs-www--2073.org.readthedocs.build/team/>`_.",
+      "source": "docs/blog/2024-january-update.rst",
+      "confidence": 0.7
+    },
+    {
+      "content": "Many people advised spending time getting to know the team, team members' strengths and weaknesses, processes, existing docs, and where the team fits in the overall organization. One person suggested ",
+      "source": "docs/blog/newsletter-november-2022.rst",
+      "confidence": 0.7
+    },
+    {
+      "content": "Respondents were asked to indicate if they worked primarily solo, as part of a team (either a team made up of people doing the same kind of job, or a multi-disciplinary team), as part of multiple team",
+      "source": "docs/surveys/salary-survey/2021.rst",
+      "confidence": 0.7
+    },
+    {
+      "content": "<figure>       <object role=\"img\" aria-label=\"Team breakdown (2021)\" aria-describedby=\"figure-team_desc\" type=\"image/svg+xml\" data=\"/_images/2021-team-breakdown.svg\">          <p id=\"figure-team_desc\"",
+      "source": "docs/surveys/salary-survey/2021.rst",
+      "confidence": 0.7
+    },
+    {
+      "content": "When taking into account respondents who work on a team, work on multiple teams, and those who manage teams, 83.4% of respondents have roles that are team-based. Solo workers make up 15.4%, with the 1",
+      "source": "docs/surveys/salary-survey/2022.rst",
+      "confidence": 0.7
+    },
+    {
+      "content": "- A solo worker    - Part of a team of people with the same or similar roles    - Part of a team of people with different roles    - Part of multiple teams    - A manager or team leader    - Other (pl",
+      "source": "docs/surveys/salary-survey/2023.rst",
+      "confidence": 0.7
+    },
+    {
+      "content": "**Team Lead**     Human responsible for managing the team. Accountable for the results of the team. Serves on the community board and votes on strategic direction and organizational processes.",
+      "source": "docs/team.rst",
+      "confidence": 0.7
+    },
+    {
+      "content": "Team members     - Team members serve for a minimum of three months.     - Membership renews automatically after joining. To step down from the team, members need to give a 14-day notice to the team l",
+      "source": "docs/team.rst",
+      "confidence": 0.7
+    },
+    {
+      "content": "Team leads     - Team leads serve for a minimum of one year.     - Membership renews automatically after joining. To step down from the team, team leads need to give a 30-day notice to the community b",
+      "source": "docs/team.rst",
+      "confidence": 0.7
+    },
+    {
+      "content": "We have approved our `Slack Moderation WEP`_, which defines the process for moderating Slack much more explicitly. The more formalized process can help grow our moderation team, and reduce confusion a",
+      "source": "docs/blog/2021-community-update.rst",
+      "confidence": 0.6000000000000001
+    },
+    {
+      "content": "There are some changes coming to our teams this year, specifically the `Core Operations (CoreOps) team <https://www.writethedocs.org/team/#core-operations-coreops>`_ and new `Community board <https://",
+      "source": "docs/blog/2023-january-update.rst",
+      "confidence": 0.6000000000000001
+    },
+    {
+      "content": "This especially struck a chord with folks who work with a team of content contributors. Having a set editorial review process is really helpful for building up a reliable and transparent workflow. The",
+      "source": "docs/blog/newsletter-september-2016.md",
+      "confidence": 0.6000000000000001
+    },
+    {
+      "content": "If a report is received concerning a member of a Code of Conduct response team, that member must not be involved in any way in the response process. The rest of the team will meet and decide on the re",
+      "source": "docs/code-of-conduct-response.rst",
+      "confidence": 0.6000000000000001
+    },
+    {
+      "content": "The sprint days allow entire open source teams to come together and collaborate. Your team sets its own agenda, but we'll have a few cross-team activities to help you learn from other open source proj",
+      "source": "docs/conf/cincinnati/2018/sprints.rst",
+      "confidence": 0.6000000000000001
+    },
+    {
+      "content": "This means following the same workflows as development teams, and being integrated in the product team. It enables a culture where writers and developers both feel ownership of documentation, and work",
+      "source": "docs/guide/docs-as-code.rst",
+      "confidence": 0.6000000000000001
+    },
+    {
+      "content": "Given that team leaders or managers are actually part of a team, and most of the “other” responses indicated partial team roles, this means that overall less than 30% of respondents work individually.",
+      "source": "docs/surveys/salary-survey/2019.rst",
+      "confidence": 0.6000000000000001
+    },
+    {
+      "content": "Respondents were further asked to indicate if they worked primarily solo, as part of a team (either a team made up of people doing the same kind of job, or a multi-disciplinary team), as part of multi",
+      "source": "docs/surveys/salary-survey/2020.rst",
+      "confidence": 0.6000000000000001
+    },
+    {
+      "content": "- 16.3% of respondents indicated that they worked solo (the same percentage as in 2020), - 52.5% worked on a single team, - 15.5% on multiple teams, and - 15.2% lead a team.",
+      "source": "docs/surveys/salary-survey/2021.rst",
+      "confidence": 0.6000000000000001
+    },
+    {
+      "content": "0.5% selected \"Other\" and entered additional comments - these respondents were either split between solo and team, or consultants to multiple teams, or both managers and team members.",
+      "source": "docs/surveys/salary-survey/2021.rst",
+      "confidence": 0.6000000000000001
+    },
+    {
+      "content": "- A solo worker    - Part of a team    - Part of multiple teams    - A manager or team leader    - Other (please specify)",
+      "source": "docs/surveys/salary-survey/2022.rst",
+      "confidence": 0.6000000000000001
+    },
+    {
+      "content": "The most widely-selected team configurations were single category: 25.2% of respondents worked only on a team made up of people with the same or similar roles, while 12.7% worked only on a team made u",
+      "source": "docs/surveys/salary-survey/2023.rst",
+      "confidence": 0.6000000000000001
+    },
+    {
+      "content": "**Team Member**     Human responsible for performing the team tasks. Reports to the team lead.",
+      "source": "docs/team.rst",
+      "confidence": 0.6000000000000001
+    },
+    {
+      "content": "- be an active member of the community for at least one year (online or at events)       - be approved by the team lead and at least one additional team member from any team       - satisfy the member",
+      "source": "docs/team.rst",
+      "confidence": 0.6000000000000001
+    },
+    {
+      "content": "- Monitor the WTD Slack space and handle CoC issues, rotation - Full team procedures and processes are currently in the process of being finalized in a separate WEP: WEP0002",
+      "source": "docs/team.rst",
+      "confidence": 0.6000000000000001
+    },
+    {
+      "content": "Write the Docs wouldn't be possible without our wonderful :doc:`/team`. As well as a small team of paid staff, we have volunteers who help out in the various areas of the community.",
+      "source": "docs/about/about-the-org.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "* Burn out. All our teams and roles are opt-in, and we prioritize self care and work-life balance. Our volunteers and paid team members are encouraged to take on tasks that they derive professional an",
+      "source": "docs/about-us.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "We also wanted to take the time to show appreciation to Janine Chan and all our `Slack moderation team <https://www.writethedocs.org/team/#slack-moderation>`_. We are overjoyed at the helpful communit",
+      "source": "docs/blog/2022-community-update.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "The members are the team leads of each of the Write the Docs team, as well as the conference chairs of our various conferences:",
+      "source": "docs/blog/2023-Q1-community-board.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "Thanks again to the team leads for joining our community board, and to all the team members (mostly volunteers!) who work diligently to support the community and each other.",
+      "source": "docs/blog/2023-Q1-community-board.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "The board members are team leads for each WTD team, as well as the conference chairs of our various conferences:",
+      "source": "docs/blog/2023-Q2-community-board.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "Thanks again to the team leads participating in the community board, and to all the team members (mostly volunteers!) who work diligently to support the community and each other.",
+      "source": "docs/blog/2023-Q2-community-board.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "**Team lead communication channels**     As a part of our continuous improvements to the organizational administration, we decided to create official WTD Google accounts for all team leads. This will ",
+      "source": "docs/blog/2023-Q3-community-board.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "Thanks again to the team leads that participate in the community board, and to all the team members (mostly volunteers!) who work diligently to support the community and each other. If you want to joi",
+      "source": "docs/blog/2023-Q3-community-board.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "The current structure of the board includes the team leads from each of our teams, and each of our conference chairs. This allows us to get a good cross-section of the community, and share information",
+      "source": "docs/blog/2023-community-update.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "The Meetup team is focusing on updating organizer resources and streamlining communication. To support our efforts, the Meetup team lead Rose Williams created an organizer mailing list and distributed",
+      "source": "docs/blog/2023-community-update.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "GitBook's branch-based Git workflow encourages your whole team to collaborate by creating a branch, requesting a review, and merging when ready. It's a flow your developers already know and love — and",
+      "source": "docs/blog/2024-community-update.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "<p>               If your team is looking for owlsome knowledge base software made by a small team with a big heart, <a href=\"https://app.knowledgeowl.com/signup\">you can try KnowledgeOwl for free her",
+      "source": "docs/blog/2024-january-update.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "Our third meeting of the year covered the latest updates for the Berlin conference, as well as general team updates and efforts to improve the organizational structure of the team Slack channels.",
+      "source": "docs/blog/2025-Q3-community-board.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "Each team lead will continue to manage membership in their team channels, and yours truly will continue to manage the community board channel. If we see a demand in the future to revive the staff chan",
+      "source": "docs/blog/2025-Q3-community-board.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "<p>Write the Docs subscribers get preview access to \"Systems Champion: Simplify Business Processes, Unlock Team Potential & Achieve True Freedom.\"</p>",
+      "source": "docs/blog/2025-community-update.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "The WEP process is defined in `WEP0`_, the first ever WEP. WEP0 itself is currently ready for review, following the draft WEP process. This might appear circular at first glance, but we hope that it w",
+      "source": "docs/blog/introducing-weps.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "We hope that you'll take the time to read our proposal and understand how we're changing the process of making changes in the community. The more engaged folks are with the process, the better the com",
+      "source": "docs/blog/introducing-weps.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "But how to get that info into release notes? One participant reported his team's process:",
+      "source": "docs/blog/newsletter-april-2017.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "- Tell me about a time you noticed a process that needed to be improved. What did you do about it? How did you implement a process change, if applicable?",
+      "source": "docs/blog/newsletter-april-2024.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "Everybody's asking about a docs-as-code workflow and toolchain these days - one recent question about adopting it for a team that's unfamiliar with Git sparked a useful discussion about this potential",
+      "source": "docs/blog/newsletter-august-2020.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "Last month's article `Doc Team Organization </blog/newsletter-november-2023/#doc-team-organization>`_, focusing on managers, provoked a lively discussion about the pros and cons of documentarians bein",
+      "source": "docs/blog/newsletter-december-2023.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "When interviewing, you may need to consider whether your personal style fits in with the prospective documentation team. Some remarked that a documentation's team focus depends on the size of the comp",
+      "source": "docs/blog/newsletter-december-2023.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "Information architecture (IA) helps a docs team to develop content in a structured and comprehensive manner. A navigation methodology can implement the IA of the documentation system. So, if your team",
+      "source": "docs/blog/newsletter-december-2024.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "We're looking for a new editor to join the `team </team/#newsletter>`__ that creates the monthly `Write the Docs newsletter </newsletter>`__. If you're an active member of the community and would like",
+      "source": "docs/blog/newsletter-editor.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "The general consensus was that decisions like these are fraught. It's easy to fall into the trap of thinking that the workflow that suits you and your needs best is the best workflow for your entire t",
+      "source": "docs/blog/newsletter-february-2017.rst",
+      "confidence": 0.5
+    }
+  ],
+  "industryInsights": [],
+  "communityWisdom": [],
+  "styleGuidePatterns": [
+    {
+      "content": "- The [AP Stylebook](https://www.apstylebook.com/) - The [Chicago Manual of Style](http://www.chicagomanualofstyle.org/book/ed17/frontmatter/toc.html)",
+      "source": "docs/guide/writing/style-guides.md",
+      "confidence": 0.7
+    },
+    {
+      "content": "- [Apple Style Guide](https://help.apple.com/applestyleguide/) - [Microsoft Writing Style Guide](https://docs.microsoft.com/en-us/style-guide/welcome/)",
+      "source": "docs/guide/writing/style-guides.md",
+      "confidence": 0.7
+    },
+    {
+      "content": "- [Open SUSE Style Guide](https://documentation.suse.com/style/current/single-html/docu_styleguide/) - [gnome Style Guide](https://developer.gnome.org/documentation/guidelines/devel-docs.html) - [Writ",
+      "source": "docs/guide/writing/style-guides.md",
+      "confidence": 0.7
+    },
+    {
+      "content": "[Free Google Docs invoice templates](https://www.invoicesimple.com/invoice-template/google-docs-invoice-template)",
+      "source": "docs/hiring-guide/freelancing/get-paid.md",
+      "confidence": 0.7
+    },
+    {
+      "content": "Style guides (like `Google's <https://developers.google.com/style/tone?hl=en#politeness>`__) usually advise against it for a simple reason: conciseness. \"Please\" doesn't add any information; an instru",
+      "source": "docs/blog/newsletter-june-2022.rst",
+      "confidence": 0.6000000000000001
+    },
+    {
+      "content": "- `Bias-Free Language <https://apastyle.apa.org/style-grammar-guidelines/bias-free-language/>`_ in the APA Style Guide - `Terminology, Power and Oppressive Language <https://tools.ietf.org/id/draft-kn",
+      "source": "docs/blog/newsletter-november-2020.rst",
+      "confidence": 0.6000000000000001
+    },
+    {
+      "content": "Style guides such as the `Microsoft Style Guide <https://docs.microsoft.com/en-us/style-guide/>`__ suggest spelling out acronyms and abbreviations at the first use, except when the short versions are ",
+      "source": "docs/blog/newsletter-september-2022.rst",
+      "confidence": 0.6000000000000001
+    },
+    {
+      "content": "Note that technical editors are not \"just\" proofreaders. They may catch typos, but they are also there to create and maintain style guides, check documentation for style and tone, advise on content or",
+      "source": "docs/book-club/splunk-product-docs/13-technical-editing.rst",
+      "confidence": 0.6000000000000001
+    },
+    {
+      "content": "We'll briefly demonstrate the importance of a Style Guide through practical examples, and then we’ll look at some real-life Style Guide varieties before we launch into creating a Style Guide on the sp",
+      "source": "docs/conf/australia/2018/workshop-style-guide.rst",
+      "confidence": 0.6000000000000001
+    },
+    {
+      "content": "- Update and use Semantic Linefeeds consistently - Apply guidelines from `Google's Developer Documentation Style Guide <https://developers.google.com/style>`_. - Edit for grammar and style issues: con",
+      "source": "docs/conf/portland/2023/writing-day.rst",
+      "confidence": 0.6000000000000001
+    },
+    {
+      "content": "You can also use an implementation of both the Microsoft Writing Style Guide and the Google Developer Documentation Style Guide with Vale. You can find these styles in the following repository: https:",
+      "source": "docs/guide/tools/testing.rst",
+      "confidence": 0.6000000000000001
+    },
+    {
+      "content": "And for general writing style, see [style guides](https://www.writethedocs.org/guide/writing/style-guides/).",
+      "source": "docs/guide/writing/accessibility.md",
+      "confidence": 0.6000000000000001
+    },
+    {
+      "content": "- General style guide information and examples - Writing for accessibility - Including anti-bias information in style guides - Style guides and resources for specific content formats",
+      "source": "docs/guide/writing/style-guides.md",
+      "confidence": 0.6000000000000001
+    },
+    {
+      "content": "XML needs a stylesheet to be readable and usable. Stylesheets for XML work much the same as those for HTML. The difference is that we assign styles to our unique XML tags, not to the standard tags use",
+      "source": "docs/guide/writing/xml.rst",
+      "confidence": 0.6000000000000001
+    },
+    {
+      "content": ":doc:`Style Guides </guide/writing/style-guides>`       An overview of style guides with links to example guides.",
+      "source": "docs/style-guide.rst",
+      "confidence": 0.6000000000000001
+    },
+    {
+      "content": "<div class=\"speaker-info\">         <img src=\"{{ speaker.slug|speaker_photo }}\" class=\"speaker-picture\" style=\"height: 6em; width: auto\">         <div class=\"speaker-contact-info\" style=\"display: flex;",
+      "source": "docs/_templates/2025/speakers.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "*The Microsoft Writing Style Guide is available for free online! Check it out* (`here <https://docs.microsoft.com/en-us/style-guide/welcome/>`_) *the next time you have a terminology question... and t",
+      "source": "docs/blog/newsletter-august-2018.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "- `Microsoft Writing Style Guide <https://docs.microsoft.com/en-us/style-guide/welcome/>`_ (the usual suspect) - `Oxford English Dictionary <http://www.oed.com/>`_ - `Merriam-Webster Dictionary <https",
+      "source": "docs/blog/newsletter-december-2018.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "Most US style guides say that commas and periods always go inside quotation marks. Whereas British style guides say they only go inside if the punctuation is part of the quotation. So it depends on yo",
+      "source": "docs/blog/newsletter-december-2018.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "* `Delighted <https://delighted.com/>`_ * `Usabilla <https://usabilla.com/>`_ * `Form Keep <https://formkeep.com/>`_ * `User Voice <https://www.uservoice.com/>`_ * `Satismeter <https://www.satismeter.",
+      "source": "docs/blog/newsletter-december-2019.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "Reviews are most productive when all reviewers understand their focus area as well as the documentarian's responsibility for questions of style, tone, and content placement. For more thoughts on the i",
+      "source": "docs/blog/newsletter-february-2023.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "The debate continues, but the main principle remains: choose a style, document it in your style guide, and apply it consistently. This approach enhances clarity and supports a seamless, accessible use",
+      "source": "docs/blog/newsletter-june-2024.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "There's often great discussion about particular points of style and style guides going on in #general. Here's a summary of the high points:",
+      "source": "docs/blog/newsletter-march-2020.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "- Elements of Style (Strunk & White)   - Microsoft Manual of Style",
+      "source": "docs/blog/newsletter-november-2018.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "First off, most participants agreed that distributing a style guide isn't enough, even with support from management. It can help to include justifications for the rules in your style guide - not only ",
+      "source": "docs/blog/newsletter-november-2018.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "* `Shopify Polaris <https://polaris.shopify.com/content/naming#does-it-need-a-branded-name->`_ * `Splunk <https://docs.splunk.com/Documentation/StyleGuide/current/StyleGuide/UIGuidelines>`_ * `IBM Car",
+      "source": "docs/blog/newsletter-october-2023.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "As a contractor, the pay period depends on the agency. As a freelancer, your contract defines the pay period. Some freelancers bill based on the project (milestones); some calculate invoices based on ",
+      "source": "docs/blog/newsletter-october-2024.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "* Technical documentation and marketing have different goals, so a single tone/voice may not be appropriate for both. * Accepted conventions in one group may be rejected by other groups (for example, ",
+      "source": "docs/blog/newsletter-september-2016.md",
+      "confidence": 0.5
+    },
+    {
+      "content": "For more on documentation style guides, this blog post from [I Heart Technical Writing](http://www.ihearttechnicalwriting.com/style-guide-technical-writing/) is a good place to start.",
+      "source": "docs/blog/newsletter-september-2016.md",
+      "confidence": 0.5
+    },
+    {
+      "content": "It also briefly mentions style guides, discusses how to edit well, and how to improve writing style.",
+      "source": "docs/book-club/splunk-product-docs/13-technical-editing.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "- Publically-accessible documentation of the styles, processes, etc. - Technical writers talking about their work in meetings, \"show and tell\" style - Attending meetings with other departments",
+      "source": "docs/book-club/splunk-product-docs/7-hiring-training-managing.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "<div class=\"announcement\" style=\"background-color:white;\">         <div class=\"uk-container\">         <a style=\"border-bottom: none; font-size: .875rem;\" class=\"uk-button uk-button-announcement uk-tex",
+      "source": "docs/conf/atlantic/2023/cfp.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "The **Keystone** package costs **{{sponsorship.keystone.price}}**.",
+      "source": "docs/conf/atlantic/2023/sponsors/prospectus.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "Invoices must be paid **within 30 days of invoice receipt**, or no later than one (1) week before the virtual conference.",
+      "source": "docs/conf/atlantic/2023/sponsors/prospectus.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "The Brainstorm a Style Guide project aspires to support writers and documentarians, especially those new to the field, in creating their style guides.",
+      "source": "docs/conf/atlantic/2023/writing-day.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "Writing Day goal: Outline a help center style guide that empowers others and helps them write help center articles with a consistent and unified voice.",
+      "source": "docs/conf/atlantic/2023/writing-day.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "Join us and share your ideas, best practices, and guidelines for style guides! We want to become a springboard for others attendees who are creating style guides for the OSS  projects, brands, and the",
+      "source": "docs/conf/atlantic/2023/writing-day.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "We expect all invoices to be paid **within 21 days of invoice receipt**, as many of our expenses must be paid up front.",
+      "source": "docs/conf/australia/2018/sponsors/prospectus.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "- does currently use a Style Guide, but wants to improve or refine their style",
+      "source": "docs/conf/australia/2018/workshop-style-guide.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "The **Keystone** package costs AUD **{{sponsorship.keystone.price}}**.",
+      "source": "docs/conf/australia/2020/sponsors/prospectus.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "We expect all invoices to be paid **within 30 days of invoice receipt**, as many of our expenses must be paid up front.",
+      "source": "docs/conf/cincinnati/2018/sponsors/prospectus.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "The **Keystone** package costs USD **{{sponsorship.keystone.price}}**.",
+      "source": "docs/conf/kenya/2025/sponsors/prospectus.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "The Write the Docs `Style Guides <https://www.writethedocs.org/guide/writing/style-guides>`_ is a growing collection of resources. This guide includes standards for writing and designing content and l",
+      "source": "docs/conf/portland/2021/writing-day.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "- The page on the Write the Docs repo is `style-guides.md <https://github.com/writethedocs/www/blob/master/docs/guide/writing/style-guides.md>`_ - Home » Learning Resources » Documentation Guide » `St",
+      "source": "docs/conf/portland/2021/writing-day.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "Hank is an experimental prototype to see whether we can fine-tune an LLM to function as a style guide editor. The `initial results <https://technicalwriting.tools/posts/style-guide-fine-tuning/>`__ su",
+      "source": "docs/conf/portland/2023/writing-day.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "- Copy-editing - Narrative structure -  `Style Guide <https://github.com/raspberrypi/style-guide>`__ improvements",
+      "source": "docs/conf/portland/2023/writing-day.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "You can use the following styles with Vale, although as of v2.0.0, Vale no longer includes these styles by default:",
+      "source": "docs/guide/tools/testing.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": ".. _style guide: https://www.writethedocs.org/guide/writing/style-guides/",
+      "source": "docs/guide/writing/docs-principles.rst",
+      "confidence": 0.5
+    },
+    {
+      "content": "- [The Responsible Communication Style Guide](https://rcstyleguide.com/)",
+      "source": "docs/guide/writing/reducing-bias.md",
+      "confidence": 0.5
+    },
+    {
+      "content": "- [What They Don’t Tell You About Creating New Style Guides](https://www.writethedocs.org/videos/portland/2018/what-they-don-t-tell-you-about-creating-new-style-guides-thursday-bram/)",
+      "source": "docs/guide/writing/reducing-bias.md",
+      "confidence": 0.5
+    }
+  ],
+  "organizationPatterns": [
+    {
+      "content": "Header structure: ## Write the Docs website → ### Code Architecture → ### Conference pages → ### Videos → #### Troubleshooting",
+      "source": "README.md",
+      "confidence": 0.7
+    },
+    {
+      "content": "Header structure: # Write the Docs Newsletter - December 2016 → ## Seasons greetings and see you next year! → ## Simplifying and tightening your writing → ## Hiring for technical background → ## Running UX tests on your documentation",
+      "source": "docs/blog/newsletter-december-2016.md",
+      "confidence": 0.7
+    },
+    {
+      "content": "Header structure: # Write the Docs Newsletter - March 2017 → ## Winter is coming – to an end! → ## North America conference speakers announced! → ## Know the rules for formatting procedures – and when to break them → ## Should documentation have bylines?",
+      "source": "docs/blog/newsletter-march-2017.md",
+      "confidence": 0.7
+    },
+    {
+      "content": "Header structure: # Write the Docs Newsletter - November 2016 → ## Community conversations and milestones → ## A quick guide to style guides → ## How do documentation and content strategy intersect? → ## Doc-friendly toolchains and CMSs",
+      "source": "docs/blog/newsletter-november-2016.md",
+      "confidence": 0.7
+    },
+    {
+      "content": "Header structure: # Write the Docs Newsletter - October 2016 → ## Happy October! → ## Improving diversity in our docs → ## Coming soon: The Responsible Communication Guide → ## Writing and maintaining command reference pages",
+      "source": "docs/blog/newsletter-october-2016.md",
+      "confidence": 0.7
+    },
+    {
+      "content": "Header structure: # Write the Docs Newsletter - September 2016 → ## Welcome to the Write the Docs Newsletter → ## What to include in your UI copy → ## Metrics case study: Total Time Reading (TTR) → ## Code review versus copy review",
+      "source": "docs/blog/newsletter-september-2016.md",
+      "confidence": 0.7
+    },
+    {
+      "content": "Header structure: # Attendee Guide → ## Where can I ask a question? → ## Conference Layout → ## Eating → ## Dress Code",
+      "source": "docs/conf/australia/2024/attendee-guide.md",
+      "confidence": 0.7
+    },
+    {
+      "content": "Header structure: # Welcome to Write the Docs Australia 2024 → ## Thanks to our Sponsors! → ## Attendee information → ### Read the Attendee Guide → ### Read the Visiting Melbourne information",
+      "source": "docs/conf/australia/2024/news/welcome-get-ready.md",
+      "confidence": 0.7
+    },
+    {
+      "content": "Header structure: # Volunteer Information → ## Apply today → ## FAQs → ### How many shifts am I required to volunteer? → ### What volunteer roles do you have?",
+      "source": "docs/conf/australia/2024/volunteer.md",
+      "confidence": 0.7
+    },
+    {
+      "content": "Header structure: # Social Events",
+      "source": "docs/conf/australia/2025/social-events.md",
+      "confidence": 0.7
+    },
+    {
+      "content": "Header structure: ## Platform → ## What's Included → ## Getting Started",
+      "source": "docs/conf/australia/2025/virtual.md",
+      "confidence": 0.7
+    },
+    {
+      "content": "Header structure: # About the Conference",
+      "source": "docs/conf/berlin/2025/about.md",
+      "confidence": 0.7
+    },
+    {
+      "content": "Header structure: # Attendee Guide",
+      "source": "docs/conf/berlin/2025/attendee-guide.md",
+      "confidence": 0.7
+    },
+    {
+      "content": "Header structure: # Contact Us → ## Press Kit",
+      "source": "docs/conf/berlin/2025/contact.md",
+      "confidence": 0.7
+    },
+    {
+      "content": "Header structure: # Convince Your Manager → ## Sample Email #1 → ### Convince your manager to send you to Write the Docs → ### Corporate Resources",
+      "source": "docs/conf/berlin/2025/convince-your-manager.md",
+      "confidence": 0.7
+    },
+    {
+      "content": "Header structure: # Health and Safety Policy  → ## Onsite Health and Safety Measures → ## Mask Policy → ## No Vaccination or Testing Requirement",
+      "source": "docs/conf/berlin/2025/health.md",
+      "confidence": 0.7
+    },
+    {
+      "content": "Header structure: # What is a Lightning Talk? → ## Schedule and Logistics → ## Planning Your Lightning Talk → ### 1. Choose a Topic → ### 2. Create an Outline",
+      "source": "docs/conf/berlin/2025/lightning-talks.md",
+      "confidence": 0.7
+    },
+    {
+      "content": "Header structure: # Last call for Call for Proposals and Opportunity Grants → ## Request your Opportunity Grant now → ## Submit your talk by {{ cfp.ends }} → ## Volunteer applications open → ## Join our Community of Sponsors",
+      "source": "docs/conf/berlin/2025/news/cfp-grants-closing.md",
+      "confidence": 0.7
+    },
+    {
+      "content": "Header structure: # Reminder for Call for Proposals, Tickets, and Opportunity Grants → ## Submit your talk by {{ cfp.ends }} → ## Buy your ticket for the conference → ### Opportunity Grants are still open → ## Join our Community of Sponsors",
+      "source": "docs/conf/berlin/2025/news/cfp-reminder.md",
+      "confidence": 0.7
+    },
+    {
+      "content": "Header structure: # Opportunity Grants → ## Eligibility → ## Schedule → ## What is covered → ### Virtual or in person",
+      "source": "docs/conf/berlin/2025/opportunity-grants.md",
+      "confidence": 0.7
+    },
+    {
+      "content": "Header structure: # Press Kit → ## Sample social media posts → ## Images and logos",
+      "source": "docs/conf/berlin/2025/press-kit.md",
+      "confidence": 0.7
+    },
+    {
+      "content": "Header structure: # Sponsor Information → ## Location → ## Schedule → ## Conference Overview → ### Venue Layout",
+      "source": "docs/conf/berlin/2025/sponsors/information.md",
+      "confidence": 0.7
+    },
+    {
+      "content": "Header structure: # Meet the Team → ### Sasha Romijn (she/her) → #### Conference Chair → ### Eric Holscher (he/him) → #### Sponsorship Coordinator",
+      "source": "docs/conf/berlin/2025/team.md",
+      "confidence": 0.7
+    },
+    {
+      "content": "Header structure: # What is an Unconference? → ## Schedule → ### Scheduling a Session → ## Leading a Session → ## Attending a Session",
+      "source": "docs/conf/berlin/2025/unconference.md",
+      "confidence": 0.7
+    },
+    {
+      "content": "Header structure: # Virtual Attendance → ## Platform → ## What's Included → ## Schedule → ## Getting Started",
+      "source": "docs/conf/berlin/2025/virtual.md",
+      "confidence": 0.7
+    },
+    {
+      "content": "Header structure: # TODO: add images to _static/conf/images/headers/ for Berlin. Refer to docs\\_data\\berlin-2025-config.yaml for variables → # banner: _static/conf/images/headers/hike.png → # og:image: _static/conf/images/headers/portland-2025-opengraph.jpg → # Visiting Berlin → ## Where to Stay",
+      "source": "docs/conf/berlin/2025/visiting.md",
+      "confidence": 0.7
+    },
+    {
+      "content": "Header structure: # Announcing Write the Docs Kenya 2025 → ## Call for proposals → ## Sponsorship → ## Keep in touch → ## See you in Nairobi",
+      "source": "docs/conf/kenya/2025/news/welcome.md",
+      "confidence": 0.7
+    },
+    {
+      "content": "Header structure: # Sponsor Information → ## Sponsor schedule → ## Sponsorship overview → ## Sponsorship spaces → ## Quick tips",
+      "source": "docs/conf/kenya/2025/sponsors/information.md",
+      "confidence": 0.7
+    },
+    {
+      "content": "Header structure: # Announcing the Call for Volunteers, Hotel Discounts, and Grant Reminder → ## Call for Volunteers → ## Hotel Discounts → ## Opportunity Grant Deadline is February 1 → ## Speaker Announcement on February 1",
+      "source": "docs/conf/portland/2024/news/call-for-volunteers.md",
+      "confidence": 0.7
+    },
+    {
+      "content": "Header structure: # Only 4 Weeks Until Write the Docs Portland → ## Buy Your Tickets → ## Volunteer → ## Writing Day Projects → ## How Do I Participate in the Conference? ",
+      "source": "docs/conf/portland/2024/news/four-weeks-out.md",
+      "confidence": 0.7
+    },
+    {
+      "content": "Header structure: # The Conference Is Only 3 Months Away! → ## Buy Your Tickets → ## Attendee Guide and Visiting Portland → ## Convince Your Manager → ## Opportunity Grant Deadline is February 1",
+      "source": "docs/conf/portland/2024/news/three-months-out.md",
+      "confidence": 0.7
+    },
+    {
+      "content": "Header structure: # Welcome to Write the Docs Portland 2024 → ## Livestream → ## Thanks to our Sponsors! → ## Attendee information → ### Read the Attendee Guide",
+      "source": "docs/conf/portland/2024/news/welcome-get-ready.md",
+      "confidence": 0.7
+    },
+    {
+      "content": "Header structure: # Meet the Team → ## Eric Holscher (he/him) → ### Conference Chair → ## Sam Wright (he/him) → ### Stage Manager",
+      "source": "docs/conf/portland/2024/team.md",
+      "confidence": 0.7
+    },
+    {
+      "content": "Header structure: # Venue → ## Revolution Hall → ## Conference Layout → ### Registration and Welcome Wagon → ### Writing Day, Unconference, and Welcome Reception",
+      "source": "docs/conf/portland/2024/venue.md",
+      "confidence": 0.7
+    },
+    {
+      "content": "Header structure: # Visiting Portland → ## Where to Stay → ### Hotels in East Portland (near venue) → ### Hotels Downtown/West Portland → ## Food and Beverages",
+      "source": "docs/conf/portland/2024/visiting.md",
+      "confidence": 0.7
+    },
+    {
+      "content": "Header structure: # Hike → ## Schedule & Logistics → ## What to Bring",
+      "source": "docs/conf/portland/2025/hike.md",
+      "confidence": 0.7
+    },
+    {
+      "content": "Header structure: # Live Stream",
+      "source": "docs/conf/portland/2025/livestream.md",
+      "confidence": 0.7
+    },
+    {
+      "content": "Header structure: # Call for Proposals Reminder, Tickets, and Opportunity Grants → ## Submit your talk by {{ cfp.ends }} → ## Buy your ticket for the conference → ### Opportunity Grants are still open → ### Calling all Volunteers",
+      "source": "docs/conf/portland/2025/news/cfp-reminder.md",
+      "confidence": 0.7
+    },
+    {
+      "content": "Header structure: # Only 1 Month Until Write the Docs Portland → ## Buy Your Tickets → ## Join our Slack Community → ### #wtd-conferences channel → ## Writing Day Projects",
+      "source": "docs/conf/portland/2025/news/one-month-out.md",
+      "confidence": 0.7
+    },
+    {
+      "content": "Header structure: # Portland 2025 Recap - Talk Videos, Photos, Sketchnotes, CoC Report → ## Conference recap → ## Talk videos → ## Conference photos → ## Talk sketchnotes",
+      "source": "docs/conf/portland/2025/news/thanks-recap.md",
+      "confidence": 0.7
+    },
+    {
+      "content": "Header structure: # Conference is 2 Months Away! → ### Pre-Conference Speaker Discussions  → ### Virtual Conference Tickets → ### Writing Day Project Submissions Open → ### Website Resources",
+      "source": "docs/conf/portland/2025/news/two-months-out.md",
+      "confidence": 0.7
+    },
+    {
+      "content": "Header structure: # Visiting Portland Information is Live and a Last CFP Reminder → ### Our Visiting Portland Page is Live! → ### Thanks to Our Sponsors",
+      "source": "docs/conf/portland/2025/news/visiting-portland-information.md",
+      "confidence": 0.7
+    },
+    {
+      "content": "Header structure: # Social Events → ## Sunday Reception → ## Monday Night Social",
+      "source": "docs/conf/portland/2025/social-events.md",
+      "confidence": 0.7
+    },
+    {
+      "content": "Header structure: # Meet the Team → ### Eric Holscher (he/him) → #### Conference Chair → ### Sam Wright (he/him) → #### Speaker Coordinator",
+      "source": "docs/conf/portland/2025/team.md",
+      "confidence": 0.7
+    },
+    {
+      "content": "Header structure: # What is Writing Day? → ## How to participate in Writing Day → ## Schedule → ## How to Prepare → ## Lead a Project",
+      "source": "docs/conf/portland/2025/writing-day.md",
+      "confidence": 0.7
+    },
+    {
+      "content": "Header structure: # Accessibility guidelines: for writing and beyond → ## Good introductions to accessibility → ## More resources → ## Exhaustive resources for web accessibility → ## Relevant talks from Write the Docs:",
+      "source": "docs/guide/writing/accessibility.md",
+      "confidence": 0.7
+    },
+    {
+      "content": "Header structure: # Introduction to Markdown\r → ## What is Markdown?\r → ## Why use Markdown?\r → ## How to use Markdown\r → ### Formatting text in Markdown\r",
+      "source": "docs/guide/writing/markdown.md",
+      "confidence": 0.7
+    },
+    {
+      "content": "Header structure: # Reducing bias in your writing → ## Providing inclusive example names",
+      "source": "docs/guide/writing/reducing-bias.md",
+      "confidence": 0.7
+    },
+    {
+      "content": "Header structure: # Style Guides → ## Structure of this page → ## Write your own style guide? → ### How-to articles for writing a style guide → ## Traditional writing style guide resources",
+      "source": "docs/guide/writing/style-guides.md",
+      "confidence": 0.7
+    },
+    {
+      "content": "Header structure: # Business identity → ## Consider → ### What type of clients do I want? → #### Example   → #### Related  ",
+      "source": "docs/hiring-guide/freelancing/business-identity.md",
+      "confidence": 0.7
+    }
+  ],
+  "extractedAt": "2025-08-08T16:41:18.491Z",
+  "source": "Write the Docs Community Repository",
+  "sourceUrl": "https://github.com/writethedocs/www"
+}
