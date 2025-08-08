@@ -106,4 +106,14 @@ program
     await planCmd.execute(specFile, options);
   });
 
+program
+  .command('git')
+  .description('Natural language git operations')
+  .argument('<command>', 'Natural language git command')
+  .action(async (naturalCommand) => {
+    const GitCommand = require('./src/commands/git');
+    const gitCmd = new GitCommand();
+    await gitCmd.execute(naturalCommand);
+  });
+
 program.parse(process.argv);

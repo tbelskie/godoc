@@ -106,6 +106,13 @@ Generate documentation roadmaps from specifications
 - `--github` - Show GitHub integration instructions
 - Revolutionary AI-powered spec-to-roadmap workflow
 
+### `godoc git`
+Natural language git operations
+- `<command>` - Natural language git command
+- Eliminates git complexity with conversational interface
+- Safe execution with confirmation prompts
+- Examples: "commit my work", "create branch for auth", "push changes"
+
 ### `godoc refactor`
 Modernize existing Hugo sites
 - `--modernize` - Update themes and structure
@@ -451,3 +458,23 @@ Every documentation team uses GOdoc as central platform for entire workflow - fr
 - **Integration**: Enhanced Claude Code prompts with learned intelligence
 
 **Status**: Ready for Monday Sprint 1 - Foundation Intelligence Engine 🚀
+
+### **CRITICAL: Project Management Requirements** ⚠️
+**UNACCEPTABLE TO DROP THE BALL ON TRACKING AND DOCUMENTING**
+- ALWAYS happens, EVERY TIME, NO EXCUSES, NO EXCEPTIONS
+- After EVERY sprint/feature completion:
+  1. ✅ Update GitHub issues with actual deliverables vs planned
+  2. ✅ Close completed issues with comprehensive delivery summaries  
+  3. ✅ Update epic/parent issues with progress status
+  4. ✅ Commit and push ALL work to repository immediately
+  5. ✅ Update CLAUDE.md with new features/commands
+  6. ✅ Use TodoWrite to track progress throughout development
+- **Never get absorbed in technical work at expense of project management**
+- **Sprint 2 lesson**: Built amazing Content Planning Intelligence but forgot to update issues until called out
+
+### **DAILY DEVELOPMENT LOGS** 📝
+- **End of EVERY development day**: Create daily log in `daily-dev-logs/YYYY-MM-DD.md`
+- **Git ignored**: Logs are for internal development process only
+- **Content**: Everything accomplished, decisions made, blockers encountered, next steps
+- **Format**: Structured markdown with consistent sections
+- **Purpose**: Maintain development continuity and institutional knowledge

@@ -48,6 +48,9 @@ temp/
 # Internal product documentation
 product docs/
 
+# Daily development logs (internal process only)
+daily-dev-logs/
+
 # Test sites and temporary directories
 *-test/
 test-site/
