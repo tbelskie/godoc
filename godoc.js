@@ -91,4 +91,19 @@ program
     await githubCmd.execute(options);
   });
 
+program
+  .command('plan')
+  .description('Generate documentation roadmaps from specifications')
+  .argument('<spec-file>', 'Path to specification file')
+  .option('-t, --title <title>', 'Custom title for the roadmap')
+  .option('-o, --output <path>', 'Custom output path for roadmap file')
+  .option('-v, --verbose', 'Show detailed task breakdown')
+  .option('--clipboard', 'Copy roadmap summary to clipboard format')
+  .option('--github', 'Show GitHub integration instructions')
+  .action(async (specFile, options) => {
+    const PlanCommand = require('./src/commands/plan');
+    const planCmd = new PlanCommand();
+    await planCmd.execute(specFile, options);
+  });
+
 program.parse(process.argv);
