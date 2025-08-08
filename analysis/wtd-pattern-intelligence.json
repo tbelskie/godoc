@@ -1,0 +1,129 @@
+{
+  "structuralPatterns": {
+    "commonDirectoryStructures": [
+      {
+        "name": "codespell",
+        "subdirectoryCount": 0,
+        "subdirectories": []
+      },
+      {
+        "name": "docs",
+        "subdirectoryCount": 18,
+        "subdirectories": [
+          "_data",
+          "_ext",
+          "_scripts",
+          "_static",
+          "_static_html"
+        ]
+      },
+      {
+        "name": "vale",
+        "subdirectoryCount": 3,
+        "subdirectories": [
+          "TheEconomist",
+          "WTD",
+          "proselint"
+        ]
+      }
+    ],
+    "navigationPatterns": [],
+    "contentOrganization": {
+      "totalFiles": 687,
+      "markdownFiles": 25,
+      "rstFiles": 338,
+      "directories": 178,
+      "maxDepth": 3
+    }
+  },
+  "strategicApproaches": {
+    "documentationTypes": [],
+    "audienceTargeting": [
+      "community-focused-structure",
+      "conference-attendee-targeting",
+      "documentation-practitioner-focus"
+    ],
+    "contentStrategy": []
+  },
+  "workflowPatterns": {
+    "teamStructures": [],
+    "processApproaches": [],
+    "toolingStrategies": []
+  },
+  "styleGuidePatterns": {
+    "commonElements": [],
+    "organizationMethods": [],
+    "enforcementApproaches": []
+  },
+  "architecturalInsights": {
+    "informationArchitecture": {
+      "commonPrefixes": {
+        "2020": 1,
+        "2021": 4,
+        "2022": 2,
+        "2023": 7,
+        "2024": 6,
+        "2025": 5,
+        "speakers": 8,
+        "sponsors": 6,
+        "simple": 1,
+        "about": 2,
+        "events": 1,
+        "learning": 1,
+        "stay": 1,
+        "donations": 1,
+        "introducing": 1,
+        "moving": 1,
+        "new": 2,
+        "newsletter": 28
+      },
+      "commonSuffixes": {},
+      "namingConventions": [
+        "conference-pattern"
+      ],
+      "directoryPatterns": {
+        "2018": 2,
+        "2019": 2,
+        "2020": 3,
+        "2021": 3,
+        "2022": 3,
+        "2023": 3,
+        "2024": 3,
+        "2025": 3,
+        "write-the-docs": 2,
+        "include": 9,
+        "_templates": 2,
+        "about": 4,
+        "docs": 2,
+        "blog": 59
+      }
+    },
+    "contentHierarchy": [
+      {
+        "file": "LICENSE.md",
+        "headerCount": 3,
+        "maxLevel": 1,
+        "structure": [
+          "H1",
+          "H1",
+          "H1"
+        ]
+      },
+      {
+        "file": "README.md",
+        "headerCount": 17,
+        "maxLevel": 4,
+        "structure": [
+          "H2",
+          "H3",
+          "H3"
+        ]
+      }
+    ],
+    "crossReferences": []
+  },
+  "extractedAt": "2025-08-08T16:45:09.623Z",
+  "ethicalUse": "Pattern learning only - no content redistribution",
+  "source": "Write the Docs Community Repository (pattern analysis)",
+  "sourceUrl": "https://github.com/writethedocs/www"
+}

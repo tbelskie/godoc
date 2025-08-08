@@ -1,0 +1,267 @@
+{
+  "documentationStrategies": [
+    {
+      "insight": "Writers using this approach are often integrated into the product team, too - but does that mean your docs should be in the code repository too",
+      "source": "newsletter-april-2020.rst",
+      "category": "strategy",
+      "score": 3
+    }
+  ],
+  "toolingRecommendations": [
+    {
+      "insight": "It can help them understand your priorities: for example if you're fully booked this week because of another team's work",
+      "source": "newsletter-april-2019.rst",
+      "category": "tooling",
+      "score": 1
+    },
+    {
+      "insight": "Both because as people are learning for the first time, and because everyone on the team (no matter how proficient) will encounter new and unexpected issues",
+      "source": "newsletter-august-2020.rst",
+      "category": "tooling",
+      "score": 1
+    },
+    {
+      "insight": "Here's a summary of the main points:\n\n* For some folks, Sphinx's dependence on reStructuredText for a full feature suite is a blocker, because developer contributors don't want to move away from Markdown",
+      "source": "newsletter-august-2018.rst",
+      "category": "tooling",
+      "score": 0
+    },
+    {
+      "insight": "* Others prefer Hugo to Sphinx because it seems to be more widely adopted, offers a wider range of themes from which to choose, and is more easily extensible",
+      "source": "newsletter-august-2018.rst",
+      "category": "tooling",
+      "score": 0
+    },
+    {
+      "insight": "Extending Sphinx or developing a custom theme for Sphinx deliverables relies on in-house Python knowledge",
+      "source": "newsletter-august-2018.rst",
+      "category": "tooling",
+      "score": 0
+    },
+    {
+      "insight": "But sometimes these asides are worthwhile - particularly if they’re not essential info, but help your reader understand the topic better",
+      "source": "newsletter-august-2020.rst",
+      "category": "tooling",
+      "score": 0
+    },
+    {
+      "insight": "Some find they're distracted by the formatting possibilities in Flare or Word, preferring the simplicity of plain text or markdown: the constraints can be freeing",
+      "source": "newsletter-december-2019.rst",
+      "category": "tooling",
+      "score": 0
+    },
+    {
+      "insight": "DITA is heavyweight; Markdown lets you get on with writing, but is neither standardised nor designed for docs; and the alternatives aren't widely used",
+      "source": "newsletter-december-2021.rst",
+      "category": "tooling",
+      "score": 0
+    }
+  ],
+  "teamWorkflowInsights": [
+    {
+      "insight": "Writers using this approach are often integrated into the product team, too - but does that mean your docs should be in the code repository too",
+      "source": "newsletter-april-2020.rst",
+      "category": "workflow",
+      "score": 3
+    },
+    {
+      "insight": "It’s important to remember that not everyone has the same level of expertise or understanding of the writing process",
+      "source": "newsletter-april-2023.rst",
+      "category": "workflow",
+      "score": 1
+    },
+    {
+      "insight": "* **Windows key + Tab**: open workspaces preview\n   * **F11**: toggle full screen",
+      "source": "newsletter-december-2019.rst",
+      "category": "workflow",
+      "score": 1
+    },
+    {
+      "insight": "The original poster framed their challenge in terms of research that delays the writing process, but replies tended to point out that research is a key part of creating any documentation",
+      "source": "newsletter-december-2021.rst",
+      "category": "workflow",
+      "score": 1
+    }
+  ],
+  "contentCreationBestPractices": [
+    {
+      "insight": "Writing comments and the README in advance forces you think through what the code should do and helps you see your product from the user's perspective",
+      "source": "newsletter-august-2017.rst",
+      "category": "content-creation",
+      "score": 3
+    },
+    {
+      "insight": "Among 2017's tidbits – which include findings on the most dreaded coding language and the feasibility of sharing an office with a noisy-keyboard-user – **more than 80% of respondents said that they use official documentation to learn**",
+      "source": "newsletter-april-2017.rst",
+      "category": "content-creation",
+      "score": 2
+    },
+    {
+      "insight": "If you want to dig in further, some people also recommended the *I'd Rather Be Writing* posts `Making Help Content Enjoyable to Read - Impossible Quest",
+      "source": "newsletter-april-2019.rst",
+      "category": "content-creation",
+      "score": 2
+    },
+    {
+      "insight": "com/en-us/style-guide/grammar/person>`_ recommends using \"you\" in documentation, as do many other companies -- for a list of many examples, see Daniel D",
+      "source": "newsletter-april-2021.rst",
+      "category": "content-creation",
+      "score": 2
+    },
+    {
+      "insight": "----------------------------------\nWhere should support content live",
+      "source": "newsletter-april-2022.rst",
+      "category": "content-creation",
+      "score": 2
+    },
+    {
+      "insight": "Should you keep support content with the rest of your documentation",
+      "source": "newsletter-april-2022.rst",
+      "category": "content-creation",
+      "score": 2
+    },
+    {
+      "insight": "Or should support content have its own separate site",
+      "source": "newsletter-april-2022.rst",
+      "category": "content-creation",
+      "score": 2
+    },
+    {
+      "insight": "Download the report to learn more about:\n\n* How your peers are faring in deflecting cases through documentation\n* The search KPIs you should be benchmarking\n* The data you need to measure content efficiency\n\n`Access the report here <https://go",
+      "source": "newsletter-april-2024.rst",
+      "category": "content-creation",
+      "score": 2
+    },
+    {
+      "insight": "org/t/style-guides-for-documentarians/112) for more style handbook recommendations",
+      "source": "newsletter-december-2016.md",
+      "category": "content-creation",
+      "score": 2
+    },
+    {
+      "insight": "For example, should man pages include tutorial-type information",
+      "source": "newsletter-december-2017.rst",
+      "category": "content-creation",
+      "score": 2
+    },
+    {
+      "insight": "\"Documentation should not be about taking chances\"",
+      "source": "newsletter-december-2019.rst",
+      "category": "content-creation",
+      "score": 2
+    },
+    {
+      "insight": "Here are some of the issues folks discussed:\n\n* It's important to keep navigability at the front of your mind when you're writing longer pages",
+      "source": "newsletter-april-2019.rst",
+      "category": "content-creation",
+      "score": 1
+    },
+    {
+      "insight": "org/job/653/senior-technical-writer/>`__, KeyBank (Remote / Ohio, US)\n- `Technical Content Writer <https://jobs",
+      "source": "newsletter-april-2022.rst",
+      "category": "content-creation",
+      "score": 1
+    },
+    {
+      "insight": "It’s important to remember that not everyone has the same level of expertise or understanding of the writing process",
+      "source": "newsletter-april-2023.rst",
+      "category": "content-creation",
+      "score": 1
+    },
+    {
+      "insight": "It's important to make sure your content is findable and useful to your customers",
+      "source": "newsletter-april-2025.rst",
+      "category": "content-creation",
+      "score": 1
+    },
+    {
+      "insight": "The last is especially important if you have versioned or translated content",
+      "source": "newsletter-april-2025.rst",
+      "category": "content-creation",
+      "score": 1
+    },
+    {
+      "insight": "There are other guidelines out there, to be sure, but ultimately, whatever decision you reach on when to use \"page\" and when to use \"screen\", what's most important is that you are consistent",
+      "source": "newsletter-august-2018.rst",
+      "category": "content-creation",
+      "score": 1
+    },
+    {
+      "insight": "com/category/technical-writing/measuring-value/>`__\n- Sarah Moir's blog posts `here <https://thisisimportant",
+      "source": "newsletter-august-2019.rst",
+      "category": "content-creation",
+      "score": 1
+    },
+    {
+      "insight": "net/2019/05/21/detailed-data-types-you-can-use-for-documentation-prioritization/>`__ and `here <https://thisisimportant",
+      "source": "newsletter-august-2019.rst",
+      "category": "content-creation",
+      "score": 1
+    },
+    {
+      "insight": "****************************************\nHelp your contributors help your project\n****************************************\n\nContribution guidelines are an important part of any open source project",
+      "source": "newsletter-december-2017.rst",
+      "category": "content-creation",
+      "score": 1
+    }
+  ],
+  "commonChallengesAndSolutions": [
+    {
+      "insight": "Here are some of the issues folks discussed:\n\n* It's important to keep navigability at the front of your mind when you're writing longer pages",
+      "source": "newsletter-april-2019.rst",
+      "category": "challenges",
+      "score": 1
+    },
+    {
+      "insight": "The original poster framed their challenge in terms of research that delays the writing process, but replies tended to point out that research is a key part of creating any documentation",
+      "source": "newsletter-december-2021.rst",
+      "category": "challenges",
+      "score": 1
+    }
+  ],
+  "industryTrends": [],
+  "successStories": [
+    {
+      "insight": "There is a counter-argument to needing a new system: instead, we should take the tools we have, but make them work better for use cases",
+      "source": "newsletter-december-2021.rst",
+      "category": "success",
+      "score": 3
+    },
+    {
+      "insight": "Recommended reading:\n\n- *Measures of Success: React Less, Lead Better, Improve More*\n- *How to Measure Anything*\n- `More newsletter entries about metrics",
+      "source": "newsletter-august-2019.rst",
+      "category": "success",
+      "score": 2
+    },
+    {
+      "insight": "Of course, if all you really wanted from the HN discussion was just some insight into \"better\" man pages, we recommend taking a look at the admirably named `tldr <https://tldr",
+      "source": "newsletter-december-2017.rst",
+      "category": "success",
+      "score": 2
+    },
+    {
+      "insight": "General agreement that compulsive curiosity and desire to learn are key attributes of a successful documentarian",
+      "source": "newsletter-april-2020.rst",
+      "category": "success",
+      "score": 1
+    },
+    {
+      "insight": "Another could be better reader engagement, as argued by Michael Marchese in `Why it's important to add an estimated reading time <https://www",
+      "source": "newsletter-april-2021.rst",
+      "category": "success",
+      "score": 1
+    },
+    {
+      "insight": "- What are the three most important skills that a successful tech writer possesses, and why",
+      "source": "newsletter-april-2024.rst",
+      "category": "success",
+      "score": 1
+    }
+  ],
+  "lessonsLearned": [],
+  "extractedAt": "2025-08-08T16:47:35.192Z",
+  "ethicalUse": "Learning from published documentation insights",
+  "source": "Write the Docs Community Content",
+  "sourceUrl": "https://github.com/writethedocs/www",
+  "note": "Insights derived from community-published content about documentation practices"
+}
