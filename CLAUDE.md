@@ -98,6 +98,14 @@ Analyze and optimize existing sites
 - `--seo` - SEO optimization recommendations
 - `--accessibility` - Accessibility compliance
 
+### `godoc plan`
+Generate documentation roadmaps from specifications
+- `<spec-file>` - Path to specification file (supports .md, .yaml, .json, .txt)
+- `--title <title>` - Custom title for the roadmap
+- `--verbose` - Show detailed task breakdown with effort estimates
+- `--github` - Show GitHub integration instructions
+- Revolutionary AI-powered spec-to-roadmap workflow
+
 ### `godoc refactor`
 Modernize existing Hugo sites
 - `--modernize` - Update themes and structure
@@ -176,7 +184,14 @@ src/
    - Responsive layouts and components
    - Feature modules (search, dark mode, navigation)
 
-6. **GitHub Integration** (`src/commands/github.js`): Complete deployment:
+6. **Content Planning Intelligence** (`src/content-planning-intelligence.js`): Revolutionary spec analysis:
+   - Specification parsing for multiple formats (MD, YAML, JSON)
+   - AI-powered documentation impact analysis
+   - Effort estimation with dependency mapping
+   - GitHub epic generation with acceptance criteria
+   - Integration with Write the Docs community wisdom
+
+7. **GitHub Integration** (`src/commands/github.js`): Complete deployment:
    - Repository creation and configuration
    - CI/CD workflow generation
    - Multi-platform deployment support
@@ -244,6 +259,17 @@ Project context stored in `.godoc/context.json`:
 3. Edit files - Auto-reload enabled
 4. `godoc generate` - Add more content
 5. `godoc github` - Deploy to production
+
+### Content Planning (New!)
+```bash
+# Revolutionary spec-to-roadmap workflow
+godoc plan feature-spec.md --verbose
+# → Analyzes specification for documentation impacts
+# → Maps to existing documentation structure
+# → Generates GitHub epic with effort estimates
+# → Applies Write the Docs community wisdom
+# → Creates complete documentation roadmap in minutes
+```
 
 ### Content Creation
 ```bash
