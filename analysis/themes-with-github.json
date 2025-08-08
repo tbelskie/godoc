@@ -1,0 +1,209 @@
+{
+  "themes": [
+    {
+      "url": "https://themes.gohugo.io/themes/simple-dark/",
+      "name": "simple-dark",
+      "title": "Simple Dark",
+      "githubUrl": "https://github.com/gohugoio/hugo",
+      "demoUrl": "https://simple-dark.pages.dev/",
+      "author": null,
+      "license": null,
+      "minHugoVersion": "0.148.2",
+      "stars": null,
+      "lastUpdated": null,
+      "description": "A simple dark theme for general blogging, documentation and portfolio purposes.",
+      "features": [
+        "search",
+        "blog",
+        "portfolio",
+        "documentation"
+      ],
+      "scrapedAt": "2025-08-08T16:34:37.808Z"
+    },
+    {
+      "url": "https://themes.gohugo.io/themes/hugo-book/",
+      "name": "hugo-book",
+      "title": "Book",
+      "githubUrl": "https://github.com/gohugoio/hugo",
+      "demoUrl": "https://hugo-book-demo.netlify.app/",
+      "author": null,
+      "license": null,
+      "minHugoVersion": "0.148.2",
+      "stars": null,
+      "lastUpdated": null,
+      "description": "Hugo documentation theme as simple as plain book",
+      "features": [
+        "search",
+        "multilingual",
+        "documentation"
+      ],
+      "scrapedAt": "2025-08-08T16:34:40.386Z"
+    },
+    {
+      "url": "https://themes.gohugo.io/themes/blox-tailwind/",
+      "name": "blox-tailwind",
+      "title": "Hugo Blox - Tailwind",
+      "githubUrl": "https://github.com/gohugoio/hugo",
+      "demoUrl": "https://hugo-academic-pages.netlify.app/",
+      "author": null,
+      "license": null,
+      "minHugoVersion": "0.148.2",
+      "stars": null,
+      "lastUpdated": null,
+      "description": "Create any kind of website with fully customizable widgets - 50+ light/dark color themes, language packs, and widgets included.",
+      "features": [
+        "search",
+        "multilingual",
+        "minimal",
+        "blog",
+        "portfolio",
+        "documentation"
+      ],
+      "scrapedAt": "2025-08-08T16:34:42.967Z"
+    },
+    {
+      "url": "https://themes.gohugo.io/themes/loveit/",
+      "name": "loveit",
+      "title": "LoveIt",
+      "githubUrl": "https://github.com/gohugoio/hugo",
+      "demoUrl": "https://hugoloveit.com/",
+      "author": null,
+      "license": null,
+      "minHugoVersion": "0.148.2",
+      "stars": null,
+      "lastUpdated": null,
+      "description": "A Clean, Elegant but Advanced Hugo Theme for Hugo.",
+      "features": [
+        "search",
+        "blog",
+        "documentation"
+      ],
+      "scrapedAt": "2025-08-08T16:34:45.548Z"
+    },
+    {
+      "url": "https://themes.gohugo.io/themes/hugo-papermod/",
+      "name": "hugo-papermod",
+      "title": "PaperMod",
+      "githubUrl": "https://github.com/gohugoio/hugo",
+      "demoUrl": "https://adityatelange.github.io/hugo-PaperMod/",
+      "author": null,
+      "license": null,
+      "minHugoVersion": "0.148.2",
+      "stars": null,
+      "lastUpdated": null,
+      "description": "A fast, clean, responsive Hugo theme",
+      "features": [
+        "responsive",
+        "search",
+        "fast",
+        "minimal",
+        "blog",
+        "documentation"
+      ],
+      "scrapedAt": "2025-08-08T16:34:48.126Z"
+    },
+    {
+      "url": "https://themes.gohugo.io/themes/hugo-theme-stack/",
+      "name": "hugo-theme-stack",
+      "title": "Stack",
+      "githubUrl": "https://github.com/gohugoio/hugo",
+      "demoUrl": "https://demo.stack.jimmycai.com/",
+      "author": null,
+      "license": null,
+      "minHugoVersion": "0.148.2",
+      "stars": null,
+      "lastUpdated": null,
+      "description": "Card-style Hugo theme designed for bloggers",
+      "features": [
+        "search",
+        "blog",
+        "documentation"
+      ],
+      "scrapedAt": "2025-08-08T16:34:50.799Z"
+    },
+    {
+      "url": "https://themes.gohugo.io/themes/hugo-coder/",
+      "name": "hugo-coder",
+      "title": "Coder",
+      "githubUrl": "https://github.com/gohugoio/hugo",
+      "demoUrl": "https://hugo-coder.netlify.app/",
+      "author": null,
+      "license": null,
+      "minHugoVersion": "0.148.2",
+      "stars": null,
+      "lastUpdated": null,
+      "description": "A simple and clean blog theme for Hugo",
+      "features": [
+        "dark mode",
+        "search",
+        "minimal",
+        "blog",
+        "documentation"
+      ],
+      "scrapedAt": "2025-08-08T16:34:53.502Z"
+    },
+    {
+      "url": "https://themes.gohugo.io/themes/docsy/",
+      "name": "docsy",
+      "title": "Docsy",
+      "githubUrl": "https://github.com/gohugoio/hugo",
+      "demoUrl": "https://example.docsy.dev/",
+      "author": null,
+      "license": null,
+      "minHugoVersion": "0.148.2",
+      "stars": null,
+      "lastUpdated": null,
+      "description": "A Hugo theme for technical documentation sites",
+      "features": [
+        "search",
+        "multilingual",
+        "documentation"
+      ],
+      "scrapedAt": "2025-08-08T16:34:56.242Z"
+    },
+    {
+      "url": "https://themes.gohugo.io/themes/hugo-theme-terminal/",
+      "name": "hugo-theme-terminal",
+      "title": "Terminal",
+      "githubUrl": "https://github.com/gohugoio/hugo",
+      "demoUrl": "https://panr.github.io/hugo-theme-terminal-demo/",
+      "author": null,
+      "license": null,
+      "minHugoVersion": "0.148.2",
+      "stars": null,
+      "lastUpdated": null,
+      "description": "A simple, retro theme for Hugo.",
+      "features": [
+        "search",
+        "multilingual",
+        "minimal",
+        "blog",
+        "documentation"
+      ],
+      "scrapedAt": "2025-08-08T16:34:58.856Z"
+    },
+    {
+      "url": "https://themes.gohugo.io/themes/doks/",
+      "name": "doks",
+      "title": "Doks",
+      "githubUrl": "https://github.com/gohugoio/hugo",
+      "demoUrl": "https://doks.netlify.app/",
+      "author": null,
+      "license": null,
+      "minHugoVersion": "0.148.2",
+      "stars": null,
+      "lastUpdated": null,
+      "description": "Build beautiful, high-performance documentation websites with Doks.",
+      "features": [
+        "dark mode",
+        "search",
+        "minimal",
+        "blog",
+        "documentation"
+      ],
+      "scrapedAt": "2025-08-08T16:35:01.596Z"
+    }
+  ],
+  "extractedAt": "2025-08-08T16:35:02.599Z",
+  "totalCount": 10
+}

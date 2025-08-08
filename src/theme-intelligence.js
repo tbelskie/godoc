@@ -1,8 +1,6 @@
 const fs = require('fs-extra');
 const path = require('path');
 const chalk = require('chalk');
-const axios = require('axios');
-const cheerio = require('cheerio');
 
 /**
  * ThemeIntelligence - Discover, analyze, and recommend Hugo themes intelligently
@@ -111,62 +109,92 @@ class ThemeIntelligence {
   }
 
   /**
-   * Scrape theme information from themes.hugo.io
+   * Scrape theme information from themes.hugo.io using Playwright
    * @param {number} limit - Maximum number of themes to scrape
    * @returns {Promise<Array>} Raw theme data from Hugo themes site
    */
   async scrapeThemesFromHugoSite(limit) {
-    const baseUrl = 'https://themes.gohugo.io';
-    const themes = [];
+    console.log(chalk.blue(`🔍 Scraping themes from themes.gohugo.io (limit: ${limit})...`));
     
+    // Try to use Playwright if available, fallback to sample themes
     try {
-      // Get the main themes page
-      const response = await axios.get(baseUrl, {
-        timeout: 10000,
-        headers: {
-          'User-Agent': 'GOdoc Theme Intelligence Bot (https://github.com/tbelskie/godoc)'
-        }
-      });
+      const playwright = require('playwright');
+      const browser = await playwright.chromium.launch();
+      const page = await browser.newPage();
       
-      const $ = cheerio.load(response.data);
-      
-      // Find theme cards (adjust selector based on actual HTML structure)
-      const themeCards = $('.theme-card, .card, .theme-item').slice(0, limit);
-      
-      for (let i = 0; i < themeCards.length; i++) {
-        const card = themeCards.eq(i);
+      try {
+        await page.goto('https://themes.gohugo.io', { waitUntil: 'networkidle' });
+        await page.waitForTimeout(2000);
         
-        const theme = {
-          name: this.extractThemeName(card, $),
-          title: this.extractThemeTitle(card, $),
-          description: this.extractThemeDescription(card, $),
-          author: this.extractThemeAuthor(card, $),
-          githubUrl: this.extractThemeGitHubUrl(card, $),
-          demoUrl: this.extractThemeDemoUrl(card, $),
-          tags: this.extractThemeTags(card, $),
-          lastUpdated: this.extractThemeLastUpdated(card, $),
-          stars: this.extractThemeStars(card, $),
-          license: this.extractThemeLicense(card, $),
-          discoveredAt: new Date().toISOString()
-        };
+        console.log(chalk.blue('📄 Page loaded, extracting theme data...'));
         
-        // Only add themes with sufficient data
-        if (theme.name && theme.githubUrl) {
-          themes.push(theme);
+        const themes = await page.evaluate((limit) => {
+          const results = [];
+          
+          // Use the correct selectors we discovered
+          const themeCards = document.querySelectorAll('div.group.overflow-hidden.rounded-lg');
+          
+          for (let i = 0; i < Math.min(themeCards.length, limit); i++) {
+            const card = themeCards[i];
+            
+            try {
+              // Extract theme image
+              const img = card.querySelector('img[class*="aspect-10/7"]');
+              if (!img) continue;
+              
+              // Extract theme name from image URL
+              const themeName = img.src.match(/\/themes\/([^\/]+)\//)?.[1] || `theme-${i}`;
+              
+              // Extract theme link
+              const themeLink = card.querySelector('a[href*="/themes/"]');
+              const themeUrl = themeLink ? themeLink.href : '';
+              
+              // Extract theme title from link text
+              const linkText = themeLink ? themeLink.textContent.trim() : '';
+              const themeTitle = linkText.replace('View details for ', '') || themeName;
+              
+              const theme = {
+                name: themeName,
+                title: themeTitle,
+                description: `A Hugo theme: ${themeTitle}`,
+                author: 'Unknown', // Will be extracted from individual theme pages later
+                githubUrl: '', // Will be extracted from individual theme pages later
+                demoUrl: themeUrl,
+                image: img.src,
+                detailsUrl: themeUrl,
+                tags: [],
+                lastUpdated: null,
+                stars: 0,
+                license: 'Unknown',
+                discoveredAt: new Date().toISOString(),
+                scrapingMethod: 'playwright'
+              };
+              
+              results.push(theme);
+            } catch (error) {
+              console.warn(`Error processing theme card ${i}:`, error.message);
+            }
+          }
+          
+          return results;
+        }, limit);
+        
+        await browser.close();
+        
+        if (themes.length > 0) {
+          console.log(chalk.green(`✅ Successfully scraped ${themes.length} themes`));
+          return themes;
+        } else {
+          console.log(chalk.yellow('⚠️  No themes found with Playwright, using fallback'));
+          return this.getSampleThemes().slice(0, limit);
         }
         
-        // Add delay to be respectful to the server
-        if (i < themeCards.length - 1) {
-          await this.delay(200);
-        }
+      } finally {
+        await browser.close();
       }
       
-      return themes;
-      
     } catch (error) {
-      console.error(chalk.red('Error scraping themes.hugo.io:'), error.message);
-      
-      // Return sample themes for development/testing
+      console.warn(chalk.yellow('⚠️  Playwright scraping failed, using sample themes:', error.message));
       return this.getSampleThemes().slice(0, limit);
     }
   }
