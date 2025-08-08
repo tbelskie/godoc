@@ -31,30 +31,39 @@ godoc "Hey, I'm a fintech startup with a team of 8 engineers. We need API docume
 ✅ Applies style guide enforcement to all content
 ✅ Ready for team to focus entirely on writing great content
 
+# Content Planning: Feature-driven documentation
+godoc plan --spec "oauth-2.1-upgrade.md" --release "Q1-2025"
+# → Analyzes spec for doc impacts
+# → Creates GitHub epic with 6 tasks
+# → Estimates effort and assigns team members
+# → Sets up review workflows and dependencies
+
 # Ongoing: Natural language operations
 godoc "create branch for new payment API docs"
 godoc "generate OAuth authentication guide following our style guide"  
+godoc validate --deep  # Pre-build validation prevents all build failures
 godoc "commit these changes with a good message and deploy to staging"
 godoc "the legal team approved, merge and deploy to production"
 ```
 
 ---
 
-## 🧠 **Core Intelligence Engines**
+## 🧠 **7 Core Intelligence Engines**
 
-### **1. Theme Intelligence System**
+### **1. Knowledge Ingestion Engine**  
+**Objective**: Systematically learn from the entire documentation industry
+- **Style guide analysis** - Google, Microsoft, GitLab, OpenAPI standards
+- **Documentation patterns** - Stripe, GitHub, Kubernetes, Shopify patterns
+- **Theme intelligence** - Learn from 500+ Hugo themes for custom generation
+- **Best practices database** - proven structures, naming, organization
+- **Continuous learning** - daily updates from new sources
+
+### **2. Theme Intelligence System**
 **Objective**: Generate themes better than any existing Hugo theme
 - **Learn from 500+ Hugo themes** - patterns, layouts, components, configurations
 - **Industry-specific intelligence** - fintech, healthcare, developer tools patterns
 - **Custom theme generation** - "sleek fintech dashboard with dark mode" → unique theme
 - **Quality scoring** - themes rated on performance, maintainability, user experience
-
-### **2. Knowledge Ingestion Engine**  
-**Objective**: Systematically learn from the entire documentation industry
-- **Style guide analysis** - Google, Microsoft, GitLab, OpenAPI standards
-- **Documentation patterns** - Stripe, GitHub, Kubernetes, Shopify patterns
-- **Best practices database** - proven structures, naming, organization
-- **Continuous learning** - daily updates from new sources
 
 ### **3. Style Guide Intelligence**
 **Objective**: Every team gets world-class documentation standards
@@ -64,18 +73,44 @@ godoc "the legal team approved, merge and deploy to production"
 - **Compliance ready** - SOX, GDPR, accessibility standards built-in
 
 ### **4. Content Intelligence**
-**Objective**: AI-powered content that rivals human experts
+**Objective**: AI-powered content that rivals human experts + proactive planning
 - **Legacy migration** - Confluence, Notion, SharePoint → optimized Hugo
 - **Content generation** - API docs, tutorials, guides with industry patterns
+- **Content Planning Intelligence** ⭐ **NEW PHASE 1 CORE**
+  - **Impact Analysis** - Upload spec/feature → identify doc impacts across site
+  - **Epic Generation** - Auto-creates GitHub issues/epics with acceptance criteria
+  - **Effort Estimation** - "3 days for eng writer, 1 day for review"
+  - **Timeline Coordination** - Aligns doc delivery with release schedules
+  - **Dependency Mapping** - "Update auth guide before API reference"
+  - **Template Matching** - Apply learned patterns from industry leaders
 - **SEO optimization** - automatically applied based on best practices
 - **Accessibility compliance** - WCAG standards enforced automatically
 
-### **5. Workflow Intelligence**
+### **5. Quality Assurance Intelligence** 🆕
+**Objective**: Automated documentation review and quality enforcement
+- **Automated Review Pipeline** - Like CodeRabbit but for documentation
+- **Style Guide Enforcement** - Real-time compliance checking across all content
+- **Accessibility Auditing** - WCAG compliance automation and fixes
+- **Link Health Monitoring** - Continuous validation and auto-updates
+- **Grammar & Spelling** - Advanced language processing and corrections
+- **Performance Analysis** - Image optimization, loading speed, mobile responsiveness
+
+### **6. Infrastructure Intelligence** 🆕
+**Objective**: Eliminate build failures and technical debugging overhead
+- **Pre-Build Validation** - Catch all issues before CI/CD (Hugo config, markdown syntax)
+- **Error Translation** - Convert cryptic build errors to actionable solutions
+- **Auto-Fix Pipeline** - Automatically resolve 90% of common build issues
+- **Dependency Management** - Ensure Hugo modules/themes work together perfectly
+- **Environment Consistency** - "Works everywhere" guarantees across dev/staging/prod
+- **Performance Monitoring** - Build time optimization and bottleneck identification
+
+### **7. Workflow Intelligence**
 **Objective**: Natural language replaces complex technical workflows  
 - **Git operations** - "create branch for API docs" → proper Git commands
 - **Infrastructure orchestration** - complete CI/CD setup in one command
 - **Team collaboration** - review processes, notifications, approvals
 - **Publishing automation** - multi-platform deployment with optimization
+- **Project Integration** - GitHub/GitLab/Jira/Linear native workflows
 
 ---
 
@@ -108,40 +143,44 @@ godoc "the legal team approved, merge and deploy to production"
 - Theme generation time under 60 seconds
 - Generated themes pass all Hugo validation
 
-### **Milestone 1.3: Style Guide Generator (Month 3)**
+### **Milestone 1.3: Content Intelligence + Content Planning (Month 3)**
 - **Week 1**: Style guide template system and industry patterns
-- **Week 2**: Custom generation engine with team optimization
-- **Week 3**: Enforcement engine for real-time validation
-- **Week 4**: Evolution system (learn from team usage)
+- **Week 2**: Custom generation engine with team optimization  
+- **Week 3**: Content Planning Intelligence - spec analysis and impact mapping
+- **Week 4**: GitHub/GitLab integration for epic and issue generation
 
 **Success Criteria**:
 - Generate comprehensive style guides in under 5 minutes
 - Automatic enforcement in all generated content
+- Content Planning: Upload spec → auto-generate documentation roadmap
+- GitHub integration: Create epics with accurate effort estimates
 - Style guides adapt based on team's actual writing patterns
-- Measurable improvement in documentation consistency
 
 ---
 
-## **Phase 2: Complete Platform (Months 3-6)**
-**Goal**: Transform into the ultimate docs-as-code platform
+## **Phase 2: Complete Intelligence Platform (Months 4-6)**
+**Goal**: Transform into the ultimate docs-as-code platform with zero overhead
 
-### **Milestone 2.1: Natural Language Interface (Month 4)**
-- Git workflow automation ("create branch for API docs")
-- Content generation with style guide enforcement
-- Infrastructure commands with intelligent defaults
-- Team collaboration through conversational commands
+### **Milestone 2.1: Quality Assurance Intelligence (Month 4)**
+- Automated review pipeline (CodeRabbit for docs)
+- Real-time style guide enforcement and suggestions
+- Link health monitoring and auto-updates
+- Accessibility auditing with automatic fixes
+- Grammar, spelling, and language optimization
 
-### **Milestone 2.2: Content Intelligence (Month 5)**
-- Legacy content migration from major platforms
-- AI-powered content optimization and restructuring
-- SEO and accessibility automatic compliance
-- Multi-format content generation (API specs, tutorials, guides)
+### **Milestone 2.2: Infrastructure Intelligence (Month 5)**
+- Pre-build validation (catch all issues before CI/CD)
+- Error translation (cryptic errors → actionable solutions)
+- Auto-fix pipeline (resolve 90% of build failures automatically)
+- Environment consistency guarantees
+- Performance monitoring and optimization
 
-### **Milestone 2.3: Infrastructure Orchestration (Month 6)**
+### **Milestone 2.3: Advanced Workflow Intelligence (Month 6)**
+- Natural language Git operations
 - Complete setup automation (repos, CI/CD, deployment)
 - Multi-platform publishing (Netlify, Vercel, GitHub Pages, AWS)
-- Performance optimization and monitoring
 - Team workflow configuration and permissions
+- Project management integration (Jira, Linear, etc.)
 
 ---
 
