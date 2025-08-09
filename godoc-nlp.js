@@ -243,17 +243,38 @@ async function executeStyleMutation(request) {
 }
 
 /**
- * Execute deployment
+ * Execute deployment with CI/CD setup
  */
 async function executeDeploy(params) {
-  const platform = params.platform || 'netlify';
-  console.log(chalk.green(`\n🚀 Deploying to ${platform}...\n`));
+  console.log(chalk.green('\n🚀 Setting up deployment pipeline...\n'));
   
-  // Use existing github command as base
-  const GitHubCommand = require('./src/commands/github');
-  const githubCmd = new GitHubCommand();
+  const CICDEngine = require('./src/cicd-engine');
+  const cicdEngine = new CICDEngine();
   
-  await githubCmd.execute({ deployment: platform });
+  try {
+    await cicdEngine.initialize();
+    
+    // Process deployment request
+    const originalRequest = params.fullMatch || `deploy to ${params.platform || 'netlify'}`;
+    const results = await cicdEngine.processDeploymentRequest(originalRequest);
+    
+    // Display configuration report
+    const report = cicdEngine.generateDeploymentReport(results);
+    console.log(report);
+    
+    // Show next steps
+    if (results.secretsRequired.length > 0) {
+      console.log(chalk.blue('🔑 Next steps:'));
+      console.log(chalk.gray('   1. Configure repository secrets listed above'));
+      console.log(chalk.gray('   2. Push changes to trigger first deployment'));
+      console.log(chalk.gray('   3. Monitor workflow in Actions/Pipelines tab'));
+    } else {
+      console.log(chalk.green('✅ Deployment configured! Push changes to deploy.'));
+    }
+    
+  } catch (error) {
+    console.error(chalk.red('Error setting up deployment:', error.message));
+  }
 }
 
 /**

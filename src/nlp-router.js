@@ -177,6 +177,24 @@ class NLPRouter {
             params: ['fullMatch', 'platform']
           },
           {
+            regex: /^(?:godoc\s+)?(?:set\s+up|setup|configure)\s+(?:ci\/cd|cicd|github\s+actions|gitlab\s+ci)\s*(?:for\s+)?(.+)?$/,
+            confidence: 0.9,
+            description: "Setup CI/CD pipeline",
+            params: ['fullMatch', 'platform']
+          },
+          {
+            regex: /^(?:godoc\s+)?(?:create|generate)\s+(?:github\s+actions?|workflow|pipeline)\s*(?:for\s+)?(.+)?$/,
+            confidence: 0.9,
+            description: "Generate CI/CD workflow",
+            params: ['fullMatch', 'platform']
+          },
+          {
+            regex: /^(?:godoc\s+)?(?:host|deploy)\s+(?:this\s+)?(?:on|to)\s+(netlify|vercel|github\s+pages|aws|s3)$/,
+            confidence: 0.95,
+            description: "Deploy to specific platform",
+            params: ['fullMatch', 'platform']
+          },
+          {
             regex: /^(?:godoc\s+)?(?:put|host|serve)\s+(?:this\s+)?(?:on|at)\s+(\w+)$/,
             confidence: 0.9,
             description: "Host on platform",

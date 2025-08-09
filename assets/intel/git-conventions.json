@@ -1,0 +1,181 @@
+{
+  "version": "1.0.0",
+  "description": "Git conventions and templates for documentation projects",
+  "commit_templates": {
+    "conventional": {
+      "name": "Conventional Commits",
+      "description": "Industry standard commit message format",
+      "format": "{type}({scope}): {subject}\n\n{body}\n\n{footer}",
+      "types": {
+        "feat": "New features or content",
+        "fix": "Bug fixes or corrections", 
+        "docs": "Documentation changes only",
+        "style": "Formatting, missing semi colons, etc; no code change",
+        "refactor": "Refactoring documentation structure",
+        "test": "Adding missing tests or correcting existing tests",
+        "chore": "Updating grunt tasks etc; no production code change",
+        "content": "New or updated content",
+        "assets": "Adding or updating images, videos, other assets",
+        "config": "Configuration file updates",
+        "deploy": "Deployment related changes",
+        "perf": "Performance improvements",
+        "revert": "Revert previous changes"
+      },
+      "scopes": {
+        "docs": "General documentation",
+        "api": "API documentation", 
+        "guide": "Guides and tutorials",
+        "reference": "Reference documentation",
+        "blog": "Blog posts",
+        "pages": "Static pages",
+        "theme": "Theme and styling",
+        "config": "Configuration",
+        "ci": "CI/CD workflows",
+        "deploy": "Deployment setup"
+      },
+      "examples": [
+        "feat(api): add OAuth 2.0 authentication guide",
+        "docs(guide): update quickstart installation steps",
+        "fix(theme): correct mobile navigation styling",
+        "content(blog): publish Q4 product updates post",
+        "chore(ci): update Hugo version to 0.120.4"
+      ]
+    },
+    "simple": {
+      "name": "Simple Descriptive",
+      "description": "Clear, descriptive commit messages without strict format",
+      "format": "{action}: {description}",
+      "actions": [
+        "Add", "Update", "Fix", "Remove", "Improve", "Refactor", 
+        "Create", "Delete", "Modify", "Enhance", "Optimize"
+      ],
+      "examples": [
+        "Add: OAuth 2.0 authentication documentation",
+        "Update: installation guide with new prerequisites", 
+        "Fix: broken links in API reference",
+        "Improve: mobile responsiveness of navigation"
+      ]
+    },
+    "documentation": {
+      "name": "Documentation-Specific",
+      "description": "Commit format optimized for documentation projects",
+      "format": "[{category}] {change_type}: {description}",
+      "categories": {
+        "content": "Content changes",
+        "structure": "Site structure changes", 
+        "style": "Visual/styling changes",
+        "config": "Configuration changes",
+        "assets": "Media and asset changes",
+        "deploy": "Deployment changes"
+      },
+      "change_types": [
+        "new", "update", "fix", "remove", "reorganize", "improve"
+      ],
+      "examples": [
+        "[content] new: Add comprehensive API authentication guide",
+        "[structure] reorganize: Move tutorials to dedicated section",
+        "[style] fix: Correct code block syntax highlighting",
+        "[config] update: Enable Git info for last modified dates"
+      ]
+    }
+  },
+  "branch_conventions": {
+    "gitflow": {
+      "name": "Git Flow",
+      "description": "Standard Git Flow branching strategy",
+      "branches": {
+        "main": "Production-ready code",
+        "develop": "Integration branch for features",
+        "feature/*": "New features or content",
+        "release/*": "Release preparation",
+        "hotfix/*": "Critical fixes",
+        "docs/*": "Documentation-only changes"
+      },
+      "patterns": {
+        "feature": "feature/{type}-{description}",
+        "release": "release/{version}",
+        "hotfix": "hotfix/{issue}-{description}",
+        "docs": "docs/{section}-{description}"
+      },
+      "examples": [
+        "feature/api-authentication-docs",
+        "feature/blog-q4-updates",
+        "docs/quickstart-improvements", 
+        "hotfix/broken-navigation-links",
+        "release/v2.1.0"
+      ]
+    },
+    "simple": {
+      "name": "Simple Feature Branches",
+      "description": "Simplified branching for documentation projects",
+      "branches": {
+        "main": "Production documentation",
+        "{feature-name}": "Feature or content branches"
+      },
+      "patterns": {
+        "feature": "{type}-{description}",
+        "content": "content-{topic}",
+        "fix": "fix-{issue}"
+      },
+      "examples": [
+        "api-docs-update",
+        "content-oauth-guide",
+        "fix-mobile-navigation",
+        "theme-improvements"
+      ]
+    }
+  },
+  "gitignore_templates": {
+    "hugo": {
+      "name": "Hugo Documentation Site",
+      "description": "Standard .gitignore for Hugo-based documentation",
+      "content": "# Hugo\npublic/\nresources/\n.hugo_build.lock\n\n# Operating System Files\n.DS_Store\n.DS_Store?\n._*\n.Spotlight-V100\n.Trashes\nehthumbs.db\nThumbs.db\n\n# Node.js\nnode_modules/\nnpm-debug.log*\nyarn-debug.log*\nyarn-error.log*\npackage-lock.json\nyarn.lock\n\n# IDE/Editor Files\n.vscode/\n.idea/\n*.swp\n*.swo\n*~\n\n# Temporary Files\n*.tmp\n*.temp\n*.log\n\n# Environment Files\n.env\n.env.local\n.env.production\n\n# Build/Deploy\ndist/\nbuild/\n.netlify/\n.vercel/\n\n# Hugo Themes (if using submodules)\n# themes/*/\n\n# Local Development\n.hugo-server.log"
+    },
+    "documentation": {
+      "name": "General Documentation", 
+      "description": "Universal .gitignore for documentation projects",
+      "content": "# Build Output\nbuild/\ndist/\nout/\npublic/\n_site/\n.docusaurus/\n\n# Dependencies\nnode_modules/\nvendor/\n.bundle/\n\n# Logs\n*.log\nlogs/\nnpm-debug.log*\nyarn-debug.log*\nyarn-error.log*\n\n# Runtime Data\npids\n*.pid\n*.seed\n*.pid.lock\n\n# Coverage Directory\ncoverage/\n.nyc_output\n\n# Environment Variables\n.env\n.env.local\n.env.production\n.env.staging\n\n# IDE/Editor\n.vscode/\n.idea/\n*.swp\n*.swo\n*~\n.project\n.settings/\n\n# OS Files\n.DS_Store\n.DS_Store?\n._*\n.Spotlight-V100\n.Trashes\nehthumbs.db\nThumbs.db\n\n# Temporary Files\n*.tmp\n*.temp\n*.cache\n\n# Deployment\n.netlify/\n.vercel/\n.now/\n\n# Local Configuration\nconfig.local.*"
+    },
+    "mkdocs": {
+      "name": "MkDocs Documentation",
+      "description": ".gitignore template for MkDocs projects", 
+      "content": "# MkDocs\nsite/\n\n# Python\n__pycache__/\n*.py[cod]\n*$py.class\n*.so\n.Python\nenv/\nvenv/\nENV/\nenv.bak/\nvenv.bak/\n\n# Distribution / Packaging\n.Python\nbuild/\ndevelop-eggs/\ndist/\ndownloads/\neggs/\n.eggs/\nlib/\nlib64/\nparts/\nsdist/\nvar/\nwheels/\n*.egg-info/\n.installed.cfg\n*.egg\n\n# PyInstaller\n*.manifest\n*.spec\n\n# Unit Test / Coverage\nhtmlcov/\n.tox/\n.coverage\n.coverage.*\n.cache\nnosetests.xml\ncoverage.xml\n*.cover\n.hypothesis/\n.pytest_cache/\n\n# Environments\n.env\n.venv\nenv/\nvenv/\nENV/\nenv.bak/\nvenv.bak/\n\n# IDE\n.vscode/\n.idea/\n*.swp\n*.swo\n\n# OS\n.DS_Store\nThumbs.db"
+    }
+  },
+  "git_hooks": {
+    "commit_msg": {
+      "name": "Commit Message Validation",
+      "description": "Validates commit messages against chosen convention",
+      "script": "#!/bin/sh\n# Commit message validation hook\n# Validates against conventional commit format\n\ncommit_regex='^(feat|fix|docs|style|refactor|test|chore|content|assets|config|deploy|perf|revert)(\\(.+\\))?: .{1,50}'\n\nif ! grep -qE \"$commit_regex\" \"$1\"; then\n    echo \"Invalid commit message format!\" >&2\n    echo \"Please use: type(scope): description\" >&2\n    echo \"Example: feat(api): add authentication guide\" >&2\n    echo \"\" >&2\n    echo \"Valid types: feat, fix, docs, style, refactor, test, chore, content, assets, config, deploy, perf, revert\" >&2\n    exit 1\nfi",
+      "install_cmd": "curl -o .git/hooks/commit-msg https://raw.githubusercontent.com/godoc/hooks/main/commit-msg && chmod +x .git/hooks/commit-msg"
+    },
+    "pre_commit": {
+      "name": "Pre-commit Validation",
+      "description": "Runs linting and validation before commits",
+      "script": "#!/bin/sh\n# Pre-commit hook for documentation projects\n\n# Check if Hugo can build successfully\nif command -v hugo >/dev/null 2>&1; then\n    echo \"Building Hugo site...\"\n    if ! hugo --quiet; then\n        echo \"Hugo build failed! Please fix errors before committing.\" >&2\n        exit 1\n    fi\n    echo \"Hugo build successful\"\nfi\n\n# Check for large files\necho \"Checking for large files...\"\nfor file in $(git diff --cached --name-only); do\n    if [ -f \"$file\" ]; then\n        size=$(wc -c < \"$file\")\n        if [ $size -gt 5242880 ]; then  # 5MB\n            echo \"Warning: $file is larger than 5MB ($size bytes)\" >&2\n            echo \"Consider using Git LFS or optimizing the file\" >&2\n            exit 1\n        fi\n    fi\ndone\n\n# Check markdown files for common issues\nif command -v markdownlint >/dev/null 2>&1; then\n    echo \"Linting markdown files...\"\n    markdownlint $(git diff --cached --name-only | grep '\\.md$') || exit 1\nfi\n\necho \"Pre-commit checks passed\"",
+      "install_cmd": "curl -o .git/hooks/pre-commit https://raw.githubusercontent.com/godoc/hooks/main/pre-commit && chmod +x .git/hooks/pre-commit"
+    }
+  },
+  "pull_request_templates": {
+    "documentation": {
+      "name": "Documentation PR Template",
+      "description": "Template for documentation pull requests",
+      "path": ".github/pull_request_template.md",
+      "content": "## Description\n\nBrief description of the changes made in this PR.\n\n## Type of Change\n\n- [ ] New content/documentation\n- [ ] Content update/revision\n- [ ] Bug fix (typo, broken link, etc.)\n- [ ] Style/formatting improvements\n- [ ] Structural reorganization\n- [ ] Configuration changes\n- [ ] Asset updates (images, videos, etc.)\n\n## Content Areas Affected\n\n- [ ] API Documentation\n- [ ] User Guides\n- [ ] Tutorials\n- [ ] Reference Material\n- [ ] Blog Posts\n- [ ] Landing Pages\n- [ ] Navigation/Structure\n- [ ] Theme/Styling\n\n## Checklist\n\n- [ ] Content is accurate and up-to-date\n- [ ] Links are working and point to correct resources\n- [ ] Images/assets are optimized and accessible\n- [ ] Spelling and grammar have been reviewed\n- [ ] Changes follow style guide (if applicable)\n- [ ] Site builds successfully with changes\n- [ ] Mobile responsiveness verified (if applicable)\n- [ ] SEO considerations addressed (titles, descriptions, etc.)\n\n## Testing\n\n- [ ] Previewed changes locally\n- [ ] Verified all links work correctly\n- [ ] Tested on different screen sizes/devices\n- [ ] Checked for accessibility issues\n\n## Screenshots (if applicable)\n\n<!-- Add screenshots to show visual changes -->\n\n## Additional Notes\n\n<!-- Any additional information, context, or notes for reviewers -->"
+    },
+    "simple": {
+      "name": "Simple PR Template", 
+      "description": "Minimal template for straightforward changes",
+      "path": ".github/pull_request_template.md",
+      "content": "## What Changed\n\nDescribe what you changed and why.\n\n## Type\n\n- [ ] New content\n- [ ] Update existing content  \n- [ ] Fix issue\n- [ ] Style/format changes\n\n## Checklist\n\n- [ ] Content is accurate\n- [ ] Links work correctly\n- [ ] Site builds successfully\n- [ ] Reviewed for typos/errors\n\n## Notes\n\nAnything else reviewers should know?"
+    }
+  },
+  "nlp_patterns": {
+    "setup_git": ["setup git", "configure git", "initialize git", "git setup"],
+    "commit_standards": ["commit standards", "commit format", "commit conventions", "commit template"],
+    "branch_naming": ["branch naming", "branch conventions", "branching strategy", "git flow"],
+    "gitignore": ["gitignore", "ignore files", "git ignore", "exclude files"],
+    "git_hooks": ["git hooks", "pre-commit", "commit hooks", "git validation"],
+    "pr_template": ["pull request template", "pr template", "merge request template"]
+  }
+}

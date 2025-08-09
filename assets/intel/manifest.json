@@ -8,7 +8,8 @@
     "styles.json": "03c7ad4235fdac4e7aac3d95b1bd4d77875b439eb81be0c5fb3b9d51b82ca120",
     "patterns.json": "77ac162255f6b36d67cb68cf2c6c2aa1ea73569384fbf72577d693a56d35f93d",
     "rules.json": "086d9a1c986b4597f21721f9820275e8f3bccc5ebef5a102bd417b130365187b",
-    "diagnostics.json": "fa4ce00208d98fe2bb04078b7f8745932a88783c61ca26238a8f70a0bb641d3b"
+    "diagnostics.json": "fa4ce00208d98fe2bb04078b7f8745932a88783c61ca26238a8f70a0bb641d3b",
+    "cicd-templates.json": "5d6eec5d639298ec93ccc573ea1fa3a657a4df4ba9bc1b605f0ae47152b1c4c5"
   },
   "notes": "Bundled, offline-first intel snapshot for CLI 0.1.x"
 }

@@ -1,84 +1,18 @@
 {
-  "name": "godoc-cli",
+  "name": "hugo-site",
   "version": "1.0.0",
-  "description": "GOdoc - AI-powered Hugo documentation generator. Create professional documentation sites through natural language conversation.",
-  "main": "godoc.js",
-  "bin": {
-    "godoc": "./godoc.js"
-  },
+  "description": "Hugo documentation site",
   "scripts": {
-    "start": "node godoc.js",
-    "test": "jest",
-    "demo": "node test-demo.js",
-    "workflow-test": "node test-godoc-workflow.js",
-    "link": "npm link",
-    "unlink": "npm unlink -g godoc-cli",
-    "version": "node godoc.js --version",
-    "help": "node godoc.js --help"
-  },
-  "keywords": [
-    "godoc",
-    "hugo",
-    "documentation",
-    "static-site-generator",
-    "ai",
-    "claude",
-    "docs-as-code",
-    "technical-writing",
-    "api-docs",
-    "markdown",
-    "jamstack"
-  ],
-  "author": {
-    "name": "Tom Belskie",
-    "url": "https://github.com/tbelskie"
-  },
-  "license": "MIT",
-  "homepage": "https://github.com/tbelskie/godoc",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/tbelskie/godoc.git"
-  },
-  "bugs": {
-    "url": "https://github.com/tbelskie/godoc/issues"
-  },
-  "engines": {
-    "node": ">=16.0.0",
-    "npm": ">=7.0.0"
-  },
-  "files": [
-    "godoc.js",
-    "src/",
-    "examples/",
-    "README.md",
-    "IMPLEMENTATION_ROADMAP.md"
-  ],
-  "dependencies": {
-    "axios": "^1.6.0",
-    "chalk": "^4.1.2",
-    "cheerio": "^1.0.0-rc.12",
-    "commander": "^9.4.1",
-    "fs-extra": "^11.1.0",
-    "glob": "^11.0.3",
-    "inquirer": "^8.2.5",
-    "minimatch": "^10.0.3",
-    "ora": "^5.4.1"
-  },
-  "optionalDependencies": {
-    "hugo-extended": "^0.120.0"
+    "build": "hugo --gc --minify",
+    "dev": "hugo server -D",
+    "preview": "hugo server --environment production",
+    "clean": "rm -rf public resources"
   },
   "devDependencies": {
-    "jest": "^29.0.0",
-    "playwright": "^1.54.2"
+    "hugo-cli": "^0.120.4"
   },
-  "preferGlobal": true,
-  "os": [
-    "darwin",
-    "linux",
-    "win32"
-  ],
-  "cpu": [
-    "x64",
-    "arm64"
-  ]
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  }
 }

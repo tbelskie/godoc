@@ -1,0 +1,140 @@
+{
+  "version": "1.0.0",
+  "description": "CI/CD Templates for automated Hugo deployment across platforms",
+  "templates": {
+    "github_actions": {
+      "netlify": {
+        "name": "Deploy Hugo to Netlify",
+        "description": "GitHub Actions workflow for Hugo deployment to Netlify",
+        "path": ".github/workflows/netlify.yml",
+        "content": "name: Deploy to Netlify\n\non:\n  push:\n    branches: [main, master]\n  pull_request:\n    branches: [main, master]\n\njobs:\n  build-and-deploy:\n    runs-on: ubuntu-latest\n    \n    steps:\n      - name: Checkout repository\n        uses: actions/checkout@v4\n        with:\n          submodules: true\n          fetch-depth: 0\n          \n      - name: Setup Hugo\n        uses: peaceiris/actions-hugo@v2\n        with:\n          hugo-version: '0.120.4'\n          extended: true\n          \n      - name: Setup Node.js\n        uses: actions/setup-node@v4\n        with:\n          node-version: '18'\n          cache: 'npm'\n          \n      - name: Install dependencies\n        run: npm ci\n        \n      - name: Build site\n        run: hugo --minify --environment production\n        \n      - name: Deploy to Netlify\n        uses: nwtgck/actions-netlify@v3.0\n        with:\n          publish-dir: './public'\n          production-branch: main\n          github-token: ${{ secrets.GITHUB_TOKEN }}\n          deploy-message: 'Deploy from GitHub Actions'\n        env:\n          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}\n          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}",
+        "secrets": ["NETLIFY_AUTH_TOKEN", "NETLIFY_SITE_ID"],
+        "variables": {
+          "hugo_version": "0.120.4",
+          "node_version": "18",
+          "publish_dir": "public"
+        }
+      },
+      "github_pages": {
+        "name": "Deploy Hugo to GitHub Pages",
+        "description": "GitHub Actions workflow for Hugo deployment to GitHub Pages",
+        "path": ".github/workflows/pages.yml",
+        "content": "name: Deploy Hugo site to Pages\n\non:\n  push:\n    branches: [main, master]\n  workflow_dispatch:\n\npermissions:\n  contents: read\n  pages: write\n  id-token: write\n\nconcurrency:\n  group: \"pages\"\n  cancel-in-progress: false\n\ndefaults:\n  run:\n    shell: bash\n\njobs:\n  build:\n    runs-on: ubuntu-latest\n    steps:\n      - name: Checkout\n        uses: actions/checkout@v4\n        with:\n          submodules: true\n          fetch-depth: 0\n          \n      - name: Setup Pages\n        id: pages\n        uses: actions/configure-pages@v4\n        \n      - name: Setup Hugo\n        uses: peaceiris/actions-hugo@v2\n        with:\n          hugo-version: 'latest'\n          extended: true\n          \n      - name: Setup Node.js\n        uses: actions/setup-node@v4\n        with:\n          node-version: '18'\n          cache: 'npm'\n          \n      - name: Install dependencies\n        run: npm ci\n        \n      - name: Build with Hugo\n        env:\n          HUGO_ENVIRONMENT: production\n          HUGO_ENV: production\n        run: |\n          hugo \\\n            --gc \\\n            --minify \\\n            --baseURL \"${{ steps.pages.outputs.base_url }}/\"\n            \n      - name: Upload artifact\n        uses: actions/upload-pages-artifact@v3\n        with:\n          path: ./public\n          \n  deploy:\n    environment:\n      name: github-pages\n      url: ${{ steps.deployment.outputs.page_url }}\n    runs-on: ubuntu-latest\n    needs: build\n    steps:\n      - name: Deploy to GitHub Pages\n        id: deployment\n        uses: actions/deploy-pages@v4",
+        "secrets": [],
+        "variables": {
+          "hugo_version": "latest",
+          "node_version": "18"
+        }
+      },
+      "vercel": {
+        "name": "Deploy Hugo to Vercel",
+        "description": "GitHub Actions workflow for Hugo deployment to Vercel",
+        "path": ".github/workflows/vercel.yml",
+        "content": "name: Deploy to Vercel\n\non:\n  push:\n    branches: [main, master]\n  pull_request:\n    branches: [main, master]\n\njobs:\n  build-and-deploy:\n    runs-on: ubuntu-latest\n    \n    steps:\n      - name: Checkout repository\n        uses: actions/checkout@v4\n        with:\n          submodules: true\n          fetch-depth: 0\n          \n      - name: Setup Hugo\n        uses: peaceiris/actions-hugo@v2\n        with:\n          hugo-version: '0.120.4'\n          extended: true\n          \n      - name: Setup Node.js\n        uses: actions/setup-node@v4\n        with:\n          node-version: '18'\n          cache: 'npm'\n          \n      - name: Install dependencies\n        run: npm ci\n        \n      - name: Build site\n        run: hugo --minify --environment production\n        \n      - name: Deploy to Vercel\n        uses: amondnet/vercel-action@v25\n        with:\n          vercel-token: ${{ secrets.VERCEL_TOKEN }}\n          github-token: ${{ secrets.GITHUB_TOKEN }}\n          vercel-args: '--prod'\n          vercel-org-id: ${{ secrets.ORG_ID }}\n          vercel-project-id: ${{ secrets.PROJECT_ID }}\n          working-directory: ./public",
+        "secrets": ["VERCEL_TOKEN", "ORG_ID", "PROJECT_ID"],
+        "variables": {
+          "hugo_version": "0.120.4",
+          "node_version": "18"
+        }
+      },
+      "aws_s3": {
+        "name": "Deploy Hugo to AWS S3",
+        "description": "GitHub Actions workflow for Hugo deployment to AWS S3 + CloudFront",
+        "path": ".github/workflows/aws.yml",
+        "content": "name: Deploy to AWS S3\n\non:\n  push:\n    branches: [main, master]\n\njobs:\n  build-and-deploy:\n    runs-on: ubuntu-latest\n    \n    steps:\n      - name: Checkout repository\n        uses: actions/checkout@v4\n        with:\n          submodules: true\n          fetch-depth: 0\n          \n      - name: Setup Hugo\n        uses: peaceiris/actions-hugo@v2\n        with:\n          hugo-version: '0.120.4'\n          extended: true\n          \n      - name: Setup Node.js\n        uses: actions/setup-node@v4\n        with:\n          node-version: '18'\n          cache: 'npm'\n          \n      - name: Install dependencies\n        run: npm ci\n        \n      - name: Build site\n        run: hugo --minify --environment production\n        \n      - name: Configure AWS credentials\n        uses: aws-actions/configure-aws-credentials@v4\n        with:\n          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}\n          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}\n          aws-region: ${{ secrets.AWS_REGION }}\n          \n      - name: Deploy to S3\n        run: |\n          aws s3 sync ./public s3://${{ secrets.S3_BUCKET_NAME }} --delete\n          \n      - name: Invalidate CloudFront\n        run: |\n          aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} --paths \"/*\"",
+        "secrets": ["AWS_ACCESS_KEY_ID", "AWS_SECRET_ACCESS_KEY", "AWS_REGION", "S3_BUCKET_NAME", "CLOUDFRONT_DISTRIBUTION_ID"],
+        "variables": {
+          "hugo_version": "0.120.4",
+          "node_version": "18"
+        }
+      }
+    },
+    "gitlab_ci": {
+      "netlify": {
+        "name": "Deploy Hugo to Netlify via GitLab CI",
+        "description": "GitLab CI pipeline for Hugo deployment to Netlify",
+        "path": ".gitlab-ci.yml",
+        "content": "image: ubuntu:latest\n\nvariables:\n  HUGO_VERSION: \"0.120.4\"\n  NODE_VERSION: \"18\"\n  \nbefore_script:\n  - apt-get update -qq && apt-get install -y -qq git curl\n  - curl -L https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.tar.gz | tar xz\n  - mv hugo /usr/local/bin/\n  - curl -fsSL https://deb.nodesource.com/setup_${NODE_VERSION}.x | bash -\n  - apt-get install -y nodejs\n  \nstages:\n  - build\n  - deploy\n  \nbuild:\n  stage: build\n  script:\n    - npm ci\n    - hugo --minify --environment production\n  artifacts:\n    paths:\n      - public\n    expire_in: 1 hour\n  only:\n    - main\n    - master\n    \ndeploy_netlify:\n  stage: deploy\n  image: node:18-alpine\n  before_script:\n    - npm install -g netlify-cli\n  script:\n    - netlify deploy --prod --dir=public --site=$NETLIFY_SITE_ID --auth=$NETLIFY_AUTH_TOKEN\n  dependencies:\n    - build\n  only:\n    - main\n    - master",
+        "secrets": ["NETLIFY_AUTH_TOKEN", "NETLIFY_SITE_ID"],
+        "variables": {
+          "hugo_version": "0.120.4",
+          "node_version": "18"
+        }
+      },
+      "gitlab_pages": {
+        "name": "Deploy Hugo to GitLab Pages", 
+        "description": "GitLab CI pipeline for Hugo deployment to GitLab Pages",
+        "path": ".gitlab-ci.yml",
+        "content": "image: ubuntu:latest\n\nvariables:\n  HUGO_VERSION: \"0.120.4\"\n  NODE_VERSION: \"18\"\n  \nbefore_script:\n  - apt-get update -qq && apt-get install -y -qq git curl\n  - curl -L https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.tar.gz | tar xz\n  - mv hugo /usr/local/bin/\n  - curl -fsSL https://deb.nodesource.com/setup_${NODE_VERSION}.x | bash -\n  - apt-get install -y nodejs\n  \ntest:\n  stage: test\n  script:\n    - npm ci\n    - hugo --minify --environment production\n  except:\n    - main\n    - master\n    \npages:\n  stage: deploy\n  script:\n    - npm ci\n    - hugo --minify --environment production\n  artifacts:\n    paths:\n      - public\n  only:\n    - main\n    - master",
+        "secrets": [],
+        "variables": {
+          "hugo_version": "0.120.4",
+          "node_version": "18"
+        }
+      }
+    },
+    "deployment_configs": {
+      "netlify_toml": {
+        "name": "Netlify Configuration",
+        "description": "netlify.toml configuration for Hugo deployment",
+        "path": "netlify.toml",
+        "content": "[build]\n  publish = \"public\"\n  command = \"hugo --gc --minify\"\n  \n[build.environment]\n  HUGO_VERSION = \"0.120.4\"\n  NODE_VERSION = \"18\"\n  HUGO_ENABLEGITINFO = \"true\"\n  \n[context.production.environment]\n  HUGO_ENV = \"production\"\n  \n[context.deploy-preview]\n  command = \"hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL\"\n  \n[context.branch-deploy]\n  command = \"hugo --gc --minify -b $DEPLOY_PRIME_URL\"\n  \n[[headers]]\n  for = \"/*\"\n  [headers.values]\n    X-Frame-Options = \"DENY\"\n    X-XSS-Protection = \"1; mode=block\"\n    X-Content-Type-Options = \"nosniff\"\n    Referrer-Policy = \"strict-origin-when-cross-origin\"\n    \n[[headers]]\n  for = \"*.css\"\n  [headers.values]\n    Cache-Control = \"public, max-age=31536000\"\n    \n[[headers]] \n  for = \"*.js\"\n  [headers.values]\n    Cache-Control = \"public, max-age=31536000\"",
+        "variables": {
+          "hugo_version": "0.120.4",
+          "node_version": "18",
+          "publish_dir": "public"
+        }
+      },
+      "vercel_json": {
+        "name": "Vercel Configuration",
+        "description": "vercel.json configuration for Hugo deployment",
+        "path": "vercel.json",
+        "content": "{\n  \"build\": {\n    \"env\": {\n      \"HUGO_VERSION\": \"0.120.4\",\n      \"NODE_VERSION\": \"18\"\n    }\n  },\n  \"builds\": [\n    {\n      \"src\": \"package.json\",\n      \"use\": \"@vercel/static-build\",\n      \"config\": {\n        \"distDir\": \"public\"\n      }\n    }\n  ],\n  \"headers\": [\n    {\n      \"source\": \"/(.*)\",\n      \"headers\": [\n        {\n          \"key\": \"X-Frame-Options\",\n          \"value\": \"DENY\"\n        },\n        {\n          \"key\": \"X-XSS-Protection\", \n          \"value\": \"1; mode=block\"\n        },\n        {\n          \"key\": \"X-Content-Type-Options\",\n          \"value\": \"nosniff\"\n        }\n      ]\n    },\n    {\n      \"source\": \"/(.*\\\\.(css|js))\",\n      \"headers\": [\n        {\n          \"key\": \"Cache-Control\",\n          \"value\": \"public, max-age=31536000, immutable\"\n        }\n      ]\n    }\n  ]\n}",
+        "variables": {
+          "hugo_version": "0.120.4", 
+          "node_version": "18",
+          "dist_dir": "public"
+        }
+      },
+      "package_json": {
+        "name": "Package.json Build Script",
+        "description": "package.json with Hugo build script for deployment platforms",
+        "path": "package.json",
+        "content": "{\n  \"name\": \"hugo-site\",\n  \"version\": \"1.0.0\",\n  \"description\": \"Hugo documentation site\",\n  \"scripts\": {\n    \"build\": \"hugo --gc --minify\",\n    \"dev\": \"hugo server -D\",\n    \"preview\": \"hugo server --environment production\",\n    \"clean\": \"rm -rf public resources\"\n  },\n  \"devDependencies\": {\n    \"hugo-cli\": \"^0.120.4\"\n  },\n  \"engines\": {\n    \"node\": \">=18.0.0\",\n    \"npm\": \">=8.0.0\"\n  }\n}",
+        "variables": {
+          "hugo_version": "0.120.4",
+          "node_version": "18"
+        }
+      }
+    }
+  },
+  "presets": {
+    "starter": {
+      "name": "Starter Deployment",
+      "description": "Simple GitHub Pages deployment for new projects",
+      "includes": ["github_actions.github_pages", "deployment_configs.package_json"]
+    },
+    "professional": {
+      "name": "Professional Netlify", 
+      "description": "Production-ready Netlify deployment with optimizations",
+      "includes": ["github_actions.netlify", "deployment_configs.netlify_toml", "deployment_configs.package_json"]
+    },
+    "enterprise": {
+      "name": "Enterprise AWS",
+      "description": "Scalable AWS S3 + CloudFront deployment",
+      "includes": ["github_actions.aws_s3", "deployment_configs.package_json"]
+    },
+    "multi_platform": {
+      "name": "Multi-Platform",
+      "description": "Support for multiple deployment targets",
+      "includes": ["github_actions.netlify", "github_actions.vercel", "deployment_configs.netlify_toml", "deployment_configs.vercel_json", "deployment_configs.package_json"]
+    }
+  },
+  "nlp_patterns": {
+    "deploy_to_netlify": ["deploy to netlify", "host on netlify", "netlify deployment", "use netlify"],
+    "deploy_to_vercel": ["deploy to vercel", "host on vercel", "vercel deployment", "use vercel"],
+    "deploy_to_github": ["deploy to github pages", "github pages", "host on github", "gh pages"],
+    "deploy_to_aws": ["deploy to aws", "host on s3", "aws deployment", "cloudfront"],
+    "deploy_to_gitlab": ["deploy to gitlab pages", "gitlab pages", "gitlab ci"]
+  }
+}
