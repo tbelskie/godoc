@@ -1,13 +1,13 @@
 {
   "name": "godoc-intel",
   "version": "0.1.0",
-  "generatedAt": "2025-08-08T20:30:00Z",
+  "generatedAt": "2025-08-09T12:00:00Z",
   "schemaVersion": "1",
   "checksum": {
-    "themes.json": "sha256-pending",
-    "styles.json": "sha256-pending", 
-    "patterns.json": "sha256-pending",
-    "rules.json": "sha256-pending"
+    "themes.json": "8949ac0e9f061d36c42e8681f0fbb9d713afd9490daf912f1ed27e23605b10e9",
+    "styles.json": "03c7ad4235fdac4e7aac3d95b1bd4d77875b439eb81be0c5fb3b9d51b82ca120",
+    "patterns.json": "77ac162255f6b36d67cb68cf2c6c2aa1ea73569384fbf72577d693a56d35f93d",
+    "rules.json": "086d9a1c986b4597f21721f9820275e8f3bccc5ebef5a102bd417b130365187b"
   },
   "notes": "Bundled, offline-first intel snapshot for CLI 0.1.x"
 }

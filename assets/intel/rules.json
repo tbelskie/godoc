@@ -6,6 +6,20 @@
       "severity": "warn", 
       "type": "regex",
       "pattern": "\\b(simply|just|obviously|clearly|of course|easy|trivial)\\b",
+      "selector": { "paths": ["**/*.md"], "excludePaths": ["**/changelog/**"] },
+      "enforce": {
+        "autoFix": true,
+        "transform": "remove",
+        "replacements": {
+          "simply": "",
+          "just": "",
+          "obviously": "",
+          "clearly": "",
+          "of course": "",
+          "easy": "straightforward",
+          "trivial": "straightforward"
+        }
+      },
       "suggest": "Remove filler words; be direct."
     },
     {
@@ -14,7 +28,30 @@
       "severity": "info",
       "type": "regex", 
       "pattern": "\\b(be|is|are|was|were|been|being)\\b\\s+\\b\\w+ed\\b",
+      "selector": { "paths": ["**/*.md"], "excludeContentTypes": ["code"] },
+      "enforce": {
+        "autoFix": false,
+        "suggestions": [
+          "Consider rewriting in active voice",
+          "Who is performing the action?"
+        ]
+      },
       "suggest": "Prefer active voice when possible."
+    },
+    {
+      "id": "style.inline-ui-italic",
+      "description": "Inline user inputs (button labels, menu items) should be italicized.",
+      "severity": "warn",
+      "type": "regex",
+      "selector": { "paths": ["**/*.md"], "when": { "contentTypeNot": ["api-reference"] } },
+      "detect": { "pattern": "\\b(Click|Select|Choose|Press|Tap)\\s+([A-Z][\\w\\s-]{1,30})\\b", "flags": "g" },
+      "enforce": { 
+        "mustWrap": "italic", 
+        "autoFix": true,
+        "exampleBefore": "Click Save Changes.",
+        "exampleAfter": "Click *Save Changes*."
+      },
+      "suggest": "Italicize UI elements for better readability."
     },
     {
       "id": "links.http",

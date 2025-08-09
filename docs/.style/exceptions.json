@@ -1,0 +1,105 @@
+{
+  "version": "1.0.0",
+  "description": "Path-specific rule exceptions for different content types",
+  "exceptions": [
+    {
+      "id": "changelog-relaxed-style",
+      "description": "Changelogs can use informal language",
+      "paths": ["**/changelog/**", "**/CHANGELOG.md", "**/releases/**"],
+      "ignoreRules": [
+        "style.banned-words",
+        "style.passive-voice",
+        "style.sentence-length"
+      ],
+      "reason": "Changelogs often need informal, direct language"
+    },
+    {
+      "id": "api-reference-no-italics",
+      "description": "API reference shouldn't auto-italicize parameter names",
+      "paths": ["**/api-reference/**", "**/api/**", "**/reference/**"],
+      "ignoreRules": [
+        "style.inline-ui-italic"
+      ],
+      "reason": "API docs use code formatting for parameters"
+    },
+    {
+      "id": "blog-posts-relaxed",
+      "description": "Blog posts can be more conversational",
+      "paths": ["**/blog/**", "**/posts/**", "**/articles/**"],
+      "ignoreRules": [
+        "style.banned-words",
+        "style.passive-voice"
+      ],
+      "allowedWords": ["simply", "just", "easy"],
+      "reason": "Blog posts benefit from conversational tone"
+    },
+    {
+      "id": "quickstart-action-oriented",
+      "description": "Quickstart guides can use action words",
+      "paths": ["**/quickstart/**", "**/getting-started/**", "**/setup/**"],
+      "ignoreRules": [
+        "style.banned-words"
+      ],
+      "allowedWords": ["simply", "just"],
+      "reason": "Quickstart guides need clear, direct instructions"
+    },
+    {
+      "id": "code-comments-relaxed",
+      "description": "Code blocks and comments have different style rules",
+      "contentTypes": ["code", "markdown.codeblock"],
+      "ignoreRules": [
+        "style.banned-words",
+        "style.sentence-length",
+        "style.passive-voice"
+      ],
+      "reason": "Code comments follow programming conventions"
+    },
+    {
+      "id": "troubleshooting-informal",
+      "description": "Troubleshooting docs can use direct, problem-solving language",
+      "paths": ["**/troubleshooting/**", "**/faq/**", "**/help/**"],
+      "ignoreRules": [
+        "style.banned-words"
+      ],
+      "allowedWords": ["simply", "just", "easy"],
+      "reason": "Troubleshooting needs clear, actionable guidance"
+    },
+    {
+      "id": "migration-guides-flexible",
+      "description": "Migration guides often reference legacy terminology",
+      "paths": ["**/migration/**", "**/upgrade/**", "**/breaking-changes/**"],
+      "ignoreRules": [
+        "style.banned-words",
+        "terminology.consistency"
+      ],
+      "reason": "Migration docs must reference old and new terminology"
+    }
+  ],
+  "contentTypeExceptions": {
+    "frontmatter": {
+      "ignoreRules": ["style.banned-words", "style.passive-voice"],
+      "reason": "YAML frontmatter has different formatting needs"
+    },
+    "tables": {
+      "ignoreRules": ["style.sentence-length"],
+      "reason": "Table cells require concise text"
+    },
+    "code": {
+      "ignoreRules": ["style.banned-words", "terminology.consistency"],
+      "reason": "Code follows programming language conventions"
+    },
+    "quotes": {
+      "ignoreRules": ["style.banned-words"],
+      "reason": "Quotes preserve original language"
+    }
+  },
+  "projectSpecific": {
+    "godoc": {
+      "allowedTerms": ["GOdoc", "DocOps", "intel pack"],
+      "brandTerms": {
+        "GOdoc": "exact",
+        "DocOps": "exact"
+      }
+    }
+  }
+}

@@ -1,6 +1,7 @@
 const fs = require('fs-extra');
 const path = require('path');
 const chalk = require('chalk');
+const crypto = require('crypto');
 
 /**
  * Intel Pack Loader - Load bundled intelligence data
@@ -24,8 +25,12 @@ class IntelLoader {
     }
 
     try {
+      // Load manifest first for checksum validation
+      const manifest = await this.loadIntelFile('manifest.json');
+      this.cache.manifest = manifest;
+      
       const intel = {
-        manifest: await this.loadIntelFile('manifest.json'),
+        manifest,
         themes: await this.loadIntelFile('themes.json'),
         styles: await this.loadIntelFile('styles.json'),
         patterns: await this.loadIntelFile('patterns.json'),
@@ -42,7 +47,7 @@ class IntelLoader {
   }
 
   /**
-   * Load specific intel file
+   * Load specific intel file with integrity checking
    * @param {string} filename - Intel file to load
    * @returns {Promise<Object>} Parsed JSON data
    */
@@ -51,6 +56,19 @@ class IntelLoader {
     
     if (!await fs.pathExists(filePath)) {
       throw new Error(`Intel file missing: ${filename}`);
+    }
+
+    // Verify checksum if manifest available
+    if (filename !== 'manifest.json' && this.cache.manifest) {
+      const expectedHash = this.cache.manifest.checksum[filename];
+      if (expectedHash) {
+        const content = await fs.readFile(filePath);
+        const actualHash = crypto.createHash('sha256').update(content).digest('hex');
+        
+        if (actualHash !== expectedHash) {
+          console.warn(chalk.yellow(`⚠️  Checksum mismatch for ${filename} - file may be corrupted`));
+        }
+      }
     }
 
     return await fs.readJSON(filePath);
