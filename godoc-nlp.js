@@ -138,10 +138,44 @@ async function executeInit(params) {
 async function executeDiagnose(params) {
   console.log(chalk.yellow('\n🔍 Diagnosing your documentation build...\n'));
   
-  // Future: Use diagnostics engine
-  console.log(chalk.yellow('🚧 Diagnostics engine coming soon!'));
-  console.log(chalk.gray('   Will automatically detect and fix common build issues'));
-  console.log(chalk.gray('   Including Hugo errors, broken links, config problems, etc.'));
+  const DiagnosticEngine = require('./src/diagnostic-engine');
+  const diagnosticEngine = new DiagnosticEngine();
+  
+  try {
+    await diagnosticEngine.initialize();
+    
+    // Run diagnostic scan
+    const results = await diagnosticEngine.runDiagnostics({ dryRun: false });
+    
+    // Display report
+    const report = diagnosticEngine.generateReport(results);
+    console.log(report);
+    
+    // Apply fixes if any are available
+    if (results.fixes.length > 0) {
+      console.log(chalk.blue('🔧 Applying automated fixes...\n'));
+      
+      const fixResults = await diagnosticEngine.applyFixes(results.fixes);
+      
+      console.log(chalk.green(`\n✅ Applied ${fixResults.applied}/${fixResults.total} fixes`));
+      
+      if (fixResults.errors.length > 0) {
+        console.log(chalk.yellow(`\n⚠️  ${fixResults.errors.length} fixes failed:`));
+        fixResults.errors.forEach(error => {
+          console.log(chalk.red(`   • ${error.fix}: ${error.error}`));
+        });
+      }
+    } else if (results.findings.length === 0) {
+      console.log(chalk.green('\n✅ No build issues detected!'));
+      console.log(chalk.gray('   Your documentation appears to be in good shape.'));
+    } else {
+      console.log(chalk.yellow('\n⚠️  Issues found but no automatic fixes available'));
+      console.log(chalk.gray('   See manual steps in the report above'));
+    }
+    
+  } catch (error) {
+    console.error(chalk.red('Error during diagnosis:', error.message));
+  }
 }
 
 /**

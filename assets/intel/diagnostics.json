@@ -1,0 +1,389 @@
+{
+  "version": "1.0.0",
+  "description": "Diagnostic recipes for automated build failure detection and fixes",
+  "recipes": [
+    {
+      "id": "hugo.shortcode.missing",
+      "name": "Missing Hugo Shortcode",
+      "category": "hugo",
+      "severity": "error",
+      "when": { 
+        "regex": "failed to render shortcode.*\"(\\w+)\"",
+        "sources": ["build_log", "hugo_output"]
+      },
+      "explain": "Hugo shortcode '{{<$1>}}' is not defined.",
+      "rootCause": "The shortcode is either missing from layouts/shortcodes/ or theme is not properly installed.",
+      "checks": [
+        "Verify layouts/shortcodes/$1.html exists",
+        "Check if theme includes the shortcode",
+        "Ensure theme submodule/dependency is installed"
+      ],
+      "autofix": {
+        "type": "create_file",
+        "enabled": true,
+        "target": "layouts/shortcodes/$1.html",
+        "content": "<!-- $1 shortcode -->\n<div class=\"shortcode-$1\">\n  {{ .Inner }}\n</div>",
+        "description": "Create basic shortcode template"
+      },
+      "manualSteps": [
+        "Check Hugo theme documentation for shortcode usage",
+        "Install missing theme dependencies with 'hugo mod get'"
+      ],
+      "links": [
+        "https://gohugo.io/templates/shortcode-templates/",
+        "https://gohugo.io/hugo-modules/"
+      ],
+      "examples": [
+        "ERROR: failed to render shortcode \"youtube\"",
+        "ERROR: failed to render shortcode \"ref\""
+      ]
+    },
+    {
+      "id": "hugo.module.notfound",
+      "name": "Hugo Module Not Found", 
+      "category": "hugo",
+      "severity": "error",
+      "when": {
+        "regex": "module \"([^\"]+)\" not found",
+        "sources": ["build_log", "hugo_output"]
+      },
+      "explain": "Hugo module '$1' is not installed or accessible.",
+      "rootCause": "Missing module dependency or incorrect module path.",
+      "checks": [
+        "Verify go.mod file exists and is valid",
+        "Check module path in hugo.toml config",
+        "Ensure network access for module download"
+      ],
+      "autofix": {
+        "type": "command",
+        "enabled": true,
+        "commands": [
+          "hugo mod init github.com/example/repo",
+          "hugo mod get $1",
+          "hugo mod tidy"
+        ],
+        "description": "Initialize Hugo modules and fetch missing dependency"
+      },
+      "manualSteps": [
+        "Run 'hugo mod init [module-path]' to initialize modules",
+        "Add module to hugo.toml: [[module.imports]] path = '$1'"
+      ],
+      "links": [
+        "https://gohugo.io/hugo-modules/use-modules/",
+        "https://gohugo.io/hugo-modules/configuration/"
+      ]
+    },
+    {
+      "id": "hugo.config.invalid",
+      "name": "Invalid Hugo Configuration",
+      "category": "hugo", 
+      "severity": "error",
+      "when": {
+        "regex": "(?:config|configuration).*(?:invalid|error|failed)",
+        "sources": ["build_log", "hugo_output"]
+      },
+      "explain": "Hugo configuration file contains syntax errors or invalid settings.",
+      "rootCause": "Malformed YAML/TOML/JSON syntax or deprecated configuration options.",
+      "checks": [
+        "Validate hugo.toml/hugo.yaml syntax",
+        "Check for deprecated configuration keys",
+        "Verify theme requirements match config"
+      ],
+      "autofix": {
+        "type": "validate_and_fix",
+        "enabled": true,
+        "actions": [
+          "Parse and validate configuration syntax",
+          "Remove deprecated configuration options",
+          "Add required configuration for current theme"
+        ],
+        "description": "Fix common configuration syntax and compatibility issues"
+      },
+      "manualSteps": [
+        "Check Hugo version compatibility",
+        "Review theme documentation for required configuration"
+      ],
+      "links": [
+        "https://gohugo.io/getting-started/configuration/",
+        "https://gohugo.io/getting-started/configuration-markup/"
+      ]
+    },
+    {
+      "id": "netlify.build.failed",
+      "name": "Netlify Build Failed",
+      "category": "deployment",
+      "severity": "error", 
+      "when": {
+        "regex": "Build failed|Deploy failed|(?:netlify|build).*(?:error|failed)",
+        "sources": ["netlify_log", "deploy_log"]
+      },
+      "explain": "Netlify deployment failed during build process.",
+      "rootCause": "Missing build command, incorrect Hugo version, or missing dependencies.",
+      "checks": [
+        "Verify netlify.toml build configuration",
+        "Check Hugo version in build settings",
+        "Ensure all dependencies are specified"
+      ],
+      "autofix": {
+        "type": "create_config",
+        "enabled": true,
+        "target": "netlify.toml",
+        "content": "[build]\\n  publish = \"public\"\\n  command = \"hugo --minify\"\\n\\n[build.environment]\\n  HUGO_VERSION = \"0.120.4\"\\n  NODE_VERSION = \"18\"",
+        "description": "Create optimized Netlify configuration"
+      },
+      "manualSteps": [
+        "Set Hugo version in Netlify dashboard",
+        "Configure build command: 'hugo --minify'",
+        "Set publish directory to 'public'"
+      ],
+      "links": [
+        "https://docs.netlify.com/configure-builds/file-based-configuration/",
+        "https://docs.netlify.com/configure-builds/common-configurations/#hugo"
+      ]
+    },
+    {
+      "id": "vercel.config.invalid",
+      "name": "Vercel Configuration Error",
+      "category": "deployment",
+      "severity": "error",
+      "when": {
+        "regex": "vercel.*(?:build|config|deploy).*(?:error|failed)",
+        "sources": ["vercel_log", "deploy_log"]
+      },
+      "explain": "Vercel deployment configuration is incorrect or missing.",
+      "rootCause": "Missing or malformed vercel.json configuration file.",
+      "checks": [
+        "Verify vercel.json exists and is valid",
+        "Check build command configuration",
+        "Ensure Hugo version is specified"
+      ],
+      "autofix": {
+        "type": "create_config", 
+        "enabled": true,
+        "target": "vercel.json",
+        "content": "{\\n  \"build\": {\\n    \"env\": {\\n      \"HUGO_VERSION\": \"0.120.4\"\\n    }\\n  },\\n  \"builds\": [\\n    {\\n      \"src\": \"package.json\",\\n      \"use\": \"@vercel/static-build\",\\n      \"config\": { \"distDir\": \"public\" }\\n    }\\n  ]\\n}",
+        "description": "Create Vercel configuration for Hugo deployment"
+      },
+      "manualSteps": [
+        "Add build script to package.json: 'hugo --minify'",
+        "Set HUGO_VERSION environment variable"
+      ],
+      "links": [
+        "https://vercel.com/docs/concepts/projects/project-configuration",
+        "https://vercel.com/guides/deploying-hugo-with-vercel"
+      ]
+    },
+    {
+      "id": "gitlab.raw.markdown", 
+      "name": "GitLab Raw Markdown Error",
+      "category": "markdown",
+      "severity": "error",
+      "when": {
+        "regex": "(Raw.*Markdown.*error|Malformed.*link|Invalid.*table)",
+        "sources": ["gitlab_ci", "build_log"]
+      },
+      "explain": "Malformed Markdown causing GitLab CI parsing errors.",
+      "rootCause": "Unbalanced brackets in links or malformed table syntax.",
+      "checks": [
+        "Scan for unbalanced link brackets: [text](url",
+        "Check table formatting and pipe alignment",
+        "Validate Markdown syntax across all files"
+      ],
+      "autofix": {
+        "type": "scan_and_fix",
+        "enabled": true,
+        "rules": [
+          "links.bracket-balance",
+          "tables.pipe-balance", 
+          "markdown.syntax-check"
+        ],
+        "description": "Fix common Markdown syntax errors"
+      },
+      "manualSteps": [
+        "Use Markdown linter to identify syntax errors",
+        "Check for missing closing brackets in links",
+        "Validate table pipe alignment"
+      ],
+      "links": [
+        "https://docs.gitlab.com/ee/user/markdown.html",
+        "https://spec.commonmark.org/"
+      ]
+    },
+    {
+      "id": "links.broken.internal",
+      "name": "Broken Internal Links",
+      "category": "content",
+      "severity": "warning",
+      "when": {
+        "regex": "(?:broken|invalid|missing).*(?:link|reference|href)",
+        "sources": ["link_checker", "build_log"]
+      },
+      "explain": "Internal links point to non-existent pages or files.",
+      "rootCause": "File moved, renamed, or deleted without updating references.",
+      "checks": [
+        "Scan all Markdown files for internal links",
+        "Verify target files exist at specified paths", 
+        "Check for case-sensitivity issues"
+      ],
+      "autofix": {
+        "type": "link_repair",
+        "enabled": true,
+        "actions": [
+          "Find moved files and update references",
+          "Convert absolute links to relative where possible",
+          "Fix case-sensitivity in file paths"
+        ],
+        "description": "Automatically repair broken internal links"
+      },
+      "manualSteps": [
+        "Run link checker to identify all broken links",
+        "Update links after file reorganization",
+        "Use consistent URL structure"
+      ],
+      "links": [
+        "https://github.com/tcort/markdown-link-check"
+      ]
+    },
+    {
+      "id": "theme.compatibility",
+      "name": "Theme Compatibility Error", 
+      "category": "hugo",
+      "severity": "error",
+      "when": {
+        "regex": "theme.*(?:not found|incompatible|version|missing)",
+        "sources": ["hugo_output", "build_log"]
+      },
+      "explain": "Hugo theme is incompatible with current Hugo version or missing files.",
+      "rootCause": "Theme requires different Hugo version or missing theme dependencies.",
+      "checks": [
+        "Check theme minimum Hugo version requirements",
+        "Verify all theme files are present",
+        "Check theme submodule status if using Git"
+      ],
+      "autofix": {
+        "type": "theme_repair",
+        "enabled": true,
+        "actions": [
+          "Update theme to compatible version",
+          "Install missing theme dependencies",
+          "Fix theme submodule if needed"
+        ],
+        "description": "Resolve theme compatibility and dependency issues"
+      },
+      "manualSteps": [
+        "Check theme documentation for Hugo version requirements",
+        "Update Hugo to compatible version: 'hugo version'",
+        "Reinstall theme: 'git submodule update --init --recursive'"
+      ],
+      "links": [
+        "https://themes.gohugo.io/",
+        "https://gohugo.io/hugo-modules/theme-components/"
+      ]
+    },
+    {
+      "id": "build.memory.exceeded",
+      "name": "Build Memory Limit Exceeded",
+      "category": "performance", 
+      "severity": "error",
+      "when": {
+        "regex": "(?:memory|RAM|out of memory|killed|signal: killed)",
+        "sources": ["build_log", "ci_log"]
+      },
+      "explain": "Build process exceeded available memory limits.",
+      "rootCause": "Large files, too many pages, or memory-intensive theme operations.",
+      "checks": [
+        "Check total number of pages and file sizes",
+        "Review theme for memory-intensive operations",
+        "Identify large assets or generated content"
+      ],
+      "autofix": {
+        "type": "optimize_build",
+        "enabled": true,
+        "actions": [
+          "Enable Hugo's memory optimization flags",
+          "Configure build pagination for large sites", 
+          "Optimize image processing settings"
+        ],
+        "description": "Apply memory optimization techniques"
+      },
+      "manualSteps": [
+        "Use --gc flag: 'hugo --gc --minify'",
+        "Increase CI memory limits if possible",
+        "Consider splitting large sites into sections"
+      ],
+      "links": [
+        "https://gohugo.io/troubleshooting/build-performance/",
+        "https://gohugo.io/content-management/build-options/"
+      ]
+    },
+    {
+      "id": "assets.missing",
+      "name": "Missing Asset Files",
+      "category": "content",
+      "severity": "error", 
+      "when": {
+        "regex": "(?:asset|file|image|resource).*(?:not found|missing|404)",
+        "sources": ["hugo_output", "build_log"]
+      },
+      "explain": "Referenced asset files (images, CSS, JS) cannot be found.",
+      "rootCause": "Files moved, incorrect paths, or missing from repository.",
+      "checks": [
+        "Scan for asset references in templates and content",
+        "Verify files exist at expected locations",
+        "Check static/ and assets/ directory structure"
+      ],
+      "autofix": {
+        "type": "asset_repair",
+        "enabled": false,
+        "reason": "Asset files must be manually provided",
+        "actions": [
+          "Create placeholder assets for development",
+          "Update asset paths to correct locations"
+        ],
+        "description": "Update asset references to correct paths"
+      },
+      "manualSteps": [
+        "Copy missing assets to static/ directory",
+        "Update asset paths in templates and content",
+        "Verify image paths are case-sensitive on deployment"
+      ],
+      "links": [
+        "https://gohugo.io/content-management/static-files/",
+        "https://gohugo.io/hugo-pipes/introduction/"
+      ]
+    }
+  ],
+  "categories": {
+    "hugo": {
+      "name": "Hugo Framework", 
+      "description": "Hugo-specific build and configuration issues",
+      "priority": "high"
+    },
+    "deployment": {
+      "name": "Deployment Platforms",
+      "description": "Platform-specific deployment and CI/CD issues", 
+      "priority": "high"
+    },
+    "markdown": {
+      "name": "Markdown Content",
+      "description": "Markdown syntax and formatting issues",
+      "priority": "medium"
+    },
+    "content": {
+      "name": "Content Issues", 
+      "description": "Links, assets, and content-related problems",
+      "priority": "medium"
+    },
+    "performance": {
+      "name": "Performance Issues",
+      "description": "Memory, speed, and resource optimization",
+      "priority": "low"
+    }
+  },
+  "autofixSettings": {
+    "safeMode": true,
+    "createBackups": true,
+    "dryRunDefault": true,
+    "requireConfirmation": true
+  }
+}
